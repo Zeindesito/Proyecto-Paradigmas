@@ -53,6 +53,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Matafuego ABC.cs" />
+    <Compile Include="Matafuego K.cs" />
     <Compile Include="Matafuego.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
