@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace Proyecto_paradigmas_matafuegos
 {
-    public partial class Form1 : Form
+    public partial class RecepcionistaForm : Form
     {
-        public Form1()
+        public RecepcionistaForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
 
         }
     }
