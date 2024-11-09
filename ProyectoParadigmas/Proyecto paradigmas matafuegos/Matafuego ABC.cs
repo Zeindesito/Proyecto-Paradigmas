@@ -8,7 +8,7 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Matafuego_ABC : Matafuego
     {
-        public string Manometro { get; set; } //Verde = bien, amarrillo = falta gas, rojo = exeso de gas
+        public string Manometro { get; set; } //Verde = bien, amarrillo = falta gas, rojo = exceso de gas
         public bool KgPolvo {  get; set; } //true = lleno, false = vacio
 
         //constructor
@@ -26,9 +26,5 @@ namespace Proyecto_paradigmas_matafuegos
             Manometro = "Verde";
             KgPolvo = true;
         }
-
-
-
-
     }
 }
