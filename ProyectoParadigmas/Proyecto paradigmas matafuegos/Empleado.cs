@@ -11,12 +11,15 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public string ObraSocial { get; set; }
         public string Codigo { get; set; }
+        public float SueldoMes {  get; set; }//?
+
 
         //constructor
-        public Empleado(string nombre, string apellido, string email, string numeroTelefono, string cuil, string obraSocial, string codigo) : base(nombre, apellido, email, numeroTelefono, cuil)
+        public Empleado(string nombre, string apellido, string email, string numeroTelefono, string cuil, string obraSocial, string codigo, float sueldoMes) : base(nombre, apellido, email, numeroTelefono, cuil)
         {
             ObraSocial = obraSocial;
             Codigo = codigo;
+            SueldoMes = sueldoMes;
         }
 
 

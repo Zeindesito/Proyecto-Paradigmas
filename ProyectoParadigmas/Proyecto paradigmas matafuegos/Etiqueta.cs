@@ -22,5 +22,8 @@ namespace Proyecto_paradigmas_matafuegos
         }
 
         public void Imprimir()
+        {
+            ToString();
+        }
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\agustin montejo\\desktop\\proyecto pp\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\agustin montejo\\desktop\\proyecto pp\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\agustin montejo\\desktop\\proyecto pp\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +27,20 @@
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\matafuego k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\matafuego k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\matafuego abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\matafuego abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\agustin montejo\\desktop\\proyecto pp\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\matafuego k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\matafuego k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,44 +98,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Servicio.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Servicio.cs",
+              "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Servicio.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Servicio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:03:48.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Cliente.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Cliente.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:44:27.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Recepcionista.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Recepcionista.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Recepcionista.cs",
               "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Recepcionista.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Recepcionista.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:31:09.939Z"
+              "WhenOpened": "2024-11-09T13:31:09.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Tecnico.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Tecnico.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Tecnico.cs",
               "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Tecnico.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Tecnico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T12:54:26.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Empleado.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Empleado.cs",
               "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Empleado.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Empleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:50:00.537Z"
+              "WhenOpened": "2024-11-09T12:50:00.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Persona.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Persona.cs",
@@ -135,19 +171,8 @@
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Persona.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:47:44.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Matafuego K.cs",
-              "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego K.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Matafuego K.cs",
-              "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego K.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Matafuego K.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T10:38:26.725Z"
+              "WhenOpened": "2024-11-09T12:47:44.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,35 +184,50 @@
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Matafuego ABC.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T09:19:53.998Z"
+              "WhenOpened": "2024-11-09T09:19:53.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Matafuego.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Matafuego.cs",
               "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Matafuego.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAHAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T15:45:28.799Z"
+              "WhenOpened": "2024-11-07T15:45:28.799Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Etiqueta.cs",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Etiqueta.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Etiqueta.cs",
               "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Etiqueta.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Etiqueta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T15:48:06.79Z"
+              "WhenOpened": "2024-11-07T15:48:06.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "Matafuego K.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego K.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Matafuego K.cs",
+              "ToolTip": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Matafuego K.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Matafuego K.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T10:38:26.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Agustin Montejo\\Desktop\\Proyecto PP\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Form1.cs",

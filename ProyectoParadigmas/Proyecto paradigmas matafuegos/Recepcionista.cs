@@ -12,6 +12,16 @@ namespace Proyecto_paradigmas_matafuegos
         {
         }
 
+        // Preguntar si el servicio es urgente o no, si es asi cobrar un plus por prisa a realizar
 
+       /* public void RealizarServicio(Servicio servicio)
+        {
+
+        }
+
+        public void VenderMataFuego(Matafuego matafuego,Persona persona)
+        {
+
+        }*/
     }
 }
