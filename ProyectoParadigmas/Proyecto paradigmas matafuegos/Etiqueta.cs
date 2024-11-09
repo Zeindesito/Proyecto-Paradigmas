@@ -20,5 +20,7 @@ namespace Proyecto_paradigmas_matafuegos
             FechaVencimiento = fechaVencimiento;
             Matafuego_ = matafuego;
         }
+
+        public void Imprimir()
     }
 }

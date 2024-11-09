@@ -10,6 +10,7 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public double Liquido {  get; set; }
         public bool Manometro { get; set; }
+        
 
     }
 }

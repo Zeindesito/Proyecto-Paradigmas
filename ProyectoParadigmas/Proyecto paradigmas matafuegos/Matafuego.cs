@@ -11,10 +11,11 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public Etiqueta EtiquetaMatafuego { get; set; }
         public string Arosello_Precinto { get; set; }
-        public double Gas { get; set; }
+        public bool Gas { get; set; }
+
 
         //constructor
-        public Matafuego(Etiqueta etiqueta, string arosello_precinto, double gas)
+        public Matafuego(Etiqueta etiqueta, string arosello_precinto, bool gas)
         {
             EtiquetaMatafuego = etiqueta;
             Arosello_Precinto = arosello_precinto;
@@ -22,25 +23,10 @@ namespace Proyecto_paradigmas_matafuegos
         }
 
         //metodos
-        public virtual void Recargar(double cantidadGas, string color, Etiqueta etiqueta, int cantidad)
+        public virtual void Recargar(string color, Etiqueta etiqueta)
         {
-            RellenarGas(cantidadGas);
-            CambiarArosello(color);
-            CambiarEtiqueta(etiqueta);
-        }
-
-        void RellenarGas(double cantidadGas)
-        {
-            Gas = cantidadGas;
-        }
-
-        void CambiarArosello(string color)
-        {
+            Gas = true;
             Arosello_Precinto = color;
-        }
-
-        void CambiarEtiqueta(Etiqueta etiqueta)
-        {
             EtiquetaMatafuego = etiqueta;
         }
 

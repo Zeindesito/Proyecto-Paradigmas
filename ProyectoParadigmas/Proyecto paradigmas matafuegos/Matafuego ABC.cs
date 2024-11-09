@@ -8,11 +8,11 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Matafuego_ABC : Matafuego
     {
-        public bool Manometro { get; set; } //True = bien, False = roto
-        public int KgPolvo {  get; set; }
+        public string Manometro { get; set; } //Verde = bien, amarrillo = falta gas, rojo = exeso de gas
+        public bool KgPolvo {  get; set; } //true = lleno, false = vacio
 
         //constructor
-        public Matafuego_ABC(int kilos, Etiqueta etiqueta, string arosello_precinto, double gas, bool manometro) : base(etiqueta, arosello_precinto, gas)
+        public Matafuego_ABC(bool kilos, Etiqueta etiqueta, string arosello_precinto, double gas, string manometro) : base(etiqueta, arosello_precinto, gas)
         {
             KgPolvo = kilos;
             Manometro = manometro;
@@ -20,18 +20,11 @@ namespace Proyecto_paradigmas_matafuegos
 
 
         //metodos
-        public override void Recargar(double cantidadGas, string color, Etiqueta etiqueta, int cantidad) //?????
+        public override void Recargar(string color, Etiqueta etiqueta)
         {
-            base.Recargar(cantidadGas, color, etiqueta, cantidad);
-
-            //añado polvo quimico
-            KgPolvo = cantidad;
-
-            //si esta roto lo cambiamos
-            if(Manometro == false)
-            {
-                Manometro = true;
-            }
+            base.Recargar(color, etiqueta);
+            Manometro = "Verde";
+            KgPolvo = true;
         }
 
 
