@@ -12,8 +12,7 @@ namespace Proyecto_paradigmas_matafuegos
         public string Apellido { get; set; }
         public string Email { get; set; }
         public string NumeroTelefono { get; set; }
-        public string DNI { get; set; } //?
-        //string Apellido { get; set; }
+        public string DNI { get; set; }
 
         public Persona(string nombre, string apellido, string email, string numeroTelefono, string dni)
         {

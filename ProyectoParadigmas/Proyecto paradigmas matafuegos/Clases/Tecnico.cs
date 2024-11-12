@@ -19,7 +19,7 @@ namespace Proyecto_paradigmas_matafuegos
         public string RecargarMatafuego(Matafuego matafuego, string color, Etiqueta etiqueta)
         {
             matafuego.Recargar(color, etiqueta);
-            return ""; //algo va aca.
+
            
         }
 

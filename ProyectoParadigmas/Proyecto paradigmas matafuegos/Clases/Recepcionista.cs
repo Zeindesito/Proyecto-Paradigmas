@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,17 +12,10 @@ namespace Proyecto_paradigmas_matafuegos
         public Recepcionista(string nombre, string apellido, string email, string numeroTelefono, string codigo) : base(nombre, apellido, email, numeroTelefono, codigo)
         {
         }
-
-        // Preguntar si el servicio es urgente o no, si es asi cobrar un plus por prisa a realizar
-
-       /* public void RealizarServicio(Servicio servicio)
+        
+        public void SolicitarServicio(Matafuego matafuego, Cliente cliente)
         {
-
+            Servicio servicio = new Servicio(Tecnico tecnico)
         }
-
-        public void VenderMataFuego(Matafuego matafuego,Persona persona)
-        {
-
-        }*/
     }
 }
