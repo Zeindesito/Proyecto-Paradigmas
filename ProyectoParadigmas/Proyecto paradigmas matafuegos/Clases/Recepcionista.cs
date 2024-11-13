@@ -9,13 +9,13 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Recepcionista : Empleado
     {
-        public Recepcionista(string nombre, string apellido, string email, string numeroTelefono, string codigo) : base(nombre, apellido, email, numeroTelefono, codigo)
+        public Recepcionista(string nombre, string apellido,string dni,string codigoEmpleado) : base(nombre, apellido,dni,codigoEmpleado)
         {
         }
         
-        public void SolicitarServicio(Matafuego matafuego, Cliente cliente)
+        /*public void SolicitarServicio(Matafuego matafuego, Cliente cliente)
         {
             Servicio servicio = new Servicio(Tecnico tecnico)
-        }
+        }*/
     }
 }

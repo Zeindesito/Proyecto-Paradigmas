@@ -12,12 +12,11 @@ namespace Proyecto_paradigmas_matafuegos
         public bool KgPolvo {  get; set; } //true = lleno, false = vacio
 
         //constructor
-        public Matafuego_ABC(bool kilos, Etiqueta etiqueta, string arosello_precinto, double gas, string manometro) : base(etiqueta, arosello_precinto, gas)
+        public Matafuego_ABC(bool kilos, Etiqueta etiqueta, string arosello_precinto, bool gas, double peso,string manometro) : base(etiqueta, arosello_precinto,gas, peso)
         {
             KgPolvo = kilos;
             Manometro = manometro;
         }
-
 
         //metodos
         public override void Recargar(string color, Etiqueta etiqueta)
@@ -25,6 +24,14 @@ namespace Proyecto_paradigmas_matafuegos
             base.Recargar(color, etiqueta);
             Manometro = "Verde";
             KgPolvo = true;
+        }
+
+        public override double CalcularCosto()
+        {
+            double costoBase = 4500;
+            costoBase += 3000;
+            costoBase += Peso * 500;
+            return costoBase;
         }
     }
 }

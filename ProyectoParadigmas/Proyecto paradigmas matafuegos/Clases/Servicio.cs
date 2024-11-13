@@ -24,8 +24,6 @@ namespace Proyecto_paradigmas_matafuegos
             this.cliente = cliente;
             this.Fecha = fecha;
         }
-
-
         public void RealizarMantenimiento()
         {
             // Realizar el mantenimiento a los matafuegos   
@@ -42,6 +40,11 @@ namespace Proyecto_paradigmas_matafuegos
             int year = DateTime.Now.Year;
             int index = (year - 2024) % ColoresArosello.Length; // Empieza en 2024 con "Verde" y rota anualmente
             return ColoresArosello[index];
+        }
+
+        public double CalcularCosto(Matafuego matafuego)
+        {
+            return matafuego.CalcularCosto();
         }
     }
 }

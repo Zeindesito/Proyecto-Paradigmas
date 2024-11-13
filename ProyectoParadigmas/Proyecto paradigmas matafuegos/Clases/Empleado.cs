@@ -11,7 +11,7 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public string CodigoEmpleado { get; set; }
         //constructor
-        public Empleado(string nombre, string apellido, string email, string numeroTelefono, string dni, string codigoEmpleado) : base(nombre, apellido, email, numeroTelefono, dni)
+        public Empleado(string nombre, string apellido,string dni, string codigoEmpleado) : base(nombre, apellido, dni)
         {
             CodigoEmpleado = codigoEmpleado;
         }

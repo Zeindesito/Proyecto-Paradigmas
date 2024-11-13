@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_paradigmas_matafuegos.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,26 @@ namespace Proyecto_paradigmas_matafuegos
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string usuario = textBox1.Text;
+            string contra = textBox2.Text;
+
+            if (Usuario.ValidarUsuario(usuario, contra))
+            {
+                RecepcionistaForm recepcionistaForm = new RecepcionistaForm();
+                recepcionistaForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.");
+            }
 
 
-        }
+        } 
     }
 }

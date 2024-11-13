@@ -9,8 +9,9 @@ namespace Proyecto_paradigmas_matafuegos
     public class Cliente : Persona
     {
         public Matafuego matafuego;
-        public Cliente(string nombre, string apellido, string email, string numeroTelefono, string dni) : base(nombre, apellido, email, numeroTelefono, dni)
+        public Cliente(string nombre, string apellido, string dni) : base(nombre, apellido, dni)
         {
+
         }
 
 

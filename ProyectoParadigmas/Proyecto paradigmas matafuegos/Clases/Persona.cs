@@ -10,16 +10,12 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public string Email { get; set; }
-        public string NumeroTelefono { get; set; }
         public string DNI { get; set; }
 
-        public Persona(string nombre, string apellido, string email, string numeroTelefono, string dni)
+        public Persona(string nombre, string apellido, string dni)
         {
             Nombre = nombre;
             Apellido = apellido;
-            Email = email;
-            NumeroTelefono = numeroTelefono;
             DNI = dni;
         }
 

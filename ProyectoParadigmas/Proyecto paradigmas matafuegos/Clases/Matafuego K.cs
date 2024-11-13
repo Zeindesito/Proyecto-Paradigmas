@@ -12,7 +12,7 @@ namespace Proyecto_paradigmas_matafuegos
         public bool Liquido {  get; set; }
         public string Manometro { get; set; }
 
-        public Matafuego_K(Etiqueta etiqueta, string arosello_precinto, bool gas, bool liquido, string manometro) : base(etiqueta, arosello_precinto, gas)
+        public Matafuego_K(Etiqueta etiqueta, string arosello_precinto, bool gas, bool liquido, double peso,string manometro) : base(etiqueta, arosello_precinto, gas, peso)
         {
             Liquido = liquido;
             Manometro = manometro;
@@ -23,6 +23,14 @@ namespace Proyecto_paradigmas_matafuegos
             base.Recargar(color, etiqueta);
             Manometro = "Verde";
             Liquido = true;
+        }
+
+        public override double CalcularCosto()
+        {
+            double costoBase = 4500;
+            costoBase += 2500;
+            costoBase = +Peso * 750;
+            return costoBase;
         }
 
     }

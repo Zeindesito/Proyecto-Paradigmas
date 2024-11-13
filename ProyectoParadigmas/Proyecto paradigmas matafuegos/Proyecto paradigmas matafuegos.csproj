@@ -50,6 +50,7 @@
     <Compile Include="Clases\Empleado.cs" />
     <Compile Include="Clases\Empresa.cs" />
     <Compile Include="Clases\Etiqueta.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Forms\Factura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +68,12 @@
     <Compile Include="Clases\Matafuego.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="Forms\ServicioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServicioForm.Designer.cs">
+      <DependentUpon>ServicioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Recepcionista.cs" />
     <Compile Include="Forms\RecepcionistaForm.cs">
@@ -94,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServicioForm.resx">
+      <DependentUpon>ServicioForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

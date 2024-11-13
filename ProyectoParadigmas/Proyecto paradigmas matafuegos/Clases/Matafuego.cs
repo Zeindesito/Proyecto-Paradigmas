@@ -12,14 +12,16 @@ namespace Proyecto_paradigmas_matafuegos
         public Etiqueta EtiquetaMatafuego { get; set; }
         public string Arosello_Precinto { get; set; }
         public bool Gas { get; set; }
+        public double Peso {  get; set; }
 
 
         //constructor
-        public Matafuego(Etiqueta etiqueta, string arosello_precinto, bool gas)
+        public Matafuego(Etiqueta etiqueta, string arosello_precinto, bool gas, double peso)
         {
             EtiquetaMatafuego = etiqueta;
             Arosello_Precinto = arosello_precinto;
             Gas = gas;
+            Peso = peso;
         }
 
         //metodos
@@ -29,6 +31,8 @@ namespace Proyecto_paradigmas_matafuegos
             Arosello_Precinto = color;
             EtiquetaMatafuego = etiqueta;
         }
+
+        public abstract double CalcularCosto();
 
        
        
