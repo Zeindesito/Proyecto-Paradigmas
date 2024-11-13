@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\matia\\source\\repos\\proyecto-paradimas\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\clases\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|c:\\users\\matia\\source\\repos\\proyecto-paradimas\\proyecto-paradigmas\\proyectoparadigmas\\proyecto paradigmas matafuegos\\clases\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\servicioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\servicioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\servicioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -59,24 +27,60 @@
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\matafuego k.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\matafuego abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\matafuego abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\matafuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\etiqueta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\porqueria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\porqueria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\recepcionistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\ventaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\forms\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\proyecto paradigmas matafuegos\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4D13B9E-2830-413D-B4E2-4F2914165FD1}|Proyecto paradigmas matafuegos\\Proyecto paradigmas matafuegos.csproj|solutionrelative:proyecto paradigmas matafuegos\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,8 +90,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 28,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Empresa.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:06:36.226Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -130,19 +147,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Program.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Program.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T20:00:23.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Porqueria\\Usuario.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Porqueria\\Usuario.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Porqueria\\Usuario.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Porqueria\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T19:51:32.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:52:03.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Factura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T21:37:23.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Etiqueta.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Etiqueta.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Etiqueta.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Etiqueta.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Etiqueta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:01:28.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "VentaForm.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAApwCUAAAA+AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T16:21:47.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "VentaForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\VentaForm.cs",
@@ -153,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Persona.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Persona.cs",
@@ -165,56 +241,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Empresa.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Empresa.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA9wCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:06:36.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "ServicioForm.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T00:42:58.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Matafuego K.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwD8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:30:14.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Matafuego.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAcwCcAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:23:59.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "ServicioForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\ServicioForm.cs",
@@ -225,55 +264,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
+              "Title": "Matafuego K.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Matafuego K.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:30:14.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Matafuego.cs",
+              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
+              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
+              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
+              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Matafuego.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:23:59.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Matafuego ABC.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego ABC.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Matafuego ABC.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Matafuego ABC.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Matafuego ABC.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAswCsAAAApAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T23:45:19.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Usuario.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Usuario.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Usuario.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:34:47.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empleado.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Empleado.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Empleado.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Empleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:30:34.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAewB8AAAANAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAewB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T23:28:31.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\Form1.cs",
@@ -284,19 +323,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "RecepcionistaForm.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBAAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAA9wBgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T23:23:31.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "RecepcionistaForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\RecepcionistaForm.cs",
@@ -307,42 +346,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Factura.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Forms\\Factura.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Forms\\Factura.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:37:23.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Tecnico.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Tecnico.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Tecnico.cs",
               "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Tecnico.cs",
               "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Tecnico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:37:17.978Z"
+              "WhenOpened": "2024-11-12T21:37:17.978Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Servicio.cs",
-              "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Servicio.cs",
-              "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Servicio.cs",
-              "ToolTip": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Servicio.cs",
-              "RelativeToolTip": "Proyecto paradigmas matafuegos\\Clases\\Servicio.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:37:16.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\matia\\source\\repos\\Proyecto-Paradimas\\Proyecto-Paradigmas\\ProyectoParadigmas\\Proyecto paradigmas matafuegos\\Clases\\Cliente.cs",
               "RelativeDocumentMoniker": "Proyecto paradigmas matafuegos\\Clases\\Cliente.cs",

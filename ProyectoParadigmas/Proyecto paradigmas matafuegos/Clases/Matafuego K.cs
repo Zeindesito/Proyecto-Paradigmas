@@ -64,10 +64,10 @@ namespace Proyecto_paradigmas_matafuegos
             }
         }
 
-        /*public override string DeterminarTipo()
+        public override string DeterminarTipo()
         {
             return "K";
-        }*/
+        }
 
     }
 }

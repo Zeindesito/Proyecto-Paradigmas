@@ -24,9 +24,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 MessageBox.Show("Por favor, seleccione el tipo de matafuego y su peso.");
                 return;
             }
-
-            string tipomatafuego=comboBox1.SelectedItem.ToString();
-            double pesomatafuego=Convert.ToDouble(comboBox2.SelectedItem);
+            
+             = comboBox1.Text
 
             
             

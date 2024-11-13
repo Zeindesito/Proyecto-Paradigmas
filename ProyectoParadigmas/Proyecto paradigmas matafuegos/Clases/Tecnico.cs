@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto_paradigmas_matafuegos
 {
-    public class Tecnico : Empleado
+    public class Tecnico : Persona
     {
         //constructor parametrizado
-        public Tecnico(string nombre, string apellido, string dni,string codigoEmpleado) : base(nombre, apellido,dni, codigoEmpleado)
+        public Tecnico(string nombre, string apellido, string dni) : base(nombre, apellido, dni)
         {
 
         }

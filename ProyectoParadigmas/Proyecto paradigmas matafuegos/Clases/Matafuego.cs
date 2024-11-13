@@ -35,9 +35,12 @@ namespace Proyecto_paradigmas_matafuegos
             EtiquetaMatafuego = etiqueta;
         }
 
+
         public abstract void DeterminarPrecioVenta();
 
         public abstract void DeterminarPrecioRecarga();
+
+        public abstract string DeterminarTipo();
 
 
 
