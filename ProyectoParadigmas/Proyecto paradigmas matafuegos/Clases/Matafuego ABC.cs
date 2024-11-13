@@ -16,6 +16,7 @@ namespace Proyecto_paradigmas_matafuegos
         {
             KgPolvo = kilos;
             Manometro = manometro;
+            DeterminarPrecioVenta();
         }
 
         //metodos
@@ -26,12 +27,50 @@ namespace Proyecto_paradigmas_matafuegos
             KgPolvo = true;
         }
 
-        public override double CalcularCosto()
+        public override void DeterminarPrecioVenta()
         {
-            double costoBase = 4500;
-            costoBase += 3000;
-            costoBase += Peso * 500;
-            return costoBase;
+            switch (Peso)
+            {
+                case 1:
+                    PrecioVenta += 35000;
+                    break;
+                case 2.5:
+                    PrecioVenta += 45000;
+                    break;
+                case 5:
+                    PrecioVenta += 120000;
+                    break;
+                case 10:
+                    PrecioVenta += 220000;
+                    break;
+            }
         }
+
+        public override void DeterminarPrecioRecarga()
+        {
+            switch (Peso)
+            {
+                case 1:
+                    PrecioVenta += 1400;
+                    break;
+                case 2.5:
+                    PrecioVenta += 1600;
+                    break;
+                case 5:
+                    PrecioVenta += 3000;
+                    break;
+                case 10:
+                    PrecioVenta += 4800;
+                    break;
+            }
+        }
+
+        /*public override string DeterminarTipo()
+        {
+            return "ABC";
+        }*/
+
+
     }
+
 }

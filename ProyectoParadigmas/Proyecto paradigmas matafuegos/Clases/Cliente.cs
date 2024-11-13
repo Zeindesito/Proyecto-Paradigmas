@@ -8,10 +8,10 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Cliente : Persona
     {
-        public Matafuego matafuego;
+        public List<Matafuego> Matafuegos { get; set; }
         public Cliente(string nombre, string apellido, string dni) : base(nombre, apellido, dni)
         {
-
+            Matafuegos = new List<Matafuego>();
         }
 
 

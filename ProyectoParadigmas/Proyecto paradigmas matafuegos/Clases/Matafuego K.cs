@@ -12,10 +12,11 @@ namespace Proyecto_paradigmas_matafuegos
         public bool Liquido {  get; set; }
         public string Manometro { get; set; }
 
-        public Matafuego_K(Etiqueta etiqueta, string arosello_precinto, bool gas, bool liquido, double peso,string manometro) : base(etiqueta, arosello_precinto, gas, peso)
+        public Matafuego_K(Etiqueta etiqueta, string arosello_precinto, bool gas, bool liquido, string manometro, int peso) : base(etiqueta, arosello_precinto, gas, peso)
         {
             Liquido = liquido;
             Manometro = manometro;
+            DeterminarPrecioVenta();
         }
 
         public override void Recargar(string color, Etiqueta etiqueta)
@@ -25,13 +26,48 @@ namespace Proyecto_paradigmas_matafuegos
             Liquido = true;
         }
 
-        public override double CalcularCosto()
+        public override void DeterminarPrecioVenta()
         {
-            double costoBase = 4500;
-            costoBase += 2500;
-            costoBase = +Peso * 750;
-            return costoBase;
+            switch (Peso)
+            {
+                case 1:
+                    PrecioVenta += 00;
+                    break;
+                case 2.5:
+                    PrecioVenta += 00;
+                    break;
+                case 5:
+                    PrecioVenta += 400000;
+                    break;
+                case 10:
+                    PrecioVenta += 00;
+                    break;
+            }
         }
+
+        public override void DeterminarPrecioRecarga()
+        {
+            switch (Peso)
+            {
+                case 1:
+                    PrecioRecarga += 5000;
+                    break;
+                case 2.5:
+                    PrecioRecarga += 8000;
+                    break;
+                case 5:
+                    PrecioRecarga += 15000;
+                    break;
+                case 10:
+                    PrecioRecarga += 28000;
+                    break;
+            }
+        }
+
+        /*public override string DeterminarTipo()
+        {
+            return "K";
+        }*/
 
     }
 }

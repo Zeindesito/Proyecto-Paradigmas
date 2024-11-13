@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,30 +10,42 @@ namespace Proyecto_paradigmas_matafuegos
     public class Servicio
     {
         public Tecnico TecnicoServicio { get; set; }
-        public List<Matafuego> Matafuegos;
-        public Cliente cliente;
+        //public List<Matafuego> Matafuegos { get; set; }
+        public Cliente Cliente {  get; set; }
         public DateTime Fecha { get; set; }
-
+        public double Costo {  get; set; }
+        
         //determino el color del arosello anualmente
         public string ColorArosello { get; private set; }
         // Lista de colores rotativos (podrías cambiar o añadir colores si deseas)
         private static readonly string[] ColoresArosello = { "Verde", "Rojo", "Azul", "Amarillo", "Naranja" };
 
-        public Servicio(Tecnico tecnico, List<Matafuego> matafuegos, Cliente cliente, DateTime fecha)
+
+
+
+
+
+        //Servicio
+        public Servicio(Tecnico tecnico, Cliente cliente, DateTime fecha)
         {
-            this.Matafuegos = matafuegos;
-            this.cliente = cliente;
-            this.Fecha = fecha;
+            Cliente = cliente;
+            TecnicoServicio = tecnico;
+            Fecha = fecha;
         }
         public void RealizarMantenimiento()
         {
             // Realizar el mantenimiento a los matafuegos   
-            foreach (var matafuego in Matafuegos)
+            List<Matafuego> matafuegosRecargados = new List<Matafuego>();
+            foreach (var matafuego in Cliente.Matafuegos)
             {
                 Etiqueta nuevaetiqueta = new Etiqueta();
-                nuevaetiqueta.Rellenar(DateTime.Now, DateTime.Now.AddYears(1), matafuego);
-                TecnicoServicio.RecargarMatafuego(matafuego, ObtenerColorAroselloAnual(), nuevaetiqueta);
+                nuevaetiqueta.Rellenar(Fecha, Fecha.AddYears(1), matafuego);
+                matafuegosRecargados.Add(TecnicoServicio.RecargarMatafuego(matafuego, ObtenerColorAroselloAnual(), nuevaetiqueta));
             }
+            CalcularCostoTotalRecarga();
+
+            //le paso al cliente la lista de matafuegos ya recargados
+            Cliente.Matafuegos = matafuegosRecargados;
         }
 
         private static string ObtenerColorAroselloAnual()
@@ -42,9 +55,16 @@ namespace Proyecto_paradigmas_matafuegos
             return ColoresArosello[index];
         }
 
-        public double CalcularCosto(Matafuego matafuego)
+        //por ahora lo dejamos asi!!!
+        private void CalcularCostoTotalRecarga()
         {
-            return matafuego.CalcularCosto();
+            Costo = 0;
+            //recorro la lista de matafuegos para calcular cuando vale la recarga de cada uno, dependiendo del tipo
+            foreach (var matafuego in Cliente.Matafuegos)
+            {
+                Costo += matafuego.PrecioRecarga; //CONSULTAR ESTO ROMPE EL ENCAPSULAMIENTO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            }
+
         }
     }
 }
