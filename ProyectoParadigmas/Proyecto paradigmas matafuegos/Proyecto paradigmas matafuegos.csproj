@@ -50,7 +50,7 @@
     <Compile Include="Porqueria\Empleado.cs" />
     <Compile Include="Clases\Empresa.cs" />
     <Compile Include="Clases\Etiqueta.cs" />
-    <Compile Include="Porqueria\Usuario.cs" />
+    <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Forms\Factura.cs">
       <SubType>Form</SubType>
     </Compile>

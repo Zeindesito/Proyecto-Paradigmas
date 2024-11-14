@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvSeleccion = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -36,14 +39,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSeleccion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +58,28 @@
             this.Column4});
             this.dgvSeleccion.Location = new System.Drawing.Point(191, 12);
             this.dgvSeleccion.Name = "dgvSeleccion";
+            this.dgvSeleccion.ReadOnly = true;
             this.dgvSeleccion.Size = new System.Drawing.Size(343, 207);
             this.dgvSeleccion.TabIndex = 0;
             this.dgvSeleccion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSeleccion_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tipo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Kg";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio C/U";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // button1
             // 
@@ -104,7 +124,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(395, 470);
+            this.button2.Location = new System.Drawing.Point(395, 447);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 65);
             this.button2.TabIndex = 8;
@@ -131,26 +151,9 @@
             this.Total});
             this.dataGridView2.Location = new System.Drawing.Point(34, 366);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(343, 207);
             this.dataGridView2.TabIndex = 10;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tipo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Kg";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio C/U";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -168,6 +171,7 @@
             // 
             this.Total.HeaderText = "Precio C/U";
             this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
             // 
             // label4
             // 
@@ -189,11 +193,22 @@
             this.lblTotal.TabIndex = 12;
             this.lblTotal.Text = "---";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(468, 538);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(61, 33);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Atrás";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // VentaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 583);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView2);
@@ -231,5 +246,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button button3;
     }
 }

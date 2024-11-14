@@ -26,7 +26,7 @@ namespace Proyecto_paradigmas_matafuegos
 
             if (Usuario.ValidarUsuario(usuario, contra))
             {
-                RecepcionistaForm recepcionistaForm = new RecepcionistaForm();
+                RecepcionistaForm recepcionistaForm = new RecepcionistaForm(this);
                 recepcionistaForm.Show();
                 this.Hide();
             }
@@ -34,8 +34,9 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.");
             }
+            textBox1.Clear();
+            textBox2.Clear();
 
-
-        } 
+        }
     }
 }

@@ -17,12 +17,12 @@ namespace Proyecto_paradigmas_matafuegos
         private List<Tecnico> Tecnicos;
         private List<Matafuego> Matafuegos;
         public Empresa empresa;
-        public RecepcionistaForm()
+        Form1 form1;
+        public RecepcionistaForm(Form1 form1)
         {
             InitializeComponent();
 
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = listaClientes;
+            this.form1 = form1;
 
             listaClientes = new List<Cliente>
             {
@@ -43,11 +43,14 @@ namespace Proyecto_paradigmas_matafuegos
 
 
             empresa = new Empresa(Tecnicos, listaClientes, Matafuegos);
+
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = listaClientes;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text)) 
+            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text))
             {
                 MessageBox.Show("Por favor, Complete todos los campos.");
             }
@@ -66,16 +69,22 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ServicioForm servicioForm= new ServicioForm();
+            ServicioForm servicioForm = new ServicioForm(this );
             servicioForm.Show();
             this.Hide();
         }
 
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
-            VentaForm ventaForm = new VentaForm(empresa);
+            VentaForm ventaForm = new VentaForm(empresa,this);
             ventaForm.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form1.Show();
+            this.Close();
         }
     }
 }
