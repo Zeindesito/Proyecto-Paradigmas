@@ -10,7 +10,7 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public DateTime FechaRevision { get; set; }
         public DateTime FechaVencimiento { get; set; }
-        public Matafuego Matafuego_ { get; set; }
+        public string TipoDeMatafuego { get; set; }
 
         public Etiqueta() { }
 
@@ -18,7 +18,7 @@ namespace Proyecto_paradigmas_matafuegos
         {
             FechaRevision = fechaRevision;
             FechaVencimiento = fechaVencimiento;
-            Matafuego_ = matafuego;
+            TipoDeMatafuego = matafuego.DeterminarTipo();
         }
 
         public void Imprimir()

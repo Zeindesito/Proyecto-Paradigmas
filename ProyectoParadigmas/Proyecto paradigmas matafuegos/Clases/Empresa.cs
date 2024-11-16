@@ -16,15 +16,15 @@ namespace Proyecto_paradigmas_matafuegos
         //constructor
         public Empresa(List<Tecnico> tecnicos, List<Cliente> clientes, List<Matafuego> matafuegos)
         {
+            //deberia usar composicion?
             TecnicoList = tecnicos;
             Clientes = clientes;
             MatafuegosList = matafuegos;
         }
 
         //metodos
-        public void AñadirCliente(Cliente cliente, List<Matafuego> matafuegos)
+        public void AñadirCliente(Cliente cliente)
         {
-            cliente.Matafuegos = matafuegos;
             Clientes.Add(cliente);
         }
 

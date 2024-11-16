@@ -23,6 +23,7 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
             }
+            
         }
 
 

@@ -53,10 +53,7 @@ namespace Proyecto_paradigmas_matafuegos
 
                 lblTotal.Text = $"{CalcularTotalCarrito()}";
             }
-            else
-            {
-                MessageBox.Show("Seleccione una fila antes de hacer clic en el botón.");
-            }
+          
         }
 
         private void dgvSeleccion_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -70,14 +67,17 @@ namespace Proyecto_paradigmas_matafuegos
             }
             else
             {
-                MessageBox.Show("Elija una columna valida");
+                MessageBox.Show("Elija una fila valida");
             }
         }
+
         //vender
         private void button2_Click(object sender, EventArgs e)
         {
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
             Factura factura = new Factura(CostoTotalVenta, Cliente_);
+            factura.Show();
+            this.MinimizeBox = true;
         }
 
         private double CalcularTotalCarrito()

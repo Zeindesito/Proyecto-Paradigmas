@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,70 +14,31 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public partial class RecepcionistaForm : Form
     {
-        private List<Cliente> listaClientes;
-        private List<Tecnico> Tecnicos;
-        private List<Matafuego> Matafuegos;
-        public Empresa empresa;
+        public Empresa Empresa_ {  get; set; }
         Form1 form1;
-        public RecepcionistaForm(Form1 form1)
+        public RecepcionistaForm(Form1 form1, Empresa empresa)
         {
             InitializeComponent();
 
             this.form1 = form1;
-
-            listaClientes = new List<Cliente>
-            {
-            new Cliente("Juan", "Frias", "40.211.195"),
-            new Cliente("Pedro", "Perez", "22.125.875")
-            };
-
-            Tecnicos = new List<Tecnico>
-            {
-            new Tecnico("Matias", "Gonzalez", "45.557.102"),
-            new Tecnico("Agustin", "Montejo", "44.512.122")
-
-            };
-            Matafuegos = new List<Matafuego>
-            {
-                new Matafuego_K(new Etiqueta(), "Rojo", true, true, "Verde", 5)
-            };
-
-
-            empresa = new Empresa(Tecnicos, listaClientes, Matafuegos);
-
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = listaClientes;
+            Empresa_ = empresa;
+            MostrarClientes();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text))
-            {
-                MessageBox.Show("Por favor, Complete todos los campos.");
-            }
-            else
-            {
-                empresa.AñadirCliente(new Cliente(textNombre.Text, textApellido.Text, textDni.Text), new List<Matafuego>());
-                textNombre.Clear();
-                textApellido.Clear();
-                textDni.Clear();
-
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = listaClientes;
-
-            }
-        }
-
+        //Recarga
         private void button1_Click(object sender, EventArgs e)
         {
-            ServicioForm servicioForm = new ServicioForm(this );
+            CrearCliente();
+            ServicioForm servicioForm = new ServicioForm(this, Empresa_);
             servicioForm.Show();
             this.Hide();
         }
 
+        //Venta
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
-            VentaForm ventaForm = new VentaForm(empresa,this);
+            CrearCliente();
+            VentaForm ventaForm = new VentaForm(Empresa_,this);
             ventaForm.Show();
             this.Hide();
         }
@@ -86,5 +48,43 @@ namespace Proyecto_paradigmas_matafuegos
             form1.Show();
             this.Close();
         }
+
+        private void MostrarClientes()
+        {
+            foreach (var cliente in Empresa_.Clientes)
+            {
+                foreach (var matafuego in cliente.Matafuegos)
+                {
+                    dataGridView1.Rows.Add(cliente.Nombre, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                }
+                
+            }
+            
+        }
+
+        private void CrearCliente()
+        {
+            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text))
+            {
+                MessageBox.Show("Por favor, Complete todos los campos.");
+            }
+            else
+            {
+                Empresa_.AñadirCliente(new Cliente(textNombre.Text, textApellido.Text, textDni.Text, txtEmail.Text, new List<Matafuego>()));
+                textNombre.Clear();
+                textApellido.Clear();
+                textDni.Clear();
+
+                dataGridView1.Rows.Clear();
+                MostrarClientes();
+
+            }
+        }
+
+        private void clientesCargadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
 }

@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnVender = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -122,15 +122,15 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Tipo:";
             // 
-            // button2
+            // btnVender
             // 
-            this.button2.Location = new System.Drawing.Point(395, 447);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 65);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Vender";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnVender.Location = new System.Drawing.Point(395, 447);
+            this.btnVender.Name = "btnVender";
+            this.btnVender.Size = new System.Drawing.Size(139, 65);
+            this.btnVender.TabIndex = 8;
+            this.btnVender.Text = "Vender";
+            this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -207,13 +207,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 583);
+            this.ClientSize = new System.Drawing.Size(554, 583);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnVender);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
@@ -235,7 +235,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnVender;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

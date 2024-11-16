@@ -13,21 +13,19 @@ namespace Proyecto_paradigmas_matafuegos.Forms
     public partial class ServicioForm : Form
     {
         RecepcionistaForm recepcionistaForm;
-        public ServicioForm(RecepcionistaForm recepcionistaForm)
+        public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
             this.recepcionistaForm = recepcionistaForm;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
-            {
-                MessageBox.Show("Por favor, seleccione el tipo de matafuego y su peso.");
-                return;
-            }
+           
 
-            //= comboBox1.Text
+
+            
 
         }
 
@@ -35,6 +33,19 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         {
             recepcionistaForm.Show();
             this.Close();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor, seleccione el tipo de matafuego y su peso.");
+                return;
+            }
+            else
+            {
+
+            }
         }
     }
 }

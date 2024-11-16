@@ -8,13 +8,15 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Cliente : Persona
     {
+        public string Email { get; set; }
         public List<Matafuego> Matafuegos { get; set; }
-        public Cliente(string nombre, string apellido, string dni) : base(nombre, apellido, dni)
+        public Cliente(string nombre, string apellido, string dni, string email, List<Matafuego> matafuegos) : base(nombre, apellido, dni)
         {
-            Matafuegos = new List<Matafuego>();
+            Matafuegos = matafuegos;
+            Email = email;
         }
 
-
+        //PREGUNTA ASOCIALE LOS MATAFUEGOS AL CLIENTE POR MEDIO DEL SUS ATRIBUTOS ESTA MAL?
 
     }
 }
