@@ -11,6 +11,7 @@ namespace Proyecto_paradigmas_matafuegos.Clases
         private static Dictionary<string, string> usuarios = new Dictionary<string, string>
     {
         { "Agustin", "4017" }, // Usuario: Usuario, Contraseña: 1234
+            {"","" },
     };
 
         public static bool ValidarUsuario(string usuario, string contraseña)

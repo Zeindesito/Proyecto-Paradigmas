@@ -19,6 +19,7 @@ namespace Proyecto_paradigmas_matafuegos
         public RecepcionistaForm(Form1 form1, Empresa empresa)
         {
             InitializeComponent();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecepcionistaForm_FormClosing);
 
             this.form1 = form1;
             Empresa_ = empresa;
@@ -84,6 +85,10 @@ namespace Proyecto_paradigmas_matafuegos
         private void clientesCargadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+        private void RecepcionistaForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                form1.Close();
         }
     }
 

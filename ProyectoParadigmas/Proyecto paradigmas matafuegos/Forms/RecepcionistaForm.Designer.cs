@@ -49,13 +49,13 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesCargadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarServicioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesCargadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -244,6 +244,18 @@
             this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.serviciosToolStripMenuItem.Text = "Servicios";
             // 
+            // realizarServicioToolStripMenuItem
+            // 
+            this.realizarServicioToolStripMenuItem.Name = "realizarServicioToolStripMenuItem";
+            this.realizarServicioToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.realizarServicioToolStripMenuItem.Text = "Servicios realizados";
+            // 
+            // realizarServicioToolStripMenuItem1
+            // 
+            this.realizarServicioToolStripMenuItem1.Name = "realizarServicioToolStripMenuItem1";
+            this.realizarServicioToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.realizarServicioToolStripMenuItem1.Text = "Realizar servicio";
+            // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -252,6 +264,18 @@
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // ventasRealizadasToolStripMenuItem
+            // 
+            this.ventasRealizadasToolStripMenuItem.Name = "ventasRealizadasToolStripMenuItem";
+            this.ventasRealizadasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.ventasRealizadasToolStripMenuItem.Text = "Ventas realizadas";
+            // 
+            // realizarVentaToolStripMenuItem
+            // 
+            this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
+            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.realizarVentaToolStripMenuItem.Text = "Realizar venta";
             // 
             // clientesToolStripMenuItem
             // 
@@ -264,38 +288,15 @@
             // clientesCargadosToolStripMenuItem
             // 
             this.clientesCargadosToolStripMenuItem.Name = "clientesCargadosToolStripMenuItem";
-            this.clientesCargadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesCargadosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.clientesCargadosToolStripMenuItem.Text = "Clientes cargados";
             this.clientesCargadosToolStripMenuItem.Click += new System.EventHandler(this.clientesCargadosToolStripMenuItem_Click);
-            // 
-            // ventasRealizadasToolStripMenuItem
-            // 
-            this.ventasRealizadasToolStripMenuItem.Name = "ventasRealizadasToolStripMenuItem";
-            this.ventasRealizadasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ventasRealizadasToolStripMenuItem.Text = "Ventas realizadas";
-            // 
-            // realizarServicioToolStripMenuItem
-            // 
-            this.realizarServicioToolStripMenuItem.Name = "realizarServicioToolStripMenuItem";
-            this.realizarServicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.realizarServicioToolStripMenuItem.Text = "Servicios realizados";
-            // 
-            // realizarServicioToolStripMenuItem1
-            // 
-            this.realizarServicioToolStripMenuItem1.Name = "realizarServicioToolStripMenuItem1";
-            this.realizarServicioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.realizarServicioToolStripMenuItem1.Text = "Realizar servicio";
-            // 
-            // realizarVentaToolStripMenuItem
-            // 
-            this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
-            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.realizarVentaToolStripMenuItem.Text = "Realizar venta";
             // 
             // RecepcionistaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1079, 650);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtEmail);
@@ -312,6 +313,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonVenta);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "RecepcionistaForm";
             this.Text = "RecepcionistaForm";

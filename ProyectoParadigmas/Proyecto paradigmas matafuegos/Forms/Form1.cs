@@ -75,7 +75,9 @@ namespace Proyecto_paradigmas_matafuegos
             textBox2.Clear();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

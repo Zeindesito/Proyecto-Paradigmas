@@ -35,11 +35,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,16 +118,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(438, 397);
             this.dataGridView1.TabIndex = 6;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(543, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Matafuegos para recarga";
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Tipo";
@@ -152,10 +142,21 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(543, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(188, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Matafuegos para recarga";
+            // 
             // ServicioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(851, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -165,6 +166,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ServicioForm";
             this.Text = "Servicio";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
