@@ -24,6 +24,7 @@ namespace Proyecto_paradigmas_matafuegos
         public VentaForm(Empresa empresa,RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentaForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
 
@@ -75,8 +76,8 @@ namespace Proyecto_paradigmas_matafuegos
         private void button2_Click(object sender, EventArgs e)
         {
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
-            Factura factura = new Factura(CostoTotalVenta, Cliente_);
-            factura.Show();
+            //Factura factura = new Factura(CostoTotalVenta,Cliente_);
+            //factura.Show();
             this.MinimizeBox = true;
         }
 
@@ -91,6 +92,9 @@ namespace Proyecto_paradigmas_matafuegos
             recepcionistaForm.Show();
             this.Close();
         }
-
+        private void VentaForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

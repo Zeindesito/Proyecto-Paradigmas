@@ -18,9 +18,9 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ServicioForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             empresa_ = empresa;
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,9 +53,12 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
 
                 Servicio servicio = new Servicio(tenico, empresa_.Clientes.Last(), DateTime.Now);
-
-
             }
+        }
+
+        private void ServicioForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

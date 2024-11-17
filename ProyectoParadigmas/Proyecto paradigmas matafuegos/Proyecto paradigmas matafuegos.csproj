@@ -111,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Forms\RecepcionistaForm.resx">
       <DependentUpon>RecepcionistaForm.cs</DependentUpon>
@@ -136,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Porqueria\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Matafuego.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

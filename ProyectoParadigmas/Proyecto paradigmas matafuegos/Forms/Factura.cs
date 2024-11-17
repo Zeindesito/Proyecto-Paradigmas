@@ -28,7 +28,7 @@ namespace Proyecto_paradigmas_matafuegos
             lblApellido.Text = cliente_.Apellido;
             lblDni.Text = cliente_.DNI;
             lblFecha.Text = DateTime.Now.ToString();
-            lblApellidoTecnico.Text = 
+            //lblApellidoTecnico.Text = 
 
         }
 
