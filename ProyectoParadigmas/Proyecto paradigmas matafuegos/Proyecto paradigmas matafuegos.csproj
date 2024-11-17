@@ -49,7 +49,6 @@
     <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Empresa.cs" />
     <Compile Include="Clases\Etiqueta.cs" />
-    <Compile Include="Clases\Servicio.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Forms\Factura.cs">
       <SubType>Form</SubType>
@@ -68,6 +67,7 @@
     <Compile Include="Clases\Matafuego.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="Clases\Servicio.cs" />
     <Compile Include="Forms\ServicioForm.cs">
       <SubType>Form</SubType>
     </Compile>

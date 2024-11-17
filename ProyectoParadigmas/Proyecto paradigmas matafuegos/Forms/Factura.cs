@@ -12,18 +12,24 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public partial class Factura : Form
     {
-        private double CostoTotal;
-        private Cliente Cliente_;
-        public Factura(double CostoTotalVenta, Cliente cliente)
+
+        private Empresa Empresa_;
+        public Factura(Empresa empresa)
         {
             InitializeComponent();
-            CostoTotal = CostoTotalVenta;
-            Cliente_ = cliente;
-            foreach (var matafuego in cliente.Matafuegos)
-            {
-                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
-            }
-            
+            Empresa_ = empresa;
+            Cliente cliente_ = Empresa_.Clientes.Last();
+                foreach (var matafuego in cliente_.Matafuegos)
+                {
+                    dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
+                }
+
+            lblNombre.Text = cliente_.Nombre;
+            lblApellido.Text = cliente_.Apellido;
+            lblDni.Text = cliente_.DNI;
+            lblFecha.Text = DateTime.Now.ToString();
+            lblApellidoTecnico.Text = 
+
         }
 
 

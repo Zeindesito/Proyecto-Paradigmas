@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,19 +14,12 @@ namespace Proyecto_paradigmas_matafuegos.Forms
     public partial class ServicioForm : Form
     {
         RecepcionistaForm recepcionistaForm;
+        private Empresa empresa_;
         public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
             this.recepcionistaForm = recepcionistaForm;
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-
-
-            
+            empresa_ = empresa;
 
         }
 
@@ -35,7 +29,12 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             this.Close();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void ServicioForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
             {
@@ -44,6 +43,17 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
             else
             {
+                Random random = new Random();
+
+                // Obtener un índice aleatorio
+                int indiceAleatorio = random.Next(empresa_.TecnicoList.Count);
+
+                // Seleccionar el elemento aleatorio
+                Tecnico tenico = empresa_.TecnicoList[indiceAleatorio];
+
+
+                Servicio servicio = new Servicio(tenico, empresa_.Clientes.Last(), DateTime.Now);
+
 
             }
         }

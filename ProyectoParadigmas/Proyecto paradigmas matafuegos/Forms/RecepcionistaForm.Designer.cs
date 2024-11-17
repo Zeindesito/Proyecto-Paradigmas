@@ -47,22 +47,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.realizarServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.realizarServicioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.realizarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesCargadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ButtonVenta
             // 
-            this.ButtonVenta.Location = new System.Drawing.Point(177, 214);
+            this.ButtonVenta.Location = new System.Drawing.Point(209, 205);
             this.ButtonVenta.Name = "ButtonVenta";
             this.ButtonVenta.Size = new System.Drawing.Size(154, 74);
             this.ButtonVenta.TabIndex = 1;
@@ -74,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 63);
+            this.label1.Location = new System.Drawing.Point(65, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(271, 24);
             this.label1.TabIndex = 2;
@@ -82,7 +72,7 @@
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(128, 101);
+            this.textNombre.Location = new System.Drawing.Point(156, 82);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(131, 20);
             this.textNombre.TabIndex = 3;
@@ -91,7 +81,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 99);
+            this.label2.Location = new System.Drawing.Point(81, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 4;
@@ -101,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 125);
+            this.label3.Location = new System.Drawing.Point(81, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 6;
@@ -109,7 +99,7 @@
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(128, 127);
+            this.textApellido.Location = new System.Drawing.Point(156, 108);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(131, 20);
             this.textApellido.TabIndex = 5;
@@ -118,7 +108,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 151);
+            this.label5.Location = new System.Drawing.Point(81, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 20);
             this.label5.TabIndex = 10;
@@ -126,14 +116,14 @@
             // 
             // textDni
             // 
-            this.textDni.Location = new System.Drawing.Point(128, 153);
+            this.textDni.Location = new System.Drawing.Point(156, 134);
             this.textDni.Name = "textDni";
             this.textDni.Size = new System.Drawing.Size(131, 20);
             this.textDni.TabIndex = 9;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 214);
+            this.button1.Location = new System.Drawing.Point(12, 205);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 74);
             this.button1.TabIndex = 13;
@@ -210,7 +200,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(53, 177);
+            this.label6.Location = new System.Drawing.Point(81, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
             this.label6.TabIndex = 18;
@@ -218,79 +208,10 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(128, 179);
+            this.txtEmail.Location = new System.Drawing.Point(156, 160);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(131, 20);
             this.txtEmail.TabIndex = 17;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.serviciosToolStripMenuItem,
-            this.ventasToolStripMenuItem,
-            this.clientesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1079, 24);
-            this.menuStrip1.TabIndex = 19;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // serviciosToolStripMenuItem
-            // 
-            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.realizarServicioToolStripMenuItem,
-            this.realizarServicioToolStripMenuItem1});
-            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.serviciosToolStripMenuItem.Text = "Servicios";
-            // 
-            // realizarServicioToolStripMenuItem
-            // 
-            this.realizarServicioToolStripMenuItem.Name = "realizarServicioToolStripMenuItem";
-            this.realizarServicioToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.realizarServicioToolStripMenuItem.Text = "Servicios realizados";
-            // 
-            // realizarServicioToolStripMenuItem1
-            // 
-            this.realizarServicioToolStripMenuItem1.Name = "realizarServicioToolStripMenuItem1";
-            this.realizarServicioToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
-            this.realizarServicioToolStripMenuItem1.Text = "Realizar servicio";
-            // 
-            // ventasToolStripMenuItem
-            // 
-            this.ventasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ventasRealizadasToolStripMenuItem,
-            this.realizarVentaToolStripMenuItem});
-            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ventasToolStripMenuItem.Text = "Ventas";
-            // 
-            // ventasRealizadasToolStripMenuItem
-            // 
-            this.ventasRealizadasToolStripMenuItem.Name = "ventasRealizadasToolStripMenuItem";
-            this.ventasRealizadasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.ventasRealizadasToolStripMenuItem.Text = "Ventas realizadas";
-            // 
-            // realizarVentaToolStripMenuItem
-            // 
-            this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
-            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.realizarVentaToolStripMenuItem.Text = "Realizar venta";
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesCargadosToolStripMenuItem});
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // clientesCargadosToolStripMenuItem
-            // 
-            this.clientesCargadosToolStripMenuItem.Name = "clientesCargadosToolStripMenuItem";
-            this.clientesCargadosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.clientesCargadosToolStripMenuItem.Text = "Clientes cargados";
-            this.clientesCargadosToolStripMenuItem.Click += new System.EventHandler(this.clientesCargadosToolStripMenuItem_Click);
             // 
             // RecepcionistaForm
             // 
@@ -312,14 +233,10 @@
             this.Controls.Add(this.textNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonVenta);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "RecepcionistaForm";
             this.Text = "RecepcionistaForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,14 +264,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesCargadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem realizarServicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem realizarServicioToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem ventasRealizadasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem realizarVentaToolStripMenuItem;
     }
 }

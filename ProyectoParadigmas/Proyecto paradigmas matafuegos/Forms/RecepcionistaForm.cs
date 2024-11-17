@@ -14,7 +14,7 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public partial class RecepcionistaForm : Form
     {
-        public Empresa Empresa_ {  get; set; }
+        public Empresa Empresa_ { get; set; }
         Form1 form1;
         public RecepcionistaForm(Form1 form1, Empresa empresa)
         {
@@ -39,7 +39,7 @@ namespace Proyecto_paradigmas_matafuegos
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
             CrearCliente();
-            VentaForm ventaForm = new VentaForm(Empresa_,this);
+            VentaForm ventaForm = new VentaForm(Empresa_, this);
             ventaForm.Show();
             this.Hide();
         }
@@ -58,9 +58,9 @@ namespace Proyecto_paradigmas_matafuegos
                 {
                     dataGridView1.Rows.Add(cliente.Nombre, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
                 }
-                
+
             }
-            
+
         }
 
         private void CrearCliente()
@@ -88,8 +88,8 @@ namespace Proyecto_paradigmas_matafuegos
         }
         private void RecepcionistaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-                form1.Close();
+            form1.Close();
         }
-    }
 
+    }
 }

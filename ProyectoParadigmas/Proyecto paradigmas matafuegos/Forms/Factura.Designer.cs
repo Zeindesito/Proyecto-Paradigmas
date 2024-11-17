@@ -48,6 +48,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lblNombreTecnico = new System.Windows.Forms.Label();
             this.lblApellidoTecnico = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -239,11 +241,33 @@
             this.lblApellidoTecnico.TabIndex = 20;
             this.lblApellidoTecnico.Text = "---";
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(90, 421);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(36, 25);
+            this.lblTotal.TabIndex = 21;
+            this.lblTotal.Text = "---";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(350, 421);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(36, 25);
+            this.lblFecha.TabIndex = 22;
+            this.lblFecha.Text = "---";
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 455);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblApellidoTecnico);
             this.Controls.Add(this.lblNombreTecnico);
             this.Controls.Add(this.label11);
@@ -291,5 +315,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblNombreTecnico;
         private System.Windows.Forms.Label lblApellidoTecnico;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblFecha;
     }
 }
