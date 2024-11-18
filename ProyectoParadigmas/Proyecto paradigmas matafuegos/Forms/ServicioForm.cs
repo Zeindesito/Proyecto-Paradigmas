@@ -26,7 +26,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             recepcionistaForm.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void ServicioForm_Load(object sender, EventArgs e)

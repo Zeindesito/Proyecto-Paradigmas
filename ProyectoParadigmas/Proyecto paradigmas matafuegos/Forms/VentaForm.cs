@@ -17,7 +17,6 @@ namespace Proyecto_paradigmas_matafuegos
         private Empresa Empresa_;
 
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
-
         private Cliente Cliente_;
         private int selectedRowIndex = -1;
 
@@ -28,10 +27,7 @@ namespace Proyecto_paradigmas_matafuegos
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
 
-            foreach (var matafuego in Empresa_.MatafuegosList)
-            {
-                dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
-            }
+            ActuaizarDatagridview();
 
             dgvSeleccion.CellClick += dgvSeleccion_CellClick;
             button1.Click += button1_Click;
@@ -65,6 +61,7 @@ namespace Proyecto_paradigmas_matafuegos
                 selectedRowIndex= e.RowIndex;
                 // Guarda el producto de la fila seleccionada
                 matafuegoElegido = Empresa_.MatafuegosList[e.RowIndex];
+                
             }
             else
             {
@@ -79,6 +76,9 @@ namespace Proyecto_paradigmas_matafuegos
             Factura factura = new Factura(Empresa_);
             factura.Show();
             this.MinimizeBox = true;
+
+            Empresa_.MatafuegosList.Remove(matafuegoElegido);
+            ActuaizarDatagridview();
         }
 
         private double CalcularTotalCarrito()
@@ -90,11 +90,19 @@ namespace Proyecto_paradigmas_matafuegos
         private void button3_Click(object sender, EventArgs e)
         {
             recepcionistaForm.Show();
-            this.Close();
+            this.Hide();
         }
         private void VentaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ActuaizarDatagridview()
+        {
+            foreach (var matafuego in Empresa_.MatafuegosList)
+            {
+                dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
+            }
         }
     }
 }

@@ -81,12 +81,6 @@
     <Compile Include="Forms\RecepcionistaForm.Designer.cs">
       <DependentUpon>RecepcionistaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ReporteForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ReporteForm.Designer.cs">
-      <DependentUpon>ReporteForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Clases\Tecnico.cs" />
     <Compile Include="Forms\VentaForm.cs">
       <SubType>Form</SubType>
@@ -120,9 +114,6 @@
     </Compile>
     <EmbeddedResource Include="Forms\RecepcionistaForm.resx">
       <DependentUpon>RecepcionistaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ReporteForm.resx">
-      <DependentUpon>ReporteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\VentaForm.resx">
       <DependentUpon>VentaForm.cs</DependentUpon>

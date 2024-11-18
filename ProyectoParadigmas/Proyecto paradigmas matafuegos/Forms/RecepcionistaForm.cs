@@ -27,12 +27,16 @@ namespace Proyecto_paradigmas_matafuegos
         //Recarga
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtBuscarDni.Text == null)
+            if (txtBuscarDni.Text == "")
             {
                 CrearCliente();
             }
-            BuscarCliente();
-
+            if (txtBuscarDni.Text != "")
+            {
+                BuscarCliente();
+            }
+            
+            MostrarClientes();
             ServicioForm servicioForm = new ServicioForm(this, Empresa_);
             servicioForm.Show();
             this.Hide();
@@ -41,22 +45,41 @@ namespace Proyecto_paradigmas_matafuegos
         //Venta
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
-            if(txtBuscarDni.Text == null)
+
+
+
+            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text) || string.IsNullOrEmpty(txtEmail.Text))
             {
-                CrearCliente();
+
+                if (!string.IsNullOrWhiteSpace(txtBuscarDni.Text))
+                {
+                    BuscarCliente();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, Complete todos los campos.");
+                    return;
+                }
+
+                //montejo valida que el dni sea un numero valido
+
+
             }
-            BuscarCliente();
-
-
-            VentaForm ventaForm = new VentaForm(Empresa_, this);
-            ventaForm.Show();
-            this.Hide();
+            else
+            {
+                //Que se mida la longitud del dni
+                CrearCliente();
+                VentaForm ventaForm = new VentaForm(Empresa_, this);
+                ventaForm.Show();
+                this.Hide();
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             form1.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void MostrarClientes()
@@ -65,7 +88,7 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 foreach (var matafuego in cliente.Matafuegos)
                 {
-                    dataGridView1.Rows.Add(cliente.Nombre, cliente.Email, cliente.DNI, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                    dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
                 }
 
             }
@@ -74,21 +97,14 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void CrearCliente()
         {
-            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text))
-            {
-                MessageBox.Show("Por favor, Complete todos los campos.");
-            }
-            else
-            {
                 Empresa_.AñadirCliente(new Cliente(textNombre.Text, textApellido.Text, textDni.Text, txtEmail.Text, new List<Matafuego>()));
                 textNombre.Clear();
                 textApellido.Clear();
                 textDni.Clear();
+                txtEmail.Clear();
 
                 dataGridView1.Rows.Clear();
                 MostrarClientes();
-
-            }
         }
 
         private void RecepcionistaForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -103,6 +119,7 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void BuscarCliente()
         {
+
             var clienteEncontrado = Empresa_.Clientes.FirstOrDefault(item => item.DNI == txtBuscarDni.Text);
 
             if (clienteEncontrado != null)
@@ -112,11 +129,16 @@ namespace Proyecto_paradigmas_matafuegos
                 Empresa_.Clientes.Add(clienteEncontrado);
 
                 MessageBox.Show("DNI encontrado y cliente actualizado.");
+                VentaForm ventaForm = new VentaForm(Empresa_, this);
+                ventaForm.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("DNI no encontrado.");
+
             }
+           
         }
 
 
