@@ -20,11 +20,11 @@ namespace Proyecto_paradigmas_matafuegos
             TipoDeMatafuego = tipoDeMatafuego;
         }
 
-        public void Rellenar(DateTime fechaRevision, DateTime fechaVencimiento, Matafuego matafuego)
+        public void Rellenar(DateTime fechaRevision, DateTime fechaVencimiento, string tipoDeMatafuego)
         {
             FechaRevision = fechaRevision;
             FechaVencimiento = fechaVencimiento;
-            TipoDeMatafuego = matafuego.DeterminarTipo();
+            TipoDeMatafuego = tipoDeMatafuego;
         }
 
         public void Imprimir()

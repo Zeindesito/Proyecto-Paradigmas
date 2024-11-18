@@ -11,16 +11,15 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public double PrecioVenta { get; set; }
         public double PrecioRecarga { get; set; }
-        public Etiqueta EtiquetaMatafuego { get; set; }
+        public Etiqueta EtiquetaMatafuego { get; set; } = new Etiqueta();
         public string Arosello_Precinto { get; set; }
         public bool Gas { get; set; }
         public double Peso { get; set; }
 
 
         //constructor PREGUNTA SI ES LEGAL PONER EL CONSTRUCTOR POR MAS QUE LA CLASE NO SE INSTANCIE!!!!!!!
-        public Matafuego(Etiqueta etiqueta, string arosello_precinto, bool gas, double peso)
+        public Matafuego(string arosello_precinto, bool gas, double peso)
         {
-            EtiquetaMatafuego = etiqueta;
             Arosello_Precinto = arosello_precinto;
             Gas = gas;
             Peso = peso;
@@ -28,11 +27,10 @@ namespace Proyecto_paradigmas_matafuegos
 
 
         //metodos
-        public virtual void Recargar(string color, Etiqueta etiqueta)
+        public virtual void Recargar(string color)
         {
             Gas = true;
             Arosello_Precinto = color;
-            EtiquetaMatafuego = etiqueta;
         }
 
 

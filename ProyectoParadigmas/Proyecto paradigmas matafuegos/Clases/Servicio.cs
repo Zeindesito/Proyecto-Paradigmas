@@ -26,9 +26,9 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             List<Matafuego> matafuegosRecargados = new List<Matafuego>();
             foreach (var matafuego in cliente.Matafuegos)
             {
-                Etiqueta nuevaetiqueta = new Etiqueta();
-                nuevaetiqueta.Rellenar(Fecha, Fecha.AddYears(1), matafuego);
-                matafuegosRecargados.Add(tecnico.RecargarMatafuego(matafuego, ObtenerColorAroselloAnual(), nuevaetiqueta));
+                //Etiqueta nuevaetiqueta = new Etiqueta();
+                matafuego.EtiquetaMatafuego.Rellenar(Fecha, Fecha.AddYears(1), matafuego.DeterminarTipo());
+                matafuegosRecargados.Add(tecnico.RecargarMatafuego(matafuego, ObtenerColorAroselloAnual()));
             }
 
             //le paso al cliente la lista de matafuegos ya recargados

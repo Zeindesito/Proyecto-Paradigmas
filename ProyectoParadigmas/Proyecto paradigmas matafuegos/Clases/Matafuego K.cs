@@ -12,16 +12,16 @@ namespace Proyecto_paradigmas_matafuegos
         public bool Liquido {  get; set; }
         public string Manometro { get; set; }
 
-        public Matafuego_K(Etiqueta etiqueta, string arosello_precinto, bool gas, bool liquido, string manometro, int peso) : base(etiqueta, arosello_precinto, gas, peso)
+        public Matafuego_K(string arosello_precinto, bool gas, bool liquido, string manometro, int peso) : base(arosello_precinto, gas, peso)
         {
             Liquido = liquido;
             Manometro = manometro;
             DeterminarPrecioVenta();
         }
 
-        public override void Recargar(string color, Etiqueta etiqueta)
+        public override void Recargar(string color)
         {
-            base.Recargar(color, etiqueta);
+            base.Recargar(color);
             Manometro = "Verde";
             Liquido = true;
         }

@@ -141,8 +141,9 @@ namespace Proyecto_paradigmas_matafuegos
            
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
-
+        }
     }
 }

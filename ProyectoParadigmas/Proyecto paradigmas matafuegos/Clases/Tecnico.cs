@@ -18,12 +18,19 @@ namespace Proyecto_paradigmas_matafuegos
         }
 
         //metodos
-        public Matafuego RecargarMatafuego(Matafuego matafuego, string color, Etiqueta etiqueta)
+        public Matafuego RecargarMatafuego(Matafuego matafuego, string color)
         {
             //no le paso una lista directamente porque necesito una etiqueta para cada matafuego, en la implementacion se hace
-            matafuego.Recargar(color, etiqueta);
+            matafuego.Recargar(color);
             Matafuegos.Add(matafuego);
             return matafuego;
+        }
+
+        public string ApellidoYnombre()
+        {
+
+           return $"{Apellido}, {Nombre}"; // Concatenación con formato
+            
         }
 
     }

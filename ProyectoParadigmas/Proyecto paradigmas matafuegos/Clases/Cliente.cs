@@ -17,6 +17,6 @@ namespace Proyecto_paradigmas_matafuegos
         }
 
         //PREGUNTA ASOCIALE LOS MATAFUEGOS AL CLIENTE POR MEDIO DEL SUS ATRIBUTOS ESTA MAL?
-
+        //Deveria agregar un metodo para asociale matafuegos?
     }
 }
