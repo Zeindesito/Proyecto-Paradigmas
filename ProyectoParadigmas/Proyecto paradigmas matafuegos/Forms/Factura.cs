@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_paradigmas_matafuegos.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,9 @@ namespace Proyecto_paradigmas_matafuegos
             lblApellido.Text = cliente_.Apellido;
             lblDni.Text = cliente_.DNI;
             lblFecha.Text = DateTime.Now.ToString();
-            //lblApellidoTecnico.Text = 
+            Servicio servicio = empresa.ServiciosRealizados.Last();
+            lblApellidoTecnico.Text = servicio.Tecnico_.Nombre;
+            lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
 
         }
 

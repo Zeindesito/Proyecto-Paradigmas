@@ -76,8 +76,8 @@ namespace Proyecto_paradigmas_matafuegos
         private void button2_Click(object sender, EventArgs e)
         {
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
-            //Factura factura = new Factura(CostoTotalVenta,Cliente_);
-            //factura.Show();
+            Factura factura = new Factura(Empresa_);
+            factura.Show();
             this.MinimizeBox = true;
         }
 

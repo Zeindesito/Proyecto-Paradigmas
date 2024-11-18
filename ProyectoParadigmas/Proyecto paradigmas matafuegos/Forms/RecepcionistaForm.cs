@@ -19,7 +19,6 @@ namespace Proyecto_paradigmas_matafuegos
         public RecepcionistaForm(Form1 form1, Empresa empresa)
         {
             InitializeComponent();
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecepcionistaForm_FormClosing);
             this.form1 = form1;
             Empresa_ = empresa;
             MostrarClientes();
@@ -28,7 +27,12 @@ namespace Proyecto_paradigmas_matafuegos
         //Recarga
         private void button1_Click(object sender, EventArgs e)
         {
-            CrearCliente();
+            if (txtBuscarDni.Text == null)
+            {
+                CrearCliente();
+            }
+            BuscarCliente();
+
             ServicioForm servicioForm = new ServicioForm(this, Empresa_);
             servicioForm.Show();
             this.Hide();
@@ -37,7 +41,13 @@ namespace Proyecto_paradigmas_matafuegos
         //Venta
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
-            CrearCliente();
+            if(txtBuscarDni.Text == null)
+            {
+                CrearCliente();
+            }
+            BuscarCliente();
+
+
             VentaForm ventaForm = new VentaForm(Empresa_, this);
             ventaForm.Show();
             this.Hide();
@@ -55,7 +65,7 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 foreach (var matafuego in cliente.Matafuegos)
                 {
-                    dataGridView1.Rows.Add(cliente.Nombre, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                    dataGridView1.Rows.Add(cliente.Nombre, cliente.Email, cliente.DNI, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
                 }
 
             }
@@ -81,14 +91,36 @@ namespace Proyecto_paradigmas_matafuegos
             }
         }
 
-        private void clientesCargadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
         private void RecepcionistaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
+
+        private void RecepcionistaForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuscarCliente()
+        {
+            var clienteEncontrado = Empresa_.Clientes.FirstOrDefault(item => item.DNI == txtBuscarDni.Text);
+
+            if (clienteEncontrado != null)
+            {
+                // Eliminar y volver a agregar el cliente
+                Empresa_.Clientes.Remove(clienteEncontrado);
+                Empresa_.Clientes.Add(clienteEncontrado);
+
+                MessageBox.Show("DNI encontrado y cliente actualizado.");
+            }
+            else
+            {
+                MessageBox.Show("DNI no encontrado.");
+            }
+        }
+
+
+
 
     }
 }
