@@ -27,14 +27,14 @@ namespace Proyecto_paradigmas_matafuegos
             {
             new Cliente("Juan", "Frias", "40.211.195", "aepappasp@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, new Etiqueta(), "Rojo", true, 1, "Verde"),
-                new Matafuego_ABC(true, new Etiqueta(), "Azul", true, 1, "Verde"),
-                new Matafuego_ABC(true, new Etiqueta(), "Rojo", true, 1, "Verde")
+                new Matafuego_ABC(true, new Etiqueta(DateTime.Parse("17/11/2023"), DateTime.Parse("17/11/2024"), "ABC"), "Rojo", true, 1, "Verde"),
+                new Matafuego_ABC(true, new Etiqueta(DateTime.Parse("20/10/2024"), DateTime.Parse("20/10/2025"), "ABC"), "Azul", true, 1, "Verde"),
+                new Matafuego_ABC(true, new Etiqueta(DateTime.Parse("18/10/2024"), DateTime.Parse("18/10/2025"), "ABC"), "Rojo", true, 1, "Verde")
             }),
             new Cliente("Pedro", "Perez", "22.125.875", "elmaskapito@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K(new Etiqueta(), "Azul", true, true, "Verde", 10),
-                new Matafuego_K(new Etiqueta(), "Rojo", true, true, "Verde", 5),
+                new Matafuego_K(new Etiqueta(DateTime.Parse("01/12/2023"), DateTime.Parse("07/12/2024"), "ABC"), "Azul", true, true, "Verde", 10),
+                new Matafuego_K(new Etiqueta(DateTime.Parse("08/12/2023"), DateTime.Parse("08/12/2024"), "ABC"), "Rojo", true, true, "Verde", 5),
             })
             };
 

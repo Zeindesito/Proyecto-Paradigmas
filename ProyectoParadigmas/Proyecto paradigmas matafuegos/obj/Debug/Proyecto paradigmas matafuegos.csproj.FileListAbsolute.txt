@@ -43,3 +43,4 @@ C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoPara
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.csproj.CoreCompileInputs.cache
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.exe
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.pdb
+C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Resource1.resources

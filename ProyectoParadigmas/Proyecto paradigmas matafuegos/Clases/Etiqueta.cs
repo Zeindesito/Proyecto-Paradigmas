@@ -13,6 +13,12 @@ namespace Proyecto_paradigmas_matafuegos
         public string TipoDeMatafuego { get; set; }
 
         public Etiqueta() { }
+        public Etiqueta(DateTime fechaRevision, DateTime fechaVencimiento, string tipoDeMatafuego)
+        {
+            FechaRevision = fechaRevision;
+            FechaVencimiento = fechaVencimiento;
+            TipoDeMatafuego = tipoDeMatafuego;
+        }
 
         public void Rellenar(DateTime fechaRevision, DateTime fechaVencimiento, Matafuego matafuego)
         {

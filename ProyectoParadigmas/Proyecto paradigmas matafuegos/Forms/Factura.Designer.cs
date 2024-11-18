@@ -119,9 +119,9 @@
             this.Column1,
             this.Kg,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(451, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(392, 58);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(342, 385);
+            this.dataGridView1.Size = new System.Drawing.Size(401, 385);
             this.dataGridView1.TabIndex = 8;
             // 
             // Column1
