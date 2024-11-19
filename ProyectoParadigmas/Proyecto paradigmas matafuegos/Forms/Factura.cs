@@ -34,7 +34,5 @@ namespace Proyecto_paradigmas_matafuegos
             lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
 
         }
-
-
     }
 }

@@ -50,6 +50,18 @@
     <Compile Include="Clases\Empresa.cs" />
     <Compile Include="Clases\Etiqueta.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Forms\AgregarInventarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarInventarioForm.Designer.cs">
+      <DependentUpon>AgregarInventarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarTecnicoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarTecnicoForm.Designer.cs">
+      <DependentUpon>AgregarTecnicoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Factura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AgregarInventarioForm.resx">
+      <DependentUpon>AgregarInventarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarTecnicoForm.resx">
+      <DependentUpon>AgregarTecnicoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>

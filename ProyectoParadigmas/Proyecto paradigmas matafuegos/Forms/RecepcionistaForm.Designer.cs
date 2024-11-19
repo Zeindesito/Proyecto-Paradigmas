@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecepcionistaForm));
             this.ButtonVenta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -176,6 +176,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(492, 54);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.Size = new System.Drawing.Size(649, 515);
             this.dataGridView1.TabIndex = 14;
@@ -224,8 +225,8 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column5.HeaderText = "Vencimiento";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -346,6 +347,7 @@
             this.agregarTecnicosToolStripMenuItem.Name = "agregarTecnicosToolStripMenuItem";
             this.agregarTecnicosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.agregarTecnicosToolStripMenuItem.Text = "Agregar tecnicos";
+            this.agregarTecnicosToolStripMenuItem.Click += new System.EventHandler(this.agregarTecnicosToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
@@ -360,6 +362,7 @@
             this.agregarMatafuegoToolStripMenuItem.Name = "agregarMatafuegoToolStripMenuItem";
             this.agregarMatafuegoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.agregarMatafuegoToolStripMenuItem.Text = "Agregar matafuego";
+            this.agregarMatafuegoToolStripMenuItem.Click += new System.EventHandler(this.agregarMatafuegoToolStripMenuItem_Click);
             // 
             // RecepcionistaForm
             // 
@@ -392,7 +395,6 @@
             this.Name = "RecepcionistaForm";
             this.Text = "RecepcionistaForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecepcionistaForm_FormClosing);
-            this.Load += new System.EventHandler(this.RecepcionistaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);

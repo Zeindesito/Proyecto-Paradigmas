@@ -3,7 +3,6 @@ C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadig
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Form1.resources
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Properties.Resources.resources
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.RecepcionistaForm.resources
-C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.ReporteForm.resources
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.VentaForm.resources
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.csproj.GenerateResource.cache
 C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.csproj.CoreCompileInputs.cache
@@ -43,3 +42,6 @@ C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoPara
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.exe
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto paradigmas matafuegos.pdb
 C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Resource1.resources
+C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarTecnicoForm.resources
+C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Resource1.resources
+C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarInventarioForm.resources

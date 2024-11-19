@@ -53,7 +53,10 @@ namespace Proyecto_paradigmas_matafuegos
 
                 if (!string.IsNullOrWhiteSpace(txtBuscarDni.Text))
                 {
-                    BuscarCliente();
+                    if (!BuscarCliente())
+                    {
+                        return;
+                    }
                 }
                 else
                 {
@@ -62,18 +65,16 @@ namespace Proyecto_paradigmas_matafuegos
                 }
 
                 //montejo valida que el dni sea un numero valido
-
-
             }
             else
             {
                 //Que se mida la longitud del dni
                 CrearCliente();
-                VentaForm ventaForm = new VentaForm(Empresa_, this);
-                ventaForm.Show();
-                this.Hide();
             }
-            
+            VentaForm ventaForm = new VentaForm(Empresa_, this);
+            ventaForm.Show();
+            this.Hide();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -84,11 +85,19 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void MostrarClientes()
         {
+            dataGridView1.Rows.Clear();
             foreach (var cliente in Empresa_.Clientes)
             {
-                foreach (var matafuego in cliente.Matafuegos)
+                if (cliente.Matafuegos.Count > 0)
                 {
-                    dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                    foreach (var matafuego in cliente.Matafuegos)
+                    {
+                        dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                    }
+                }
+                else
+                {
+                   dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, "-", "-", "-");
                 }
 
             }
@@ -111,13 +120,7 @@ namespace Proyecto_paradigmas_matafuegos
         {
             Application.Exit();
         }
-
-        private void RecepcionistaForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BuscarCliente()
+        private bool BuscarCliente()
         {
 
             var clienteEncontrado = Empresa_.Clientes.FirstOrDefault(item => item.DNI == txtBuscarDni.Text);
@@ -129,13 +132,12 @@ namespace Proyecto_paradigmas_matafuegos
                 Empresa_.Clientes.Add(clienteEncontrado);
 
                 MessageBox.Show("DNI encontrado y cliente actualizado.");
-                VentaForm ventaForm = new VentaForm(Empresa_, this);
-                ventaForm.Show();
-                this.Hide();
+                return true;
             }
             else
             {
                 MessageBox.Show("DNI no encontrado.");
+                return false;
 
             }
            
@@ -144,6 +146,20 @@ namespace Proyecto_paradigmas_matafuegos
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void agregarTecnicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarTecnicoForm agregarTecnicoForm = new AgregarTecnicoForm(this,Empresa_);
+            agregarTecnicoForm.Show();
+            this.Hide();
+        }
+
+        private void agregarMatafuegoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this);
+            agregarInventarioForm.Show();
+            this.Hide();
         }
     }
 }

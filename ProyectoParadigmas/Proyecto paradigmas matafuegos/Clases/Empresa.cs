@@ -26,6 +26,10 @@ namespace Proyecto_paradigmas_matafuegos
         }
 
         //metodos
+        public void AñadirTecnico(Tecnico tecnico)
+        {
+            TecnicoList.Add(tecnico);
+        }
         public void AñadirCliente(Cliente cliente)
         {
             Clientes.Add(cliente);
@@ -42,7 +46,6 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 cliente.Matafuegos.Add(matafuego);
             }
-
             return CalcularCostoTotalVenta(matafuegos);
         }
 
