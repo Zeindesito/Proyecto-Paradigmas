@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_paradigmas_matafuegos
 {
+    [Serializable]
     public abstract class Persona
     {
         public string Nombre { get; set; }

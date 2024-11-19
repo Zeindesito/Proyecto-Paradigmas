@@ -12,6 +12,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 {
     public partial class AgregarTecnicoForm : Form
     {
+        Sistema sistema;
+
         RecepcionistaForm recepcionistaForm;
         public List<Tecnico> TecnicoList { get; set; }
         public Empresa Empresa_ {  get; set; }
@@ -39,6 +41,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             else
             {
                 CrearTecnico();
+                var p
+
                 MessageBox.Show("Tecnico creado correctamente.");
             }
         }
