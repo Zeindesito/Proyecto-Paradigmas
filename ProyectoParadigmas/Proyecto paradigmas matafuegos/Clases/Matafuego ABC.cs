@@ -17,6 +17,7 @@ namespace Proyecto_paradigmas_matafuegos
             KgPolvo = kilos;
             Manometro = manometro;
             DeterminarPrecioVenta();
+            DeterminarPrecioRecarga();
         }
 
         //metodos

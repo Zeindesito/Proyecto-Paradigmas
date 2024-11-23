@@ -345,8 +345,8 @@
             // agregarTecnicosToolStripMenuItem
             // 
             this.agregarTecnicosToolStripMenuItem.Name = "agregarTecnicosToolStripMenuItem";
-            this.agregarTecnicosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.agregarTecnicosToolStripMenuItem.Text = "Agregar tecnicos";
+            this.agregarTecnicosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarTecnicosToolStripMenuItem.Text = "Modificar tecnicos";
             this.agregarTecnicosToolStripMenuItem.Click += new System.EventHandler(this.agregarTecnicosToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
@@ -360,7 +360,7 @@
             // agregarMatafuegoToolStripMenuItem
             // 
             this.agregarMatafuegoToolStripMenuItem.Name = "agregarMatafuegoToolStripMenuItem";
-            this.agregarMatafuegoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.agregarMatafuegoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarMatafuegoToolStripMenuItem.Text = "Agregar matafuego";
             this.agregarMatafuegoToolStripMenuItem.Click += new System.EventHandler(this.agregarMatafuegoToolStripMenuItem_Click);
             // 

@@ -32,12 +32,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            switch (cbxTipo.Text)
-            {
-                case "ABC":
-                    Matafuego_ABC matafuego = new Matafuego_ABC();
-                    break;
-            }
             
         }
     }

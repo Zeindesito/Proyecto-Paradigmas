@@ -13,12 +13,12 @@ namespace Proyecto_paradigmas_matafuegos
     public partial class VentaForm : Form
     {
         RecepcionistaForm recepcionistaForm;
-        private Matafuego matafuegoElegido;
         private Empresa Empresa_;
 
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
         private Cliente Cliente_;
         private int selectedRowIndex = -1;
+        private Matafuego matafuegoElegido;
 
         public VentaForm(Empresa empresa,RecepcionistaForm recepcionistaForm)
         {

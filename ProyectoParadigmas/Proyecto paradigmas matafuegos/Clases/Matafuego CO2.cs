@@ -4,25 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proyecto_paradigmas_matafuegos
+namespace Proyecto_paradigmas_matafuegos.Clases
 {
-    public class Matafuego_K : Matafuego
+    public class Matafuego_CO2 : Matafuego
     {
-        public bool Liquido {  get; set; }
-        public string Manometro { get; set; }
-        public Matafuego_K(string arosello_precinto, bool gas, bool liquido, string manometro, int peso) : base(arosello_precinto, gas, peso)
+        public Matafuego_CO2(string arosello_precinto, bool gas, double peso) : base(arosello_precinto, gas, peso)
         {
-            Liquido = liquido;
-            Manometro = manometro;
             DeterminarPrecioVenta();
             DeterminarPrecioRecarga();
         }
 
+        //metodos
         public override void Recargar(string color)
         {
             base.Recargar(color);
-            Manometro = "Verde";
-            Liquido = true;
         }
 
         public override void DeterminarPrecioVenta()
@@ -30,16 +25,16 @@ namespace Proyecto_paradigmas_matafuegos
             switch (Peso)
             {
                 case 1:
-                    PrecioVenta += 180000;
+                    PrecioVenta += 380000;
                     break;
                 case 2.5:
-                    PrecioVenta += 310000;
+                    PrecioVenta += 520000;
                     break;
                 case 5:
-                    PrecioVenta += 400000;
+                    PrecioVenta += 800000;
                     break;
                 case 10:
-                    PrecioVenta += 770000;
+                    PrecioVenta += 140000;
                     break;
             }
         }
@@ -49,24 +44,23 @@ namespace Proyecto_paradigmas_matafuegos
             switch (Peso)
             {
                 case 1:
-                    PrecioRecarga += 5000;
+                    PrecioVenta += 1800;
                     break;
                 case 2.5:
-                    PrecioRecarga += 8000;
+                    PrecioVenta += 2100;
                     break;
                 case 5:
-                    PrecioRecarga += 15000;
+                    PrecioVenta += 3000;
                     break;
                 case 10:
-                    PrecioRecarga += 28000;
+                    PrecioVenta += 4800;
                     break;
             }
         }
 
         public override string DeterminarTipo()
         {
-            return "K";
+            return "ABC";
         }
-
     }
 }

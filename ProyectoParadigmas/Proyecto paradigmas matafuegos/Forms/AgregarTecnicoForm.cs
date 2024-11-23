@@ -12,16 +12,18 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 {
     public partial class AgregarTecnicoForm : Form
     {
-        Sistema sistema;
 
         RecepcionistaForm recepcionistaForm;
         public List<Tecnico> TecnicoList { get; set; }
         public Empresa Empresa_ {  get; set; }
+        private int selectedRowIndex = -1;
+        private Tecnico TecnicoElegido;
         public AgregarTecnicoForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
             this.recepcionistaForm = recepcionistaForm;
             Empresa_ = empresa;
+            MostrarTecnicos();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,7 +43,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             else
             {
                 CrearTecnico();
-                var p
 
                 MessageBox.Show("Tecnico creado correctamente.");
             }
@@ -53,6 +54,52 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             textNombre.Clear();
             textApellido.Clear();
             textDni.Clear();
+            MostrarTecnicos();
+            
         }
+
+        //seleccionar objetos del dataGridView
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // Asegúrate de que se selecciona una fila válida
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count - 1)
+            {
+                selectedRowIndex = e.RowIndex;
+                // Guarda el producto de la fila seleccionada
+                TecnicoElegido = Empresa_.TecnicoList[e.RowIndex];
+
+            }
+            else
+            {
+                MessageBox.Show("Elija una fila valida");
+            }
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (TecnicoElegido != null)
+            {
+                Empresa_.TecnicoList.RemoveAt(selectedRowIndex);
+                // Limpia la selección
+                TecnicoElegido = null;
+                // Agrega el producto seleccionado al DataGridView
+                MostrarTecnicos();
+                MessageBox.Show("Tecnico eliminado con éxito");
+            }
+
+            
+        }
+
+        private void MostrarTecnicos()
+        {
+            dataGridView1.Rows.Clear();
+            foreach (var tecnico in Empresa_.TecnicoList)
+            {
+                dataGridView1.Rows.Add(tecnico.Nombre, tecnico.Apellido, tecnico.DNI);
+            }
+        }
+
+       
     }
 }

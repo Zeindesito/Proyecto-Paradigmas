@@ -27,53 +27,27 @@ namespace Proyecto_paradigmas_matafuegos
         //Recarga
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtBuscarDni.Text == "")
+            if(ValidarCamposYCrearCliente() == true)
             {
-                CrearCliente();
-            }
-            if (txtBuscarDni.Text != "")
-            {
-                BuscarCliente();
+                MostrarClientes();
+                ServicioForm servicioForm = new ServicioForm(this, Empresa_);
+                servicioForm.Show();
+                this.Hide();
             }
             
-            MostrarClientes();
-            ServicioForm servicioForm = new ServicioForm(this, Empresa_);
-            servicioForm.Show();
-            this.Hide();
         }
 
         //Venta
         private void ButtonVenta_Click(object sender, EventArgs e)
         {
-
-
-
-            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text) || string.IsNullOrEmpty(txtEmail.Text))
+            if (ValidarCamposYCrearCliente() == true)
             {
-
-                if (!string.IsNullOrWhiteSpace(txtBuscarDni.Text))
-                {
-                    if (!BuscarCliente())
-                    {
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Por favor, Complete todos los campos.");
-                    return;
-                }
-
-                //montejo valida que el dni sea un numero valido
+                MostrarClientes();
+                VentaForm ventaForm = new VentaForm(Empresa_, this);
+                ventaForm.Show();
+                this.Hide();
             }
-            else
-            {
-                //Que se mida la longitud del dni
-                CrearCliente();
-            }
-            VentaForm ventaForm = new VentaForm(Empresa_, this);
-            ventaForm.Show();
-            this.Hide();
+            
 
         }
 
@@ -160,6 +134,39 @@ namespace Proyecto_paradigmas_matafuegos
             AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this);
             agregarInventarioForm.Show();
             this.Hide();
+        }
+
+        private bool ValidarCamposYCrearCliente()
+        {
+            if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text) || string.IsNullOrEmpty(txtEmail.Text))
+            {
+
+                if (!string.IsNullOrWhiteSpace(txtBuscarDni.Text))
+                {
+                    if (BuscarCliente() == true)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, Complete todos los campos.");
+                    return false;
+                }
+                //montejo valida que el dni sea un numero valido
+            }
+            else
+            {
+                //Que se mida la longitud del dni
+                CrearCliente();
+                MessageBox.Show("Cliente creado con exito");
+                return true;
+            }
         }
     }
 }

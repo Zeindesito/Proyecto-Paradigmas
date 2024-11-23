@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace Proyecto_paradigmas_matafuegos
 {
-    [Serializable]
     public class Tecnico : Persona
     {
         //para saber que matafuegos recargo este tecnico le guardamos la lista 
