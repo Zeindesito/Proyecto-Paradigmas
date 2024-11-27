@@ -18,11 +18,12 @@ namespace Proyecto_paradigmas_matafuegos
 
 
         //constructor PREGUNTA SI ES LEGAL PONER EL CONSTRUCTOR POR MAS QUE LA CLASE NO SE INSTANCIE!!!!!!!
-        public Matafuego(string arosello_precinto, bool gas, double peso)
+        public Matafuego(string arosello_precinto, bool gas, double peso, double precio)
         {
             Arosello_Precinto = arosello_precinto;
             Gas = gas;
             Peso = peso;
+            PrecioVenta = precio;
         }
 
 
@@ -32,9 +33,6 @@ namespace Proyecto_paradigmas_matafuegos
             Gas = true;
             Arosello_Precinto = color;
         }
-
-
-        public abstract void DeterminarPrecioVenta();
 
         public abstract void DeterminarPrecioRecarga();
 

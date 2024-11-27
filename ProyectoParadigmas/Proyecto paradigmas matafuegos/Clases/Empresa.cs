@@ -40,6 +40,11 @@ namespace Proyecto_paradigmas_matafuegos
             ServiciosRealizados.Add(servicio);
         }
 
+        public void AñadirMatafuego(Matafuego matafuego)
+        {
+            MatafuegosList.Add(matafuego);
+        }
+
         public double VenderMatafuego(List<Matafuego> matafuegos, Cliente cliente)
         {
             foreach (var matafuego in matafuegos)

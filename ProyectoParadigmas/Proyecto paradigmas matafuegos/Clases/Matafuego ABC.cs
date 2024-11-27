@@ -12,11 +12,10 @@ namespace Proyecto_paradigmas_matafuegos
         public bool KgPolvo {  get; set; } //true = lleno, false = vacio
 
         //constructor
-        public Matafuego_ABC(bool kilos, string arosello_precinto, bool gas, double peso,string manometro) : base(arosello_precinto,gas, peso)
+        public Matafuego_ABC(bool kilos, string arosello_precinto, bool gas, double peso,string manometro, double precio) : base(arosello_precinto,gas, peso, precio)
         {
             KgPolvo = kilos;
             Manometro = manometro;
-            DeterminarPrecioVenta();
             DeterminarPrecioRecarga();
         }
 
@@ -26,25 +25,6 @@ namespace Proyecto_paradigmas_matafuegos
             base.Recargar(color);
             Manometro = "Verde";
             KgPolvo = true;
-        }
-
-        public override void DeterminarPrecioVenta()
-        {
-            switch (Peso)
-            {
-                case 1:
-                    PrecioVenta += 35000;
-                    break;
-                case 2.5:
-                    PrecioVenta += 45000;
-                    break;
-                case 5:
-                    PrecioVenta += 120000;
-                    break;
-                case 10:
-                    PrecioVenta += 220000;
-                    break;
-            }
         }
 
         public override void DeterminarPrecioRecarga()

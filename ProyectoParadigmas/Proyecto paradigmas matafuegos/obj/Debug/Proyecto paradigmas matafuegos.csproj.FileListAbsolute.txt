@@ -47,3 +47,5 @@ C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadig
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarInventarioForm.resources
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarTecnicoForm.resources
 C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Resource1.resources
+C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarInventarioForm.resources
+C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarTecnicoForm.resources

@@ -131,7 +131,7 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void agregarMatafuegoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this);
+            AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this, Empresa_);
             agregarInventarioForm.Show();
             this.Hide();
         }
