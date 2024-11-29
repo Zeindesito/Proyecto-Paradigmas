@@ -180,7 +180,6 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.Size = new System.Drawing.Size(649, 515);
             this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -345,7 +344,7 @@
             // agregarTecnicosToolStripMenuItem
             // 
             this.agregarTecnicosToolStripMenuItem.Name = "agregarTecnicosToolStripMenuItem";
-            this.agregarTecnicosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarTecnicosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.agregarTecnicosToolStripMenuItem.Text = "Modificar tecnicos";
             this.agregarTecnicosToolStripMenuItem.Click += new System.EventHandler(this.agregarTecnicosToolStripMenuItem_Click);
             // 
@@ -360,7 +359,7 @@
             // agregarMatafuegoToolStripMenuItem
             // 
             this.agregarMatafuegoToolStripMenuItem.Name = "agregarMatafuegoToolStripMenuItem";
-            this.agregarMatafuegoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarMatafuegoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.agregarMatafuegoToolStripMenuItem.Text = "Agregar matafuego";
             this.agregarMatafuegoToolStripMenuItem.Click += new System.EventHandler(this.agregarMatafuegoToolStripMenuItem_Click);
             // 

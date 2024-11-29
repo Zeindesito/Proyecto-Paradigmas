@@ -42,8 +42,12 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
             else
             {
+                if (!EsDniValido(textDni.Text))
+                {
+                    MessageBox.Show("Por favor, ingrese un DNI válido en el formato ##.###.###");
+                    return;
+                }
                 CrearTecnico();
-
                 MessageBox.Show("Tecnico creado correctamente.");
             }
         }
@@ -99,7 +103,27 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 dataGridView1.Rows.Add(tecnico.Nombre, tecnico.Apellido, tecnico.DNI);
             }
         }
+        //validar dni
+        private bool EsDniValido(string dni)
+        {
+            // Validar longitud
+            if (dni.Length != 10)
+                return false;
 
-       
+            // Validar formato (##.###.###)
+            if (dni[2] != '.' || dni[6] != '.')
+                return false;
+
+            // Validar que los caracteres sean números o puntos
+            foreach (char c in dni)
+            {
+                if (!char.IsDigit(c) && c != '.')
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

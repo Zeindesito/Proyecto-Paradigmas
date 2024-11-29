@@ -42,7 +42,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
             else
             {
-                switch (cbxTipo.Text)
+               /* switch (cbxTipo.Text)
                 {
                     case "ABC":
                         ClienteServicio.Matafuegos.Add(new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---"));
@@ -52,7 +52,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                         ClienteServicio.Matafuegos.Add(new Matafuego_K(txtColorArosello.Text, false, false, "---", Convert.ToInt32(cbxPeso.Text)));
                         break;
 
-                }
+                }*/
                 dataGridView1.Rows.Clear();
                 double Total = 0;
                 foreach (var item in ClienteServicio.Matafuegos)

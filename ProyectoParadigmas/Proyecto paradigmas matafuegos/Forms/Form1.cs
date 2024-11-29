@@ -27,14 +27,14 @@ namespace Proyecto_paradigmas_matafuegos
             {
             new Cliente("Juan", "Frias", "40.211.195", "aepappasp@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde"),
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde"),
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde")
+                new Matafuego_ABC(true, "Verde", true, 1, "Verde",3500),
+                new Matafuego_ABC(true, "Verde", true, 1, "Verde",3500),
+                new Matafuego_ABC(true, "Verde", true, 1, "Verde", 3500)
             }),
             new Cliente("Pedro", "Perez", "22.125.875", "elmaskapito@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 10),
-                new Matafuego_K("Verde", true, true, "Verde", 5),
+                new Matafuego_K("Verde", true, true, "Verde", 10, 3500),
+                new Matafuego_K("Verde", true, true, "Verde", 5, 3500),
             })
             };
 
@@ -55,9 +55,9 @@ namespace Proyecto_paradigmas_matafuegos
             };
             MatafuegosEmpresa = new List<Matafuego>
             {
-                new Matafuego_K("Rojo", true, true, "Verde", 5),
-                new Matafuego_K("Rojo", true, true, "Amarillo", 10),
-                new Matafuego_ABC(true, "Rojo", true, 1, "Verde")
+                new Matafuego_K("Rojo", true, true, "Verde", 5, 3500),
+                new Matafuego_K("Rojo", true, true, "Amarillo", 10, 3500),
+                new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 3500)
 
             };
 

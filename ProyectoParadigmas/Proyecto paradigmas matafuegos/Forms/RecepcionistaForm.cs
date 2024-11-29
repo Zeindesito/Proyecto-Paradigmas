@@ -96,7 +96,12 @@ namespace Proyecto_paradigmas_matafuegos
         }
         private bool BuscarCliente()
         {
+            if(!EsDniValido(txtBuscarDni.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un DNI válido en el formato ##.###.### para buscar.");
+                return false;
 
+            }
             var clienteEncontrado = Empresa_.Clientes.FirstOrDefault(item => item.DNI == txtBuscarDni.Text);
 
             if (clienteEncontrado != null)
@@ -117,23 +122,16 @@ namespace Proyecto_paradigmas_matafuegos
            
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void agregarTecnicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarTecnicoForm agregarTecnicoForm = new AgregarTecnicoForm(this,Empresa_);
             agregarTecnicoForm.Show();
-            this.Hide();
         }
 
         private void agregarMatafuegoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this, Empresa_);
             agregarInventarioForm.Show();
-            this.Hide();
         }
 
         private bool ValidarCamposYCrearCliente()
@@ -143,7 +141,7 @@ namespace Proyecto_paradigmas_matafuegos
 
                 if (!string.IsNullOrWhiteSpace(txtBuscarDni.Text))
                 {
-                    if (BuscarCliente() == true)
+                    if (BuscarCliente())
                     {
                         return true;
                     }
@@ -162,11 +160,55 @@ namespace Proyecto_paradigmas_matafuegos
             }
             else
             {
-                //Que se mida la longitud del dni
+                if(!EsDniValido(textDni.Text))
+                {
+                    MessageBox.Show("Por favor, ingrese un DNI válido en el formato ##.###.###");
+                    return false;
+                }
+                if(!EsEmailValido(txtEmail.Text))
+                {
+                    MessageBox.Show("Ingrese un email valido");
+                    return false;
+                }
+
                 CrearCliente();
                 MessageBox.Show("Cliente creado con exito");
                 return true;
             }
+        }
+        //validar email
+        private bool EsEmailValido(string email)
+        {
+            try
+            {
+                var direccion = new System.Net.Mail.MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        //validar que el dni tenga formato ##.###.###
+        private bool EsDniValido(string dni)
+        {
+            // Validar longitud
+            if (dni.Length != 10)
+                return false;
+
+            // Validar formato (##.###.###)
+            if (dni[2] != '.' || dni[6] != '.')
+                return false;
+
+            // Validar que los caracteres sean números o puntos
+            foreach (char c in dni)
+            {
+                if (!char.IsDigit(c) && c != '.')
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

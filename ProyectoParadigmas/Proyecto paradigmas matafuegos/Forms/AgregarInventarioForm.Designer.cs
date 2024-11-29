@@ -41,12 +41,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -182,17 +182,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(543, 389);
             this.dataGridView1.TabIndex = 35;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.75F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(596, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(312, 25);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "INVENTARIO DE MATAFUEGOS";
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Tipo";
@@ -222,6 +211,17 @@
             this.Column5.HeaderText = "Vencimiento";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.75F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(596, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(312, 25);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "INVENTARIO DE MATAFUEGOS";
             // 
             // dateTimePicker1
             // 
