@@ -133,6 +133,14 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
         }
 
-        
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -166,5 +166,29 @@
   <ItemGroup>
     <None Include="Resources\Matafuego.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-logo-alerta-llama-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuego-c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CO2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
