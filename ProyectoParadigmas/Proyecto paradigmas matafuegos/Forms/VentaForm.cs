@@ -109,6 +109,10 @@ namespace Proyecto_paradigmas_matafuegos
         //flecha volver al menu anterior
         private void button3_Click_1(object sender, EventArgs e)
         {
+            if (ListaMatafuego == null || !ListaMatafuego.Any())
+            {
+                Empresa_.Clientes.Remove(Cliente_);
+            }
             recepcionistaForm.Show();
             recepcionistaForm.Empresa_ = Empresa_;
             recepcionistaForm.MostrarClientes();
@@ -134,11 +138,12 @@ namespace Proyecto_paradigmas_matafuegos
             //actualizo el carrito
             foreach (var item in matafuegosParaVenta)
             {
-                dataGridView2.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga);
+                dataGridView2.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioVenta);
             }
 
         }
 
+        //filtro
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedItem != null)

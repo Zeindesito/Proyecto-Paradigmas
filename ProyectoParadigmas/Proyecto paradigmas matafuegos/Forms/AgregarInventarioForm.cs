@@ -29,6 +29,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         //cargar al inventario
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(cbxTipo.Text))
             {
                 MessageBox.Show("Por favor, seleccione un tipo de matafuego.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -59,27 +60,26 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             switch (cbxTipo.Text)
             {
                 case "ABC":
-                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, peso, "Verde", precio);
+                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, peso, "Verde", Convert.ToDouble(txtPrecio.Text));
                     break;
 
                 case "K":
-                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", peso, precio);
+                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", peso, Convert.ToDouble(txtPrecio.Text));
                     break;
 
                 case "CO2":
-                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, peso, precio);
+                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, peso, Convert.ToDouble(txtPrecio.Text));
                     break;
 
                 default:
                     MessageBox.Show("El tipo de matafuego seleccionado no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
             }
-
+            precio = 0;
             matafuego.EtiquetaMatafuego.Rellenar(dateTimePicker1.Value.Date, dateTimePicker1.Value.Date.AddYears(1), matafuego.DeterminarTipo());
             Empresa_.AñadirMatafuego(matafuego);
             MostrarMatafuegos();
             MessageBox.Show("Matafuego añadido correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            precio = 0;
         }
 
 

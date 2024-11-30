@@ -105,14 +105,22 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 empresa_.ServiciosRealizados.Add(new Servicio(tecnico, ClienteServicio, DateTime.Now));
                 Factura factura = new Factura(empresa_, ListaMatafuego,recepcionistaForm);
                 factura.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("No se encontró el técnico en la lista.");
             }
         }
+
+        //Volver
         private void button2_Click(object sender, EventArgs e)
         {
+
+            if (ListaMatafuego == null || !ListaMatafuego.Any())
+            {
+                empresa_.Clientes.Remove(ClienteServicio);
+            }
             recepcionistaForm.Show();
             recepcionistaForm.Empresa_ = empresa_;
             recepcionistaForm.MostrarClientes();

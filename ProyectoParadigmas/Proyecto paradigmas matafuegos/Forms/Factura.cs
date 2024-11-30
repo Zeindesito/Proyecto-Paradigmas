@@ -73,8 +73,10 @@ namespace Proyecto_paradigmas_matafuegos
        
         }
 
+        //cierra
         private void Factura_FormClosing(object sender, FormClosingEventArgs e)
         {
+            recepcionistaForm.MostrarClientes();
             recepcionistaForm.Show();
             this.Hide();
         }

@@ -9,7 +9,7 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public abstract class Matafuego
     {
-        public double PrecioVenta { get; set; } = 0;
+        public double PrecioVenta { get; set; }
         public double PrecioRecarga { get; set; }
         public Etiqueta EtiquetaMatafuego { get; set; } = new Etiqueta();
         public string Arosello_Precinto { get; set; }
@@ -38,40 +38,6 @@ namespace Proyecto_paradigmas_matafuegos
         public abstract void DeterminarPrecioRecarga();
 
         public abstract string DeterminarTipo();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       /* public virtual void DeterminarPrecioVenta()
-        {
-            switch (Peso)
-            {
-                case 1:
-                    Precio = 200;
-                    break;
-                case 2:
-                    Precio = 500;
-                    break;
-                case 5:
-                    Precio = 1000;
-                    break;
-                case 10:
-                    Precio = 2500;
-                    break;
-            }
-        } */
-
-        //public abstract string DeterminarTipo();
     }
 
 }
