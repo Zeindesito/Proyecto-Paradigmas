@@ -104,7 +104,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 MatafuegoElegido = null;
                 // Agrega el producto seleccionado al DataGridView
                 MostrarMatafuegos();
-                MessageBox.Show("Tecnico eliminado con éxito");
+                MessageBox.Show("Matafuego eliminado con éxito");
             }
         }
 

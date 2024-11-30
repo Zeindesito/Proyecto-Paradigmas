@@ -128,8 +128,11 @@
             this.Column4,
             this.Column5});
             this.dataGridView1.Location = new System.Drawing.Point(476, 110);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 385);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(604, 385);
             this.dataGridView1.TabIndex = 8;
             // 
             // label6
@@ -257,23 +260,28 @@
             this.Column1.HeaderText = "Tipo";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Kg
             // 
             this.Kg.HeaderText = "Peso(Kg)";
             this.Kg.Name = "Kg";
+            this.Kg.ReadOnly = true;
+            this.Kg.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Precio C/U";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Color arosello";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column4
             // 
@@ -283,6 +291,7 @@
             this.Column4.HeaderText = "Fecha carga";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column5
             // 
@@ -292,12 +301,13 @@
             this.Column5.HeaderText = "Fecha vencimiento";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1131, 535);
+            this.ClientSize = new System.Drawing.Size(1080, 495);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblApellidoTecnico);
@@ -317,6 +327,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Factura";
             this.Text = "Factura";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

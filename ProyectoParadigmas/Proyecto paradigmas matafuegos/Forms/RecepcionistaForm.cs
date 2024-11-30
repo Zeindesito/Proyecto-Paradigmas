@@ -125,12 +125,14 @@ namespace Proyecto_paradigmas_matafuegos
         private void agregarTecnicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarTecnicoForm agregarTecnicoForm = new AgregarTecnicoForm(this,Empresa_);
-            agregarTecnicoForm.Show();
+            agregarTecnicoForm.StartPosition = FormStartPosition.CenterParent;
+            agregarTecnicoForm.ShowDialog();
         }
 
         private void agregarMatafuegoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this, Empresa_);
+            agregarInventarioForm.StartPosition = FormStartPosition.CenterParent;
             agregarInventarioForm.Show();
         }
 
@@ -210,5 +212,6 @@ namespace Proyecto_paradigmas_matafuegos
             }
             return true;
         }
+
     }
 }

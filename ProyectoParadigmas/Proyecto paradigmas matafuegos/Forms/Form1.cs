@@ -25,16 +25,25 @@ namespace Proyecto_paradigmas_matafuegos
 
         listaClientes = new List<Cliente>
             {
-            new Cliente("Juan", "Frias", "40.211.195", "aepappasp@gmail.com", new List<Matafuego>
+            new Cliente("Juan", "Frias", "40.211.195", "juanfrias34@gmail.com", new List<Matafuego>
             {
                 new Matafuego_ABC(true, "Verde", true, 1, "Verde",3500),
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde",3500),
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde", 3500)
             }),
-            new Cliente("Pedro", "Perez", "22.125.875", "elmaskapito@gmail.com", new List<Matafuego>
+            new Cliente("Pedro", "Perez", "22.125.875", "perezpedro@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 10, 3500),
-                new Matafuego_K("Verde", true, true, "Verde", 5, 3500),
+                new Matafuego_K("Verde", true, true, "Verde", 2.5, 4500),
+            }),
+             new Cliente("Nazareno", "Rolon", "44.789.897", "nazarolon@gmail.com", new List<Matafuego>
+            {
+                new Matafuego_CO2("Verde", true, 5, 6500),
+            }),
+            new Cliente("Matias", "Inglant", "43.678.234", "inglantmati@gmail.com", new List<Matafuego>
+            {
+                new Matafuego_K("Verde", true, true, "Verde", 10, 7500),
+            }),
+             new Cliente("Luis", "Fonsi", "47.234.101", "luisfonsi21@gmail.com", new List<Matafuego>
+            {
+                new Matafuego_ABC(true, "Verde", true, 5, "Verde",5500),
             })
             };
 
@@ -50,7 +59,7 @@ namespace Proyecto_paradigmas_matafuegos
             Tecnicos = new List<Tecnico>
             {
             new Tecnico("Matias", "Gonzalez", "45.557.102"),
-            new Tecnico("Agustin", "Montejo", "44.512.122")
+            new Tecnico("Agustin", "Montejo", "45.101.907")
 
             };
             MatafuegosEmpresa = new List<Matafuego>
@@ -73,7 +82,10 @@ namespace Proyecto_paradigmas_matafuegos
                  new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 7000),
 
             };
-
+            foreach (var matafuego in MatafuegosEmpresa)
+            {
+                matafuego.EtiquetaMatafuego.Rellenar(DateTime.Parse("20/11/2024"), DateTime.Parse("20/11/2025"), matafuego.DeterminarTipo());
+            }
 
             empresa = new Empresa(Tecnicos, listaClientes, MatafuegosEmpresa);
         }
@@ -95,11 +107,6 @@ namespace Proyecto_paradigmas_matafuegos
             }
             textBox1.Clear();
             textBox2.Clear();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
