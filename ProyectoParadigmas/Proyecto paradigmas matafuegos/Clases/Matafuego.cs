@@ -9,7 +9,7 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public abstract class Matafuego
     {
-        public double PrecioVenta { get; set; }
+        public double PrecioVenta { get; set; } = 0;
         public double PrecioRecarga { get; set; }
         public Etiqueta EtiquetaMatafuego { get; set; } = new Etiqueta();
         public string Arosello_Precinto { get; set; }
@@ -24,6 +24,7 @@ namespace Proyecto_paradigmas_matafuegos
             Gas = gas;
             Peso = peso;
             PrecioVenta = precio;
+            DeterminarPrecioRecarga();
         }
 
 

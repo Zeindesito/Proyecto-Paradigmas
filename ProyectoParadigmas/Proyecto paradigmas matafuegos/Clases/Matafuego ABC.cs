@@ -16,7 +16,6 @@ namespace Proyecto_paradigmas_matafuegos
         {
             KgPolvo = kilos;
             Manometro = manometro;
-            DeterminarPrecioRecarga();
         }
 
         //metodos
@@ -32,16 +31,16 @@ namespace Proyecto_paradigmas_matafuegos
             switch (Peso)
             {
                 case 1:
-                    PrecioVenta += 1400;
+                    PrecioRecarga = 5000;
                     break;
                 case 2.5:
-                    PrecioVenta += 1600;
+                    PrecioRecarga = 8000;
                     break;
                 case 5:
-                    PrecioVenta += 3000;
+                    PrecioRecarga = 15000;
                     break;
                 case 10:
-                    PrecioVenta += 4800;
+                    PrecioRecarga = 28000;
                     break;
             }
         }

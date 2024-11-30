@@ -55,9 +55,22 @@ namespace Proyecto_paradigmas_matafuegos
             };
             MatafuegosEmpresa = new List<Matafuego>
             {
-                new Matafuego_K("Rojo", true, true, "Verde", 5, 3500),
-                new Matafuego_K("Rojo", true, true, "Amarillo", 10, 3500),
-                new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 3500)
+                 //1kg
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 1, 5000),
+                 new Matafuego_CO2("Rojo",true,1,5000),
+                 new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 3000),
+                 //2.5kg
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 2.5, 6000),
+                 new Matafuego_CO2("Rojo",true,2.5,6500),
+                 new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 4000),
+                 //5kg
+                 new Matafuego_K("Rojo", true, true, "Verde", 5, 7500),
+                 new Matafuego_CO2("Rojo",true,5,8000),
+                 new Matafuego_ABC(true, "Rojo", true, 5, "Amarillo", 5500),
+                 //10kg
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 10, 9000),
+                 new Matafuego_CO2("Rojo",true,10,9000),
+                 new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 7000),
 
             };
 

@@ -79,7 +79,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
         }
 
-
+        //eliminar
         private void button3_Click(object sender, EventArgs e)
         {
             if (TecnicoElegido != null)

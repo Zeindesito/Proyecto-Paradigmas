@@ -14,7 +14,6 @@ namespace Proyecto_paradigmas_matafuegos
         {
             Liquido = liquido;
             Manometro = manometro;
-            DeterminarPrecioRecarga();
         }
 
         public override void Recargar(string color)
@@ -29,16 +28,16 @@ namespace Proyecto_paradigmas_matafuegos
             switch (Peso)
             {
                 case 1:
-                    PrecioRecarga += 5000;
+                    PrecioRecarga = 5000;
                     break;
                 case 2.5:
-                    PrecioRecarga += 8000;
+                    PrecioRecarga = 8000;
                     break;
                 case 5:
-                    PrecioRecarga += 15000;
+                    PrecioRecarga = 15000;
                     break;
                 case 10:
-                    PrecioRecarga += 28000;
+                    PrecioRecarga = 28000;
                     break;
             }
         }

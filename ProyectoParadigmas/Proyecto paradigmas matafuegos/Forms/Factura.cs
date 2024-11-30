@@ -13,26 +13,56 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public partial class Factura : Form
     {
-
+        private double CostoVenta;
         private Empresa Empresa_;
+
+        //recarga
         public Factura(Empresa empresa)
         {
             InitializeComponent();
+            Rellenar(empresa, 0);
+
+        }
+
+        //venta
+        public Factura(Empresa empresa, double costoVenta)
+        {
+            InitializeComponent();
+            Rellenar(empresa, costoVenta);
+
+            lblTotal.Text = CostoVenta.ToString();
+                lblApelli.Text = " ";
+                lblNom.Text = " ";
+                lblApellidoTecnico.Text = " ";
+                lblNombreTecnico.Text = " ";
+                lblRecargadoPor.Text = " ";
+
+        }
+
+        private void Rellenar(Empresa empresa, double costoVenta)
+        {
             Empresa_ = empresa;
+            CostoVenta = costoVenta;
             Cliente cliente_ = Empresa_.Clientes.Last();
-                foreach (var matafuego in cliente_.Matafuegos)
-                {
-                    dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
-                }
+            dataGridView1.Rows.Clear();
+            foreach (var matafuego in cliente_.Matafuegos)
+            {
+                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+            }
 
             lblNombre.Text = cliente_.Nombre;
             lblApellido.Text = cliente_.Apellido;
             lblDni.Text = cliente_.DNI;
             lblFecha.Text = DateTime.Now.ToString();
-            Servicio servicio = empresa.ServiciosRealizados.Last();
-            lblApellidoTecnico.Text = servicio.Tecnico_.Nombre;
-            lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
 
+            if(costoVenta == 0)
+            {
+                Servicio servicio = empresa.ServiciosRealizados.Last();
+                lblApellidoTecnico.Text = servicio.Tecnico_.Nombre;
+                lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
+            }
+       
         }
+
     }
 }

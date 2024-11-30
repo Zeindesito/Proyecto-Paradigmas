@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,21 +37,24 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblDni = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblRecargadoPor = new System.Windows.Forms.Label();
+            this.lblApelli = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
             this.lblNombreTecnico = new System.Windows.Forms.Label();
             this.lblApellidoTecnico = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +102,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(565, 30);
+            this.label5.Location = new System.Drawing.Point(740, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 25);
             this.label5.TabIndex = 4;
@@ -118,28 +123,14 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Kg,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(392, 58);
+            this.Column3,
+            this.Column2,
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(476, 110);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(401, 385);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 385);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tipo";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Kg
-            // 
-            this.Kg.HeaderText = "Kg";
-            this.Kg.Name = "Kg";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Precio C/U";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // label6
             // 
@@ -155,7 +146,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(260, 421);
+            this.label10.Location = new System.Drawing.Point(240, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 25);
             this.label10.TabIndex = 12;
@@ -191,35 +182,35 @@
             this.lblDni.TabIndex = 15;
             this.lblDni.Text = "---";
             // 
-            // label7
+            // lblRecargadoPor
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 208);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(174, 25);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Recargado por:";
+            this.lblRecargadoPor.AutoSize = true;
+            this.lblRecargadoPor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecargadoPor.Location = new System.Drawing.Point(24, 208);
+            this.lblRecargadoPor.Name = "lblRecargadoPor";
+            this.lblRecargadoPor.Size = new System.Drawing.Size(174, 25);
+            this.lblRecargadoPor.TabIndex = 16;
+            this.lblRecargadoPor.Text = "Recargado por:";
             // 
-            // label9
+            // lblApelli
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 268);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Apellido:";
+            this.lblApelli.AutoSize = true;
+            this.lblApelli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApelli.Location = new System.Drawing.Point(24, 268);
+            this.lblApelli.Name = "lblApelli";
+            this.lblApelli.Size = new System.Drawing.Size(104, 25);
+            this.lblApelli.TabIndex = 17;
+            this.lblApelli.Text = "Apellido:";
             // 
-            // label11
+            // lblNom
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(24, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 25);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Nombre:";
+            this.lblNom.AutoSize = true;
+            this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNom.Location = new System.Drawing.Point(24, 243);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(100, 25);
+            this.lblNom.TabIndex = 18;
+            this.lblNom.Text = "Nombre:";
             // 
             // lblNombreTecnico
             // 
@@ -255,24 +246,65 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(350, 421);
+            this.lblFecha.Location = new System.Drawing.Point(330, 74);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(36, 25);
             this.lblFecha.TabIndex = 22;
             this.lblFecha.Text = "---";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tipo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Kg
+            // 
+            this.Kg.HeaderText = "Peso(Kg)";
+            this.Kg.Name = "Kg";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Precio C/U";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Color arosello";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column4.HeaderText = "Fecha carga";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column5.HeaderText = "Fecha vencimiento";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 455);
+            this.ClientSize = new System.Drawing.Size(1131, 535);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblApellidoTecnico);
             this.Controls.Add(this.lblNombreTecnico);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblNom);
+            this.Controls.Add(this.lblApelli);
+            this.Controls.Add(this.lblRecargadoPor);
             this.Controls.Add(this.lblDni);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
@@ -304,18 +336,21 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblDni;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblRecargadoPor;
+        private System.Windows.Forms.Label lblApelli;
+        private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblNombreTecnico;
         private System.Windows.Forms.Label lblApellidoTecnico;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

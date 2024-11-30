@@ -37,6 +37,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             return Costo = CalcularCostoTotalRecarga(cliente);
         }
 
+
+
         private double CalcularCostoTotalRecarga(Cliente cliente)
         {
             double Costo = 0;

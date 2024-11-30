@@ -15,11 +15,14 @@ namespace Proyecto_paradigmas_matafuegos.Forms
     {
         RecepcionistaForm recepcionistaForm;
         private Empresa Empresa_;
+        private int selectedRowIndex = -1;
+        private Matafuego MatafuegoElegido;
         public AgregarInventarioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
             this.recepcionistaForm = recepcionistaForm;
             Empresa_ = empresa;
+            MostrarMatafuegos();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,31 +40,99 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         //cargar al inventario
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(cbxTipo.Text))
+            {
+                MessageBox.Show("Por favor, seleccione un tipo de matafuego.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtColorArosello.Text))
+            {
+                MessageBox.Show("Por favor, ingrese el color del arosello.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!double.TryParse(cbxPeso.Text, out double peso) || peso <= 0)
+            {
+                MessageBox.Show("Por favor, ingrese un peso válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!double.TryParse(txtPrecio.Text, out double precio) || precio <= 0)
+            {
+                MessageBox.Show("Por favor, ingrese un precio válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Matafuego matafuego = null;
+            
+
             switch (cbxTipo.Text)
             {
                 case "ABC":
-                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, Convert.ToDouble(cbxPeso.Text), "Verde", Convert.ToDouble(txtPrecio.Text));
-                    matafuego.EtiquetaMatafuego.Rellenar(dateTimePicker1.Value.Date, dateTimePicker1.Value.Date.AddYears(1), matafuego.DeterminarTipo());
-                    Empresa_.AñadirMatafuego(matafuego);
-                    
+                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, peso, "Verde", precio);
                     break;
 
                 case "K":
-                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", Convert.ToDouble(cbxPeso.Text), Convert.ToDouble(txtPrecio.Text));
-                    matafuego.EtiquetaMatafuego.Rellenar(dateTimePicker1.Value.Date, dateTimePicker1.Value.Date.AddYears(1), matafuego.DeterminarTipo());
-                    Empresa_.AñadirMatafuego(matafuego);
-
+                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", peso, precio);
                     break;
 
                 case "CO2":
-                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, Convert.ToDouble(cbxPeso.Text), Convert.ToDouble(txtPrecio));
-                    matafuego.EtiquetaMatafuego.Rellenar(dateTimePicker1.Value.Date, dateTimePicker1.Value.Date.AddYears(1), matafuego.DeterminarTipo());
-                    Empresa_.AñadirMatafuego(matafuego);
+                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, peso, precio);
                     break;
+
+                default:
+                    MessageBox.Show("El tipo de matafuego seleccionado no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
             }
-            
+
+            matafuego.EtiquetaMatafuego.Rellenar(dateTimePicker1.Value.Date, dateTimePicker1.Value.Date.AddYears(1), matafuego.DeterminarTipo());
+            Empresa_.AñadirMatafuego(matafuego);
+            MostrarMatafuegos();
+            MessageBox.Show("Matafuego añadido correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            precio = 0;
         }
 
+
+        //eliminar
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (MatafuegoElegido != null)
+            {
+                Empresa_.MatafuegosList.RemoveAt(selectedRowIndex);
+                // Limpia la selección
+                MatafuegoElegido = null;
+                // Agrega el producto seleccionado al DataGridView
+                MostrarMatafuegos();
+                MessageBox.Show("Tecnico eliminado con éxito");
+            }
+        }
+
+        private void MostrarMatafuegos()
+        {
+            dataGridView1.Rows.Clear();
+            foreach (var matafuego in Empresa_.MatafuegosList)
+            {
+                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Asegúrate de que se selecciona una fila válida
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count - 1)
+            {
+                selectedRowIndex = e.RowIndex;
+                // Guarda el producto de la fila seleccionada
+                MatafuegoElegido = Empresa_.MatafuegosList[e.RowIndex];
+
+            }
+            else
+            {
+                MessageBox.Show("Elija una fila valida");
+            }
+        }
+
+        
     }
 }

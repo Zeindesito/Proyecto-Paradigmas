@@ -10,7 +10,6 @@ namespace Proyecto_paradigmas_matafuegos.Clases
     {
         public Matafuego_CO2(string arosello_precinto, bool gas, double peso, double precio) : base(arosello_precinto, gas, peso, precio)
         {
-            DeterminarPrecioRecarga();
         }
 
         //metodos
@@ -25,23 +24,23 @@ namespace Proyecto_paradigmas_matafuegos.Clases
             switch (Peso)
             {
                 case 1:
-                    PrecioVenta += 1800;
+                    PrecioRecarga = 5000;
                     break;
                 case 2.5:
-                    PrecioVenta += 2100;
+                    PrecioRecarga = 8000;
                     break;
                 case 5:
-                    PrecioVenta += 3000;
+                    PrecioRecarga = 15000;
                     break;
                 case 10:
-                    PrecioVenta += 4800;
+                    PrecioRecarga = 28000;
                     break;
             }
         }
 
         public override string DeterminarTipo()
         {
-            return "ABC";
+            return "CO2";
         }
     }
 }

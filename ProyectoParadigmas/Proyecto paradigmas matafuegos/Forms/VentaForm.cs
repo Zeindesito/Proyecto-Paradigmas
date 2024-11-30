@@ -14,6 +14,7 @@ namespace Proyecto_paradigmas_matafuegos
     {
         RecepcionistaForm recepcionistaForm;
         private Empresa Empresa_;
+        private List<Matafuego> MatafuegosSeleccion;
 
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
         private Cliente Cliente_;
@@ -26,6 +27,7 @@ namespace Proyecto_paradigmas_matafuegos
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentaForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
+            MatafuegosSeleccion = Empresa_.MatafuegosList;
 
             ActuaizarDatagridview();
 
@@ -44,24 +46,47 @@ namespace Proyecto_paradigmas_matafuegos
                 // Agrega el producto seleccionado al segundo DataGridView
                 dataGridView2.Rows.Add(matafuegoElegido.DeterminarTipo(), matafuegoElegido.Peso, matafuegoElegido.PrecioVenta);
 
+                //borro el producto de la lista auxiliar para no borrar de la original
+                MatafuegosSeleccion.Remove(matafuegoElegido);
+
+                //añado a la lista para vender
                 matafuegosParaVenta.Add(matafuegoElegido);
+
+                ActuaizarDatagridview();
+
                 // Limpia la selección
                 matafuegoElegido = null;
-
+                
                 lblTotal.Text = $"{CalcularTotalCarrito()}";
             }
           
         }
 
+        //vender
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
+            foreach (var matafuego in matafuegosParaVenta)
+            {
+                Empresa_.MatafuegosList.Remove(matafuego);
+            }
+
+            Factura factura = new Factura(Empresa_, CostoTotalVenta);
+            factura.Show();
+            this.MinimizeBox = true;
+            ActuaizarDatagridview();
+        }
+
+
         private void dgvSeleccion_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Asegúrate de que se selecciona una fila válida
-            if (e.RowIndex >= 0 && e.RowIndex < dgvSeleccion.Rows.Count -1)
+            if (e.RowIndex >= 0 && e.RowIndex < dgvSeleccion.Rows.Count - 1)
             {
-                selectedRowIndex= e.RowIndex;
+                selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada
                 matafuegoElegido = Empresa_.MatafuegosList[e.RowIndex];
-                
+
             }
             else
             {
@@ -69,17 +94,8 @@ namespace Proyecto_paradigmas_matafuegos
             }
         }
 
-        //vender
-        private void button2_Click(object sender, EventArgs e)
-        {
-            double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
-            Factura factura = new Factura(Empresa_);
-            factura.Show();
-            this.MinimizeBox = true;
 
-            Empresa_.MatafuegosList.Remove(matafuegoElegido);
-            ActuaizarDatagridview();
-        }
+
 
         private double CalcularTotalCarrito()
         {
@@ -99,10 +115,21 @@ namespace Proyecto_paradigmas_matafuegos
 
         private void ActuaizarDatagridview()
         {
-            foreach (var matafuego in Empresa_.MatafuegosList)
+            dgvSeleccion.Rows.Clear();
+            dataGridView2.Rows.Clear();
+
+            //actualizado el datagridview donde estan cargados
+            foreach (var matafuego in MatafuegosSeleccion)
             {
                 dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
             }
+
+            //actualizo el carrito
+            foreach (var item in matafuegosParaVenta)
+            {
+                dataGridView2.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga);
+            }
+
         }
     }
 }
