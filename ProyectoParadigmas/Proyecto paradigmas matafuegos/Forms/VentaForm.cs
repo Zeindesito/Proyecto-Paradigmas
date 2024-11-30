@@ -15,7 +15,7 @@ namespace Proyecto_paradigmas_matafuegos
         RecepcionistaForm recepcionistaForm;
         private Empresa Empresa_;
         private List<Matafuego> MatafuegosSeleccion;
-
+        private List<Matafuego> ListaMatafuego;
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
         private Cliente Cliente_;
         private int selectedRowIndex = -1;
@@ -35,6 +35,10 @@ namespace Proyecto_paradigmas_matafuegos
             button1.Click += button1_Click;
 
             Cliente_ = Empresa_.Clientes[Empresa_.Clientes.Count - 1];
+
+            Cliente_ = Empresa_.Clientes.Last();
+            ListaMatafuego = Cliente_.Matafuegos;
+            Cliente_.Matafuegos = new List<Matafuego>();
         }
 
 
@@ -65,13 +69,14 @@ namespace Proyecto_paradigmas_matafuegos
         //vender
         private void button2_Click(object sender, EventArgs e)
         {
+
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
             foreach (var matafuego in matafuegosParaVenta)
             {
                 Empresa_.MatafuegosList.Remove(matafuego);
             }
 
-            Factura factura = new Factura(Empresa_, CostoTotalVenta);
+            Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego);
             factura.Show();
             this.MinimizeBox = true;
             ActuaizarDatagridview();
@@ -106,6 +111,8 @@ namespace Proyecto_paradigmas_matafuegos
         private void button3_Click(object sender, EventArgs e)
         {
             recepcionistaForm.Show();
+            recepcionistaForm.Empresa_ = Empresa_;
+            recepcionistaForm.MostrarClientes();
             this.Hide();
         }
         private void VentaForm_FormClosing(object sender, FormClosingEventArgs e)

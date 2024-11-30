@@ -22,6 +22,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime Fecha)
         {
             double Costo = 0;
+
             // Realizar el mantenimiento a los matafuegos   
             List<Matafuego> matafuegosRecargados = new List<Matafuego>();
             foreach (var matafuego in cliente.Matafuegos)

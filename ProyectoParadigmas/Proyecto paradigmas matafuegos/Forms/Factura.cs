@@ -17,18 +17,19 @@ namespace Proyecto_paradigmas_matafuegos
         private Empresa Empresa_;
 
         //recarga
-        public Factura(Empresa empresa)
+        public Factura(Empresa empresa, List<Matafuego> matafuegos)
         {
             InitializeComponent();
-            Rellenar(empresa, 0);
+
+            Rellenar(empresa, 0, matafuegos);
 
         }
 
         //venta
-        public Factura(Empresa empresa, double costoVenta)
+        public Factura(Empresa empresa, double costoVenta, List<Matafuego> matafuegos)
         {
             InitializeComponent();
-            Rellenar(empresa, costoVenta);
+            Rellenar(empresa, costoVenta, matafuegos);
 
             lblTotal.Text = CostoVenta.ToString();
                 lblApelli.Text = " ";
@@ -39,7 +40,7 @@ namespace Proyecto_paradigmas_matafuegos
 
         }
 
-        private void Rellenar(Empresa empresa, double costoVenta)
+        private void Rellenar(Empresa empresa, double costoVenta, List<Matafuego> matafuegos)
         {
             Empresa_ = empresa;
             CostoVenta = costoVenta;
@@ -49,6 +50,13 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
             }
+
+            //le cargo los matafuegos viejos
+            foreach (var item in matafuegos)
+            {
+                cliente_.Matafuegos.Add(item);
+            }
+
 
             lblNombre.Text = cliente_.Nombre;
             lblApellido.Text = cliente_.Apellido;

@@ -26,10 +26,5 @@ namespace Proyecto_paradigmas_matafuegos
             FechaVencimiento = fechaVencimiento;
             TipoDeMatafuego = tipoDeMatafuego;
         }
-
-        public void Imprimir()
-        {
-            ToString();
-        }
     }
 }

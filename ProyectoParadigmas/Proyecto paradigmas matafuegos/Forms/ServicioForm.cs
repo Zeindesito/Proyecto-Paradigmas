@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_paradigmas_matafuegos.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         RecepcionistaForm recepcionistaForm;
         private Empresa empresa_;
         private Cliente ClienteServicio;
+        private List<Matafuego> ListaMatafuego;
         public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
@@ -28,13 +30,15 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             {
                 cbxTenicos.Items.Add(tecnico.ApellidoYnombre());
             }
+
+            ClienteServicio = empresa_.Clientes.Last();
+            ListaMatafuego = ClienteServicio.Matafuegos;
+            ClienteServicio.Matafuegos = new List<Matafuego>();
         }
 
         //agregar matafuego
         private void button3_Click(object sender, EventArgs e)
         {
-            ClienteServicio = empresa_.Clientes.Last();
-
             if (cbxTipo.SelectedIndex == -1 || cbxPeso.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, seleccione el tipo de matafuego, su peso y su color de arosello");
@@ -42,18 +46,28 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
             else
             {
-               /* switch (cbxTipo.Text)
-                {
+                Matafuego Matafuego_ = null;
+               switch (cbxTipo.Text)
+               {
                     case "ABC":
-                        ClienteServicio.Matafuegos.Add(new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---"));
+                        Matafuego_ = new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---", 0);
                         break;
 
                     case "K":
-                        ClienteServicio.Matafuegos.Add(new Matafuego_K(txtColorArosello.Text, false, false, "---", Convert.ToInt32(cbxPeso.Text)));
+                        Matafuego_ = new Matafuego_K(txtColorArosello.Text, false, false, "---", Convert.ToDouble(cbxPeso.Text), 0);
                         break;
 
-                }*/
+                    case "CO2":
+                        Matafuego_ = new Matafuego_CO2(txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), 0);
+                        break;
+               }
+                DateTime fecha;
+                fecha = DateTime.Now;
+                Matafuego_.EtiquetaMatafuego.Rellenar(fecha, fecha.AddYears(1), Matafuego_.DeterminarTipo());
+                ClienteServicio.Matafuegos.Add(Matafuego_);
+
                 dataGridView1.Rows.Clear();
+
                 double Total = 0;
                 foreach (var item in ClienteServicio.Matafuegos)
                 {
@@ -76,6 +90,9 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             recepcionistaForm.Show();
+            recepcionistaForm.Empresa_ = empresa_;
+            recepcionistaForm.MostrarClientes();
+
             this.Hide();
         }
 
@@ -84,6 +101,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
         }
 
+        //Recargar matafuego
         private void btnRealizarServicio_Click(object sender, EventArgs e)
         {
             if (cbxTenicos.SelectedIndex == -1)
@@ -105,7 +123,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 // Crear el servicio con el técnico seleccionado
                 empresa_.ServiciosRealizados.Add(new Servicio(tecnico, ClienteServicio, DateTime.Now));
 
-                Factura factura = new Factura(empresa_);
+                Factura factura = new Factura(empresa_, ListaMatafuego);
                 factura.Show();
             }
             else
@@ -113,15 +131,5 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 MessageBox.Show("No se encontró el técnico en la lista.");
             }
         }
-
-        /*para despues va a servir
-                         Random random = new Random();
-
-                // Obtener un índice aleatorio
-                int indiceAleatorio = random.Next(empresa_.TecnicoList.Count);
-
-                // Seleccionar el elemento aleatorio
-                Tecnico tenico = empresa_.TecnicoList[indiceAleatorio];
-        */
     }
 }

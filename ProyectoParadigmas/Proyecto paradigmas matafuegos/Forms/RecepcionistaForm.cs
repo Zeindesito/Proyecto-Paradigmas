@@ -57,7 +57,7 @@ namespace Proyecto_paradigmas_matafuegos
             this.Hide();
         }
 
-        private void MostrarClientes()
+        public void MostrarClientes()
         {
             dataGridView1.Rows.Clear();
             foreach (var cliente in Empresa_.Clientes)
