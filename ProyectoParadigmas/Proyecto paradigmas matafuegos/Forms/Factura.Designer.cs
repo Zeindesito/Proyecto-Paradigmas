@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +55,9 @@
             this.lblApellidoTecnico = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +104,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(740, 54);
+            this.label5.Location = new System.Drawing.Point(629, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 25);
             this.label5.TabIndex = 4;
@@ -128,7 +130,7 @@
             this.Column2,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(476, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(419, 135);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -166,9 +168,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column4.HeaderText = "Fecha carga";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -176,9 +178,9 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column5.HeaderText = "Fecha vencimiento";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -188,7 +190,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 418);
+            this.label6.Location = new System.Drawing.Point(24, 495);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 25);
             this.label6.TabIndex = 9;
@@ -198,7 +200,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(240, 74);
+            this.label10.Location = new System.Drawing.Point(24, 188);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 25);
             this.label10.TabIndex = 12;
@@ -238,7 +240,7 @@
             // 
             this.lblRecargadoPor.AutoSize = true;
             this.lblRecargadoPor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecargadoPor.Location = new System.Drawing.Point(24, 208);
+            this.lblRecargadoPor.Location = new System.Drawing.Point(24, 275);
             this.lblRecargadoPor.Name = "lblRecargadoPor";
             this.lblRecargadoPor.Size = new System.Drawing.Size(174, 25);
             this.lblRecargadoPor.TabIndex = 16;
@@ -248,7 +250,7 @@
             // 
             this.lblApelli.AutoSize = true;
             this.lblApelli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApelli.Location = new System.Drawing.Point(24, 268);
+            this.lblApelli.Location = new System.Drawing.Point(24, 335);
             this.lblApelli.Name = "lblApelli";
             this.lblApelli.Size = new System.Drawing.Size(104, 25);
             this.lblApelli.TabIndex = 17;
@@ -258,7 +260,7 @@
             // 
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNom.Location = new System.Drawing.Point(24, 243);
+            this.lblNom.Location = new System.Drawing.Point(24, 310);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(100, 25);
             this.lblNom.TabIndex = 18;
@@ -268,7 +270,7 @@
             // 
             this.lblNombreTecnico.AutoSize = true;
             this.lblNombreTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreTecnico.Location = new System.Drawing.Point(130, 243);
+            this.lblNombreTecnico.Location = new System.Drawing.Point(130, 310);
             this.lblNombreTecnico.Name = "lblNombreTecnico";
             this.lblNombreTecnico.Size = new System.Drawing.Size(36, 25);
             this.lblNombreTecnico.TabIndex = 19;
@@ -278,7 +280,7 @@
             // 
             this.lblApellidoTecnico.AutoSize = true;
             this.lblApellidoTecnico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoTecnico.Location = new System.Drawing.Point(134, 268);
+            this.lblApellidoTecnico.Location = new System.Drawing.Point(134, 335);
             this.lblApellidoTecnico.Name = "lblApellidoTecnico";
             this.lblApellidoTecnico.Size = new System.Drawing.Size(36, 25);
             this.lblApellidoTecnico.TabIndex = 20;
@@ -288,7 +290,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(90, 421);
+            this.lblTotal.Location = new System.Drawing.Point(102, 495);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(36, 25);
             this.lblTotal.TabIndex = 21;
@@ -298,17 +300,26 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(330, 74);
+            this.lblFecha.Location = new System.Drawing.Point(114, 188);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(36, 25);
             this.lblFecha.TabIndex = 22;
             this.lblFecha.Text = "---";
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox16.Location = new System.Drawing.Point(405, 122);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(633, 410);
+            this.pictureBox16.TabIndex = 80;
+            this.pictureBox16.TabStop = false;
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 495);
+            this.ClientSize = new System.Drawing.Size(1052, 536);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblApellidoTecnico);
@@ -328,10 +339,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox16);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Factura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factura";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Factura_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,5 +379,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }

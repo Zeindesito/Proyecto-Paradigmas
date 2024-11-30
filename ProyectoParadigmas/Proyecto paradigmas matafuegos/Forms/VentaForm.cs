@@ -32,7 +32,7 @@ namespace Proyecto_paradigmas_matafuegos
             ActuaizarDatagridview();
 
             dgvSeleccion.CellClick += dgvSeleccion_CellClick;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click_1;
 
             Cliente_ = Empresa_.Clientes[Empresa_.Clientes.Count - 1];
 
@@ -43,7 +43,7 @@ namespace Proyecto_paradigmas_matafuegos
 
 
         //seleccionar
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             if (matafuegoElegido != null)
             {
@@ -60,25 +60,24 @@ namespace Proyecto_paradigmas_matafuegos
 
                 // Limpia la selección
                 matafuegoElegido = null;
-                
+
                 lblTotal.Text = $"{CalcularTotalCarrito()}";
+                comboBox2.SelectedIndex = -1;
             }
-          
         }
 
         //vender
-        private void button2_Click(object sender, EventArgs e)
+        private void btnVender_Click(object sender, EventArgs e)
         {
-
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
             foreach (var matafuego in matafuegosParaVenta)
             {
                 Empresa_.MatafuegosList.Remove(matafuego);
             }
 
-            Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego);
+            Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego,recepcionistaForm);
             factura.Show();
-            this.MinimizeBox = true;
+            this.Hide();
             ActuaizarDatagridview();
         }
 
@@ -106,15 +105,16 @@ namespace Proyecto_paradigmas_matafuegos
         {
             return matafuegosParaVenta.Sum(matafuego => matafuego.PrecioVenta);
         }
-        
+
         //flecha volver al menu anterior
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             recepcionistaForm.Show();
             recepcionistaForm.Empresa_ = Empresa_;
             recepcionistaForm.MostrarClientes();
             this.Hide();
         }
+
         private void VentaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -137,6 +137,21 @@ namespace Proyecto_paradigmas_matafuegos
                 dataGridView2.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga);
             }
 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem != null)
+            {
+                string filtro = comboBox2.SelectedItem.ToString();
+
+                var filtrados = MatafuegosSeleccion.Where(m => m.DeterminarTipo() == filtro).ToList();
+                dgvSeleccion.Rows.Clear();
+                foreach (var matafuego in filtrados)
+                {
+                    dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
+                }
+            }
         }
     }
 }

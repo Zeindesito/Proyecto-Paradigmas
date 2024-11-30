@@ -25,17 +25,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             MostrarMatafuegos();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            recepcionistaForm.Show();
-            this.Hide();
-        }
-
-        private void AgregarInventarioForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         //cargar al inventario
         private void button1_Click(object sender, EventArgs e)
@@ -133,14 +122,10 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            recepcionistaForm.Show();
+            this.Hide();
         }
     }
 }

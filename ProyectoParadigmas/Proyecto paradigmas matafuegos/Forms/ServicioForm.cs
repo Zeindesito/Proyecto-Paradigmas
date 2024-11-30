@@ -82,25 +82,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
         }
 
-        private void ServicioForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            recepcionistaForm.Show();
-            recepcionistaForm.Empresa_ = empresa_;
-            recepcionistaForm.MostrarClientes();
-
-            this.Hide();
-        }
-
-        private void ServicioForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //Recargar matafuego
         private void btnRealizarServicio_Click(object sender, EventArgs e)
         {
@@ -122,13 +103,25 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
                 // Crear el servicio con el técnico seleccionado
                 empresa_.ServiciosRealizados.Add(new Servicio(tecnico, ClienteServicio, DateTime.Now));
-                Factura factura = new Factura(empresa_, ListaMatafuego);
+                Factura factura = new Factura(empresa_, ListaMatafuego,recepcionistaForm);
                 factura.Show();
             }
             else
             {
                 MessageBox.Show("No se encontró el técnico en la lista.");
             }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            recepcionistaForm.Show();
+            recepcionistaForm.Empresa_ = empresa_;
+            recepcionistaForm.MostrarClientes();
+
+            this.Hide();
+        }
+        private void ServicioForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

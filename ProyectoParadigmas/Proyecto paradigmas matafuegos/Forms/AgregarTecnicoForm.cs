@@ -26,17 +26,13 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             MostrarTecnicos();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            recepcionistaForm.Show();
-            this.Hide();
-        }
+        
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textNombre.Text) || string.IsNullOrEmpty(textApellido.Text) || string.IsNullOrEmpty(textDni.Text))
             {
-               
+
                 MessageBox.Show("Por favor, Complete todos los campos.");
                 return;
             }
@@ -80,7 +76,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         }
 
         //eliminar
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             if (TecnicoElegido != null)
             {
@@ -91,8 +87,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 MostrarTecnicos();
                 MessageBox.Show("Tecnico eliminado con éxito");
             }
-
-            
         }
 
         private void MostrarTecnicos()
@@ -125,6 +119,10 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
             return true;
         }
-
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            recepcionistaForm.Show();
+            this.Hide();
+        }
     }
 }

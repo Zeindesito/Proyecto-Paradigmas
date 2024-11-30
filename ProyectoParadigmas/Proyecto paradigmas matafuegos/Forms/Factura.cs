@@ -13,23 +13,25 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public partial class Factura : Form
     {
+        private RecepcionistaForm recepcionistaForm;
         private double CostoVenta;
         private Empresa Empresa_;
 
         //recarga
-        public Factura(Empresa empresa, List<Matafuego> matafuegos)
+        public Factura(Empresa empresa, List<Matafuego> matafuegos, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
 
             Rellenar(empresa, 0, matafuegos);
-
+            this.recepcionistaForm = recepcionistaForm;
         }
 
         //venta
-        public Factura(Empresa empresa, double costoVenta, List<Matafuego> matafuegos)
+        public Factura(Empresa empresa, double costoVenta, List<Matafuego> matafuegos, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
             Rellenar(empresa, costoVenta, matafuegos);
+            this.recepcionistaForm= recepcionistaForm;
 
             lblTotal.Text = CostoVenta.ToString();
                 lblApelli.Text = " ";
@@ -37,7 +39,6 @@ namespace Proyecto_paradigmas_matafuegos
                 lblApellidoTecnico.Text = " ";
                 lblNombreTecnico.Text = " ";
                 lblRecargadoPor.Text = " ";
-
         }
 
         private void Rellenar(Empresa empresa, double costoVenta, List<Matafuego> matafuegos)
@@ -72,5 +73,10 @@ namespace Proyecto_paradigmas_matafuegos
        
         }
 
+        private void Factura_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            recepcionistaForm.Show();
+            this.Hide();
+        }
     }
 }

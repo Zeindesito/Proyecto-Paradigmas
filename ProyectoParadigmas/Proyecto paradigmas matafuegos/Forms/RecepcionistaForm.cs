@@ -212,6 +212,5 @@ namespace Proyecto_paradigmas_matafuegos
             }
             return true;
         }
-
     }
 }
