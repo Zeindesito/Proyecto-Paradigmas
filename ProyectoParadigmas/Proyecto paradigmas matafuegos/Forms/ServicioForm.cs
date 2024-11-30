@@ -122,7 +122,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
                 // Crear el servicio con el técnico seleccionado
                 empresa_.ServiciosRealizados.Add(new Servicio(tecnico, ClienteServicio, DateTime.Now));
-
                 Factura factura = new Factura(empresa_, ListaMatafuego);
                 factura.Show();
             }

@@ -87,6 +87,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(34, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 65);
@@ -130,7 +131,7 @@
             // 
             this.btnVender.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVender.Location = new System.Drawing.Point(395, 448);
+            this.btnVender.Location = new System.Drawing.Point(34, 434);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(139, 65);
             this.btnVender.TabIndex = 8;
@@ -142,7 +143,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 332);
+            this.label3.Location = new System.Drawing.Point(341, 332);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 9;
@@ -156,7 +157,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.Total});
-            this.dataGridView2.Location = new System.Drawing.Point(34, 366);
+            this.dataGridView2.Location = new System.Drawing.Point(191, 364);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(343, 207);
@@ -187,7 +188,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(167, 332);
+            this.label4.Location = new System.Drawing.Point(187, 332);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 11;
@@ -197,7 +198,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(221, 332);
+            this.lblTotal.Location = new System.Drawing.Point(241, 332);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(24, 20);
             this.lblTotal.TabIndex = 12;
@@ -205,7 +206,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(468, 538);
+            this.button3.Location = new System.Drawing.Point(17, 548);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 33);
             this.button3.TabIndex = 17;
