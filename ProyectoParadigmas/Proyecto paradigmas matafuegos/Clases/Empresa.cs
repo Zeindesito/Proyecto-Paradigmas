@@ -14,15 +14,16 @@ namespace Proyecto_paradigmas_matafuegos
         public List<Tecnico> TecnicoList { get; set; }
         public List<Cliente> Clientes { get; set; }
         public List<Matafuego> MatafuegosList { get; set; } //inventario
-        public List<Servicio> ServiciosRealizados { get; set; } = new List<Servicio>();
+        public List<Servicio> ServiciosRealizados { get; set; }
 
         //constructor
-        public Empresa(List<Tecnico> tecnicos, List<Cliente> clientes, List<Matafuego> matafuegos)
+        public Empresa(List<Tecnico> tecnicos, List<Cliente> clientes, List<Matafuego> matafuegos, List<Servicio> servicios)
         {
             //deberia usar composicion?
             TecnicoList = tecnicos;
             Clientes = clientes;
             MatafuegosList = matafuegos;
+            ServiciosRealizados = servicios;
         }
 
         //metodos

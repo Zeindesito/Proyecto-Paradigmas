@@ -88,8 +88,14 @@ namespace Proyecto_paradigmas_matafuegos
                 matafuego.EtiquetaMatafuego.Rellenar(DateTime.Parse("20/11/2024"), DateTime.Parse("20/11/2025"), matafuego.DeterminarTipo());
             }
 
-            empresa = new Empresa(Tecnicos, listaClientes, MatafuegosEmpresa);
+            Servicio viejoServicio = new Servicio(Tecnicos.Last(), listaClientes.Last(), DateTime.Parse("06/02/2024"));
+            viejoServicio.RealizarRecarga(listaClientes.Last(), Tecnicos.Last(), DateTime.Parse("06/02/2024"), "Rojo", new List<Matafuego>{ new Matafuego_K("Verde", true, true, "Verde", 10, 600000) });
+            List<Servicio> servicios = new List<Servicio>();
+            servicios.Add(viejoServicio);
+            empresa = new Empresa(Tecnicos, listaClientes, MatafuegosEmpresa, servicios);
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
