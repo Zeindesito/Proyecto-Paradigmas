@@ -70,8 +70,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,8 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonVenta
@@ -94,7 +94,7 @@
             this.ButtonVenta.BackColor = System.Drawing.Color.Maroon;
             this.ButtonVenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonVenta.Font = new System.Drawing.Font("OCR-B 10 BT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonVenta.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ButtonVenta.Location = new System.Drawing.Point(155, 358);
             this.ButtonVenta.Name = "ButtonVenta";
@@ -109,7 +109,7 @@
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("OCR-B 10 BT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(536, 358);
             this.button1.Name = "button1";
@@ -214,11 +214,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("OCR-B 10 BT", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(181, 466);
+            this.label4.Location = new System.Drawing.Point(164, 459);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(466, 33);
+            this.label4.Size = new System.Drawing.Size(561, 36);
             this.label4.TabIndex = 15;
             this.label4.Text = "LISTA DE CLIENTES CARGADOS";
             // 
@@ -364,22 +364,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("OCR-B 10 BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(230, 91);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(369, 29);
+            this.label7.Size = new System.Drawing.Size(438, 29);
             this.label7.TabIndex = 45;
             this.label7.Text = "INGRESE DATOS DEL CLIENTE";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("OCR-B 10 BT", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(209, 37);
+            this.label1.Location = new System.Drawing.Point(181, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(423, 33);
+            this.label1.Size = new System.Drawing.Size(498, 36);
             this.label1.TabIndex = 39;
             this.label1.Text = "INGRESAR NUEVO SERVICIO";
             // 
@@ -497,15 +497,6 @@
             this.pictureBox11.TabIndex = 64;
             this.pictureBox11.TabStop = false;
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Location = new System.Drawing.Point(6, 30);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(867, 958);
-            this.pictureBox13.TabIndex = 66;
-            this.pictureBox13.TabStop = false;
-            // 
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.DarkRed;
@@ -514,6 +505,15 @@
             this.pictureBox12.Size = new System.Drawing.Size(873, 964);
             this.pictureBox12.TabIndex = 65;
             this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
+            this.pictureBox13.Location = new System.Drawing.Point(6, 30);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(867, 958);
+            this.pictureBox13.TabIndex = 66;
+            this.pictureBox13.TabStop = false;
             // 
             // RecepcionistaForm
             // 
@@ -573,8 +573,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
