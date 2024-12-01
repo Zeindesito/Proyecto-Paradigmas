@@ -16,8 +16,7 @@ namespace Proyecto_paradigmas_matafuegos
         public bool Gas { get; set; }
         public double Peso { get; set; }
 
-
-        //constructor PREGUNTA SI ES LEGAL PONER EL CONSTRUCTOR POR MAS QUE LA CLASE NO SE INSTANCIE!!!!!!!
+        //constructor
         public Matafuego(string arosello_precinto, bool gas, double peso, double precio)
         {
             Arosello_Precinto = arosello_precinto;

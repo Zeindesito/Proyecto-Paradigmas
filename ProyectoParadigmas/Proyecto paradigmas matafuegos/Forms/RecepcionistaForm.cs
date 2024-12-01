@@ -50,7 +50,7 @@ namespace Proyecto_paradigmas_matafuegos
             
 
         }
-
+        //volver atras.
         private void button2_Click(object sender, EventArgs e)
         {
             form1.Show();
@@ -158,7 +158,6 @@ namespace Proyecto_paradigmas_matafuegos
                     MessageBox.Show("Por favor, Complete todos los campos.");
                     return false;
                 }
-                //montejo valida que el dni sea un numero valido
             }
             else
             {
@@ -220,9 +219,5 @@ namespace Proyecto_paradigmas_matafuegos
             serviciosRealizados.ShowDialog();
         }
 
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

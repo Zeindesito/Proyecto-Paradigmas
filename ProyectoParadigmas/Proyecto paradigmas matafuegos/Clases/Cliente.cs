@@ -17,8 +17,5 @@ namespace Proyecto_paradigmas_matafuegos
             Matafuegos = matafuegos;
             Email = email;
         }
-
-        //PREGUNTA ASOCIALE LOS MATAFUEGOS AL CLIENTE POR MEDIO DEL SUS ATRIBUTOS ESTA MAL?
-        //Deveria agregar un metodo para asociale matafuegos?
     }
 }

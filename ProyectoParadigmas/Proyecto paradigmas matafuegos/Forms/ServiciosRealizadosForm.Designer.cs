@@ -225,7 +225,6 @@
             this.Name = "ServiciosRealizadosForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ServiciosRealizadosForm";
-            this.Load += new System.EventHandler(this.ServiciosRealizadosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);

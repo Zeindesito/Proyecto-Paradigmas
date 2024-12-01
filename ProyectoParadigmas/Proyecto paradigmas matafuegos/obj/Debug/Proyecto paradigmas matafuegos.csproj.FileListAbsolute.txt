@@ -50,3 +50,4 @@ C:\Users\matia\source\repos\Proyecto-Paradigmas\Proyecto-Paradigmas\ProyectoPara
 C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarInventarioForm.resources
 C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.AgregarTecnicoForm.resources
 C:\Users\matia\source\repos\Proyecto-Paradimas\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.ServiciosRealizadosForm.resources
+C:\Users\Agustin Montejo\Desktop\Proyecto PP\Proyecto-Paradigmas\ProyectoParadigmas\Proyecto paradigmas matafuegos\obj\Debug\Proyecto_paradigmas_matafuegos.Forms.ServiciosRealizadosForm.resources

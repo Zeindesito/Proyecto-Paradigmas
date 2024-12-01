@@ -59,22 +59,9 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             //recorro la lista de matafuegos para calcular cuando vale la recarga de cada uno, dependiendo del tipo
             foreach (var matafuego in cliente.Matafuegos)
             {
-                Costo += matafuego.PrecioRecarga; //CONSULTAR ESTO ROMPE EL ENCAPSULAMIENTO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                Costo += matafuego.PrecioRecarga;
             }
             return Costo;
         }
-
-        /*
-        public string ColorArosello { get; private set; }
-        // Lista de colores rotativos (podrías cambiar o añadir colores si deseas)
-        private static readonly string[] ColoresArosello = { "Verde", "Rojo", "Azul", "Amarillo", "Naranja" };
-
-        private static string ObtenerColorAroselloAnual()
-        {
-            int year = DateTime.Now.Year;
-            int index = (year - 2024) % ColoresArosello.Length; // Empieza en 2024 con "Verde" y rota anualmente
-            return ColoresArosello[index];
-        }
-        */
     }
 }
