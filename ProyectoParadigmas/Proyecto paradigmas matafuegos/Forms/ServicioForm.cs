@@ -47,7 +47,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         //agregar matafuego
         private void button3_Click(object sender, EventArgs e)
         {
-            if (cbxTipo.SelectedIndex == -1 || cbxPeso.SelectedIndex == -1)
+            if (cbxTipo.SelectedIndex == -1 || cbxPeso.SelectedIndex == -1 || string.IsNullOrEmpty(txtColorArosello.Text))
             {
                 MessageBox.Show("Por favor, seleccione el tipo de matafuego, su peso y su color de arosello");
                 return;
@@ -56,8 +56,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             {
 
                 Matafuego Matafuego_ = null;
-               switch (cbxTipo.Text)
-               {
+                switch (cbxTipo.Text)
+                {
                     case "ABC":
                         Matafuego_ = new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---", 0);
                         break;
@@ -69,7 +69,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                     case "CO2":
                         Matafuego_ = new Matafuego_CO2(txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), 0);
                         break;
-               }
+                }
                 //le cargo los matafuegos al cliente
                 ClienteServicio.Matafuegos.Add(Matafuego_);
 
@@ -79,7 +79,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 double Total = 0;
                 foreach (var item in ClienteServicio.Matafuegos)
                 {
-                    dataGridView1.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga);
+                    dataGridView1.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga, DateTime.Now.AddYears(1));
 
                     //cargo el total
                     Total += item.PrecioRecarga;
@@ -112,14 +112,10 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
                 //Recargo los matafuegos
                 servicio.RealizarRecarga(ClienteServicio, tecnico, DateTime.Now, txtColorArosello.Text, ClienteServicio.Matafuegos);
-                foreach (var item in ClienteServicio.Matafuegos)
-                {
-                    MessageBox.Show((item.Peso).ToString());
-                }
                 //añado el servicio a la lista de la empresa
                 empresa_.CargarServicio(servicio);
 
-                //imprimo la factura                  le paso la lista de matafuegos original que tenia
+                //imprimo la factura          //le paso la lista de matafuegos original que tenia
                 Factura factura = new Factura(empresa_, ListaMatafuego,recepcionistaForm);
                 factura.Show();
                 this.Hide();

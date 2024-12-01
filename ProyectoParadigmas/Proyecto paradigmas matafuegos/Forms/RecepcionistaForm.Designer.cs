@@ -600,7 +600,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonServicio;
         private System.Windows.Forms.Button ButtonVenta;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
