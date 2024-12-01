@@ -28,23 +28,23 @@ namespace Proyecto_paradigmas_matafuegos
             {
             new Cliente("Juan", "Frias", "40.211.195", "juanfrias34@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde",3500),
+                new Matafuego_ABC(true, "Verde", true, 1, "Verde", 35000),
             }),
             new Cliente("Pedro", "Perez", "22.125.875", "perezpedro@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 2.5, 4500),
+                new Matafuego_K("Verde", true, true, "Verde", 2.5, 250000),
             }),
              new Cliente("Nazareno", "Rolon", "44.789.897", "nazarolon@gmail.com", new List<Matafuego>
             {
-                new Matafuego_CO2("Verde", true, 5, 6500),
+                new Matafuego_CO2("Verde", true, 5, 450000),
             }),
             new Cliente("Matias", "Inglant", "43.678.234", "inglantmati@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 10, 7500),
+                new Matafuego_K("Verde", true, true, "Verde", 10, 600000),
             }),
              new Cliente("Luis", "Fonsi", "47.234.101", "luisfonsi21@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, "Verde", true, 5, "Verde",5500),
+                new Matafuego_ABC(true, "Verde", true, 5, "Verde",130000),
             })
             };
 
@@ -66,21 +66,21 @@ namespace Proyecto_paradigmas_matafuegos
             MatafuegosEmpresa = new List<Matafuego>
             {
                  //1kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 1, 5000),
-                 new Matafuego_CO2("Rojo",true,1,5000),
-                 new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 3000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 1, 150000),
+                 new Matafuego_CO2("Rojo",true,1,180000),
+                 new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 35000),
                  //2.5kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 2.5, 6000),
-                 new Matafuego_CO2("Rojo",true,2.5,6500),
-                 new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 4000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 2.5, 250000),
+                 new Matafuego_CO2("Rojo",true,2.5,250000),
+                 new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 65000),
                  //5kg
-                 new Matafuego_K("Rojo", true, true, "Verde", 5, 7500),
-                 new Matafuego_CO2("Rojo",true,5,8000),
-                 new Matafuego_ABC(true, "Rojo", true, 5, "Amarillo", 5500),
+                 new Matafuego_K("Rojo", true, true, "Verde", 5, 420000),
+                 new Matafuego_CO2("Rojo",true,5,450000),
+                 new Matafuego_ABC(true, "Rojo", true, 5, "Amarillo", 130000),
                  //10kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 10, 9000),
-                 new Matafuego_CO2("Rojo",true,10,9000),
-                 new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 7000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 10, 680000),
+                 new Matafuego_CO2("Rojo",true,10,600000),
+                 new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 190000),
 
             };
             foreach (var matafuego in MatafuegosEmpresa)

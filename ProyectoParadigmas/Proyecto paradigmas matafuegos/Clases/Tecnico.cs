@@ -10,8 +10,6 @@ namespace Proyecto_paradigmas_matafuegos
 {
     public class Tecnico : Persona
     {
-        //para saber que matafuegos recargo este tecnico le guardamos la lista 
-        public List<Matafuego> Matafuegos { get; set; } = new List<Matafuego>();
         //constructor parametrizado
         public Tecnico(string nombre, string apellido, string dni) : base(nombre, apellido, dni)
         {
@@ -22,7 +20,6 @@ namespace Proyecto_paradigmas_matafuegos
         {
             //no le paso una lista directamente porque necesito una etiqueta para cada matafuego, en la implementacion se hace
             matafuego.Recargar(color);
-            Matafuegos.Add(matafuego);
             return matafuego;
         }
 

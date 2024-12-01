@@ -10,6 +10,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
     {
         public Tecnico Tecnico_ {get; set;}
         public Cliente Cliente_ { get; set;}
+        public List<Matafuego> Matafuegos { get; set;}
         public DateTime Fecha { get; set;}
         public double Costo { get; set;}
 
@@ -20,47 +21,27 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             Fecha = fecha;
         }
 
-        public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime fecha, string arosello)
+        public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime fecha, string arosello, List<Matafuego> matafuegos)
         {
             Costo = 0;
 
-            // Crear una lista temporal para iterar sin modificar la original
-            List<Matafuego> matafuegosCopia = cliente.Matafuegos.ToList();
-
             // Lista para almacenar los matafuegos recargados
-            List<Matafuego> matafuegosRecargados = new List<Matafuego>();
+            Matafuegos = new List<Matafuego>();
 
-            foreach (var matafuego in matafuegosCopia)
+            foreach (var matafuego in cliente.Matafuegos)
             {
                 // Cargar los datos de la etiqueta del matafuego
                 matafuego.EtiquetaMatafuego.Rellenar(fecha, fecha.AddYears(1), arosello);
 
                 // Llamar al técnico para recargar el matafuego y agregarlo a la lista de recargados
                 Matafuego matafuegoRecargado = tecnico.RecargarMatafuego(matafuego, arosello);
-                matafuegosRecargados.Add(matafuegoRecargado);
+                Matafuegos.Add(matafuegoRecargado);
 
                 // Sumar el costo de la recarga al costo total
                 Costo += matafuegoRecargado.PrecioRecarga;
             }
 
-            // Actualizar la lista de matafuegos del cliente con los recargados
-            cliente.Matafuegos = matafuegosRecargados;
-
             // Retornar el costo total de la recarga
-            return Costo;
-        }
-
-
-
-
-        private double CalcularCostoTotalRecarga(Cliente cliente)
-        {
-            double Costo = 0;
-            //recorro la lista de matafuegos para calcular cuando vale la recarga de cada uno, dependiendo del tipo
-            foreach (var matafuego in cliente.Matafuegos)
-            {
-                Costo += matafuego.PrecioRecarga;
-            }
             return Costo;
         }
     }

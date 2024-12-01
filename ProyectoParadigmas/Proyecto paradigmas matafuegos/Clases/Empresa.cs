@@ -50,6 +50,7 @@ namespace Proyecto_paradigmas_matafuegos
             foreach (var matafuego in matafuegos)
             {
                 cliente.Matafuegos.Add(matafuego);
+                MatafuegosList.Remove(matafuego);
             }
             return CalcularCostoTotalVenta(matafuegos);
         }

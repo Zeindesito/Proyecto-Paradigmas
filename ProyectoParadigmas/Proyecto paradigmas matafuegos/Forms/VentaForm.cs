@@ -73,10 +73,6 @@ namespace Proyecto_paradigmas_matafuegos
         private void btnVender_Click(object sender, EventArgs e)
         {
             double CostoTotalVenta = Empresa_.VenderMatafuego(matafuegosParaVenta, Cliente_);
-            foreach (var matafuego in matafuegosParaVenta)
-            {
-                Empresa_.MatafuegosList.Remove(matafuego);
-            }
 
             Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego, recepcionistaForm);
             factura.Show();

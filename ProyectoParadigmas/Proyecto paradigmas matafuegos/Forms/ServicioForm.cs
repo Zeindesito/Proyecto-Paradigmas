@@ -105,15 +105,17 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             var tecnico = empresa_.TecnicoList.FirstOrDefault(t => t.ApellidoYnombre() == tecnicoSeleccionadoNombre);
 
             if (tecnico != null)
-            {
-                //MessageBox.Show($"Técnico seleccionado: {tecnico.ApellidoYnombre()}");
+            { 
 
                 // Crear el servicio con el técnico seleccionado
                 Servicio servicio = new Servicio(tecnico, ClienteServicio, DateTime.Now);
 
                 //Recargo los matafuegos
-                servicio.RealizarRecarga(ClienteServicio, tecnico, DateTime.Now, txtColorArosello.Text);
-
+                servicio.RealizarRecarga(ClienteServicio, tecnico, DateTime.Now, txtColorArosello.Text, ClienteServicio.Matafuegos);
+                foreach (var item in ClienteServicio.Matafuegos)
+                {
+                    MessageBox.Show((item.Peso).ToString());
+                }
                 //añado el servicio a la lista de la empresa
                 empresa_.CargarServicio(servicio);
 

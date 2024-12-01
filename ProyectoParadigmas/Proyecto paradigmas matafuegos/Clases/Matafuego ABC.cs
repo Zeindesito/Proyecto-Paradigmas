@@ -31,16 +31,16 @@ namespace Proyecto_paradigmas_matafuegos
             switch (Peso)
             {
                 case 1:
-                    PrecioRecarga = 5000;
+                    PrecioRecarga = 4200;
                     break;
                 case 2.5:
-                    PrecioRecarga = 8000;
+                    PrecioRecarga = 4900;
                     break;
                 case 5:
-                    PrecioRecarga = 15000;
+                    PrecioRecarga = 5600;
                     break;
                 case 10:
-                    PrecioRecarga = 28000;
+                    PrecioRecarga = 7700;
                     break;
             }
         }

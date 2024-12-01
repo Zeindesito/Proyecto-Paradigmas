@@ -53,6 +53,11 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 MessageBox.Show("Por favor, ingrese un precio válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (string.IsNullOrEmpty(txtColorArosello.Text))
+            {
+                MessageBox.Show("Por favor, escriba un color de arosello");
+                return;
+            }
 
             Matafuego matafuego = null;
             
