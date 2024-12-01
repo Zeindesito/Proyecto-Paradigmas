@@ -74,25 +74,28 @@
             // textDni
             // 
             this.textDni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textDni.Location = new System.Drawing.Point(46, 222);
             this.textDni.Name = "textDni";
-            this.textDni.Size = new System.Drawing.Size(162, 13);
+            this.textDni.Size = new System.Drawing.Size(162, 19);
             this.textDni.TabIndex = 38;
             // 
             // textApellido
             // 
             this.textApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textApellido.Location = new System.Drawing.Point(46, 165);
             this.textApellido.Name = "textApellido";
-            this.textApellido.Size = new System.Drawing.Size(162, 13);
+            this.textApellido.Size = new System.Drawing.Size(162, 19);
             this.textApellido.TabIndex = 36;
             // 
             // textNombre
             // 
             this.textNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textNombre.Location = new System.Drawing.Point(46, 103);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(169, 13);
+            this.textNombre.Size = new System.Drawing.Size(169, 19);
             this.textNombre.TabIndex = 34;
             // 
             // dataGridView1

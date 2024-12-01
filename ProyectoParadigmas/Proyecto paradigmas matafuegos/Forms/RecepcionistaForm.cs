@@ -133,7 +133,7 @@ namespace Proyecto_paradigmas_matafuegos
         {
             AgregarInventarioForm agregarInventarioForm = new AgregarInventarioForm(this, Empresa_);
             agregarInventarioForm.StartPosition = FormStartPosition.CenterParent;
-            agregarInventarioForm.Show();
+            agregarInventarioForm.ShowDialog();
         }
 
         private bool ValidarCamposYCrearCliente()
