@@ -21,24 +21,72 @@ namespace Proyecto_paradigmas_matafuegos
         public Factura(Empresa empresa, List<Matafuego> matafuegos, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
-
-            Rellenar(empresa, 0, matafuegos);
             this.recepcionistaForm = recepcionistaForm;
+            Empresa_ = empresa;
+            Cliente cliente_ = Empresa_.Clientes.Last();
+
+            //muestro en el datagridview
+            Servicio servicio = empresa.ServiciosRealizados.Last();
+            lblApellidoTecnico.Text = servicio.Tecnico_.Nombre;
+            lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
+            lblTotal.Text = servicio.Costo.ToString();
+            dataGridView1.Rows.Clear();
+
+            foreach (var matafuego in cliente_.Matafuegos)
+            {
+                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioRecarga, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+            }
+
+            //muestro la demas informacion
+            lblNombre.Text = cliente_.Nombre;
+            lblApellido.Text = cliente_.Apellido;
+            lblDni.Text = cliente_.DNI;
+            lblFecha.Text = DateTime.Now.ToString();
+
+            //le cargo los matafuegos viejos
+            foreach (var item in matafuegos)
+            {
+                cliente_.Matafuegos.Add(item);
+            }
         }
 
         //venta
         public Factura(Empresa empresa, double costoVenta, List<Matafuego> matafuegos, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
-            Rellenar(empresa, costoVenta, matafuegos);
             this.recepcionistaForm= recepcionistaForm;
-
+            Empresa_ = empresa;
+            CostoVenta = costoVenta;
+            Cliente cliente_ = Empresa_.Clientes.Last();
             lblTotal.Text = CostoVenta.ToString();
+
+            //todo lo de tecnico en vacio
                 lblApelli.Text = " ";
                 lblNom.Text = " ";
                 lblApellidoTecnico.Text = " ";
                 lblNombreTecnico.Text = " ";
                 lblRecargadoPor.Text = " ";
+
+            //muestro en el datagridview
+            dataGridView1.Rows.Clear();
+            foreach (var matafuego in cliente_.Matafuegos)
+            {
+                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+            }
+
+            //muestro la demas informacion
+            lblNombre.Text = cliente_.Nombre;
+            lblApellido.Text = cliente_.Apellido;
+            lblDni.Text = cliente_.DNI;
+            lblFecha.Text = DateTime.Now.ToString();
+
+            //le cargo los matafuegos viejos
+            foreach (var item in matafuegos)
+            {
+                cliente_.Matafuegos.Add(item);
+            }
+
+
         }
 
         private void Rellenar(Empresa empresa, double costoVenta, List<Matafuego> matafuegos)
@@ -48,18 +96,8 @@ namespace Proyecto_paradigmas_matafuegos
 
             Cliente cliente_ = Empresa_.Clientes.Last();
 
-            //muestro en el datagridview
-            dataGridView1.Rows.Clear();
-            foreach (var matafuego in cliente_.Matafuegos)
-            {
-                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
-            }
 
-            //le cargo los matafuegos viejos
-            foreach (var item in matafuegos)
-            {
-                cliente_.Matafuegos.Add(item);
-            }
+            
 
             lblNombre.Text = cliente_.Nombre;
             lblApellido.Text = cliente_.Apellido;
@@ -68,9 +106,12 @@ namespace Proyecto_paradigmas_matafuegos
 
             if(costoVenta == 0)
             {
-                Servicio servicio = empresa.ServiciosRealizados.Last();
-                lblApellidoTecnico.Text = servicio.Tecnico_.Nombre;
-                lblNombreTecnico.Text = servicio.Tecnico_.Apellido;
+                
+                dataGridView1.Rows.Clear();
+                foreach (var matafuego in cliente_.Matafuegos)
+                {
+                    dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioRecarga, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                }
             }
        
         }

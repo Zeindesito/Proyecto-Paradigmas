@@ -15,33 +15,31 @@ namespace Proyecto_paradigmas_matafuegos
         RecepcionistaForm recepcionistaForm;
         private Empresa Empresa_;
         private List<Matafuego> MatafuegosSeleccion;
+        private List<Matafuego> MatafuegosFiltrados;
         private List<Matafuego> ListaMatafuego;
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
         private Cliente Cliente_;
         private int selectedRowIndex = -1;
         private Matafuego matafuegoElegido;
 
-        public VentaForm(Empresa empresa,RecepcionistaForm recepcionistaForm)
+        public VentaForm(Empresa empresa, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentaForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
-
-
             MatafuegosSeleccion = Empresa_.MatafuegosList;
+            MatafuegosFiltrados = new List<Matafuego>(MatafuegosSeleccion);
 
             ActuaizarDatagridview();
+
             dgvSeleccion.CellClick += dgvSeleccion_CellClick;
             button1.Click += button1_Click_1;
 
-            //guardo el cliente a realizarle la venta
+            Cliente_ = Empresa_.Clientes[Empresa_.Clientes.Count - 1];
+
             Cliente_ = Empresa_.Clientes.Last();
-
-            //guardo la lista que ya tenia de matafuegos
             ListaMatafuego = Cliente_.Matafuegos;
-
-            //Borro la lista de matafugos que tenia cliente
             Cliente_.Matafuegos = new List<Matafuego>();
         }
 
@@ -56,6 +54,7 @@ namespace Proyecto_paradigmas_matafuegos
 
                 //borro el producto de la lista auxiliar para no borrar de la original
                 MatafuegosSeleccion.Remove(matafuegoElegido);
+                MatafuegosFiltrados.Remove(matafuegoElegido);
 
                 //añado a la lista para vender
                 matafuegosParaVenta.Add(matafuegoElegido);
@@ -79,7 +78,7 @@ namespace Proyecto_paradigmas_matafuegos
                 Empresa_.MatafuegosList.Remove(matafuego);
             }
 
-            Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego,recepcionistaForm);
+            Factura factura = new Factura(Empresa_, CostoTotalVenta, ListaMatafuego, recepcionistaForm);
             factura.Show();
             this.Hide();
             ActuaizarDatagridview();
@@ -93,7 +92,7 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada
-                matafuegoElegido = Empresa_.MatafuegosList[e.RowIndex];
+                matafuegoElegido = MatafuegosFiltrados[e.RowIndex];
 
             }
             else
@@ -102,26 +101,20 @@ namespace Proyecto_paradigmas_matafuegos
             }
         }
 
-
-
-
         private double CalcularTotalCarrito()
         {
             return matafuegosParaVenta.Sum(matafuego => matafuego.PrecioVenta);
         }
 
-        //Volver
+        //flecha volver al menu anterior
         private void button3_Click_1(object sender, EventArgs e)
         {
-            if (ListaMatafuego == null || ListaMatafuego.Count == 0)
+            if (ListaMatafuego == null || !ListaMatafuego.Any())
             {
                 Empresa_.Clientes.Remove(Cliente_);
-                MessageBox.Show($"Cliente {Cliente_.Nombre} eliminado por no realizar operacion");
             }
-            Cliente_.Matafuegos = ListaMatafuego;
-
-            recepcionistaForm.Empresa_ = Empresa_;
             recepcionistaForm.Show();
+            recepcionistaForm.Empresa_ = Empresa_;
             recepcionistaForm.MostrarClientes();
             this.Hide();
         }
@@ -137,7 +130,7 @@ namespace Proyecto_paradigmas_matafuegos
             dataGridView2.Rows.Clear();
 
             //actualizado el datagridview donde estan cargados
-            foreach (var matafuego in MatafuegosSeleccion)
+            foreach (var matafuego in MatafuegosFiltrados)
             {
                 dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
             }
@@ -157,9 +150,13 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 string filtro = comboBox2.SelectedItem.ToString();
 
-                var filtrados = MatafuegosSeleccion.Where(m => m.DeterminarTipo() == filtro).ToList();
+                MatafuegosFiltrados = filtro == "TODOS"
+                ? new List<Matafuego>(MatafuegosSeleccion)
+                : MatafuegosSeleccion.Where(m => m.DeterminarTipo() == filtro).ToList();
+
+
                 dgvSeleccion.Rows.Clear();
-                foreach (var matafuego in filtrados)
+                foreach (var matafuego in MatafuegosFiltrados)
                 {
                     dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
                 }

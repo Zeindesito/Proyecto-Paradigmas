@@ -11,6 +11,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         public Tecnico Tecnico_ {get; set;}
         public Cliente Cliente_ { get; set;}
         public DateTime Fecha { get; set;}
+        public double Costo { get; set;}
 
         public Servicio(Tecnico tecnico_, Cliente cliente_, DateTime fecha)
         {
@@ -21,7 +22,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
         public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime fecha, string arosello)
         {
-            double costo = 0;
+            Costo = 0;
 
             // Crear una lista temporal para iterar sin modificar la original
             List<Matafuego> matafuegosCopia = cliente.Matafuegos.ToList();
@@ -39,14 +40,14 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 matafuegosRecargados.Add(matafuegoRecargado);
 
                 // Sumar el costo de la recarga al costo total
-                costo += matafuegoRecargado.PrecioRecarga;
+                Costo += matafuegoRecargado.PrecioRecarga;
             }
 
             // Actualizar la lista de matafuegos del cliente con los recargados
             cliente.Matafuegos = matafuegosRecargados;
 
             // Retornar el costo total de la recarga
-            return costo;
+            return Costo;
         }
 
 
