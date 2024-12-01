@@ -106,7 +106,7 @@ namespace Proyecto_paradigmas_matafuegos
 
             if (clienteEncontrado != null)
             {
-                // Eliminar y volver a agregar el cliente
+                // Eliminar y volver a agregar el cliente asi queda al final de la lista
                 Empresa_.Clientes.Remove(clienteEncontrado);
                 Empresa_.Clientes.Add(clienteEncontrado);
 

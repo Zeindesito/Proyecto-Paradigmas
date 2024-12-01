@@ -1,4 +1,5 @@
 ﻿using Proyecto_paradigmas_matafuegos.Clases;
+using Proyecto_paradigmas_matafuegos.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

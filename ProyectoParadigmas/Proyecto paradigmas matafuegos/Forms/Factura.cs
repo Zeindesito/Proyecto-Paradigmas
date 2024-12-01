@@ -45,7 +45,10 @@ namespace Proyecto_paradigmas_matafuegos
         {
             Empresa_ = empresa;
             CostoVenta = costoVenta;
+
             Cliente cliente_ = Empresa_.Clientes.Last();
+
+            //muestro en el datagridview
             dataGridView1.Rows.Clear();
             foreach (var matafuego in cliente_.Matafuegos)
             {
@@ -57,7 +60,6 @@ namespace Proyecto_paradigmas_matafuegos
             {
                 cliente_.Matafuegos.Add(item);
             }
-
 
             lblNombre.Text = cliente_.Nombre;
             lblApellido.Text = cliente_.Apellido;

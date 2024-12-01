@@ -15,9 +15,11 @@ namespace Proyecto_paradigmas_matafuegos.Forms
     public partial class ServicioForm : Form
     {
         RecepcionistaForm recepcionistaForm;
+
         private Empresa empresa_;
         private Cliente ClienteServicio;
         private List<Matafuego> ListaMatafuego;
+
         public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
             InitializeComponent();
@@ -31,9 +33,15 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 cbxTenicos.Items.Add(tecnico.ApellidoYnombre());
             }
 
+            //guardo el cliente a realizarle el servicio
             ClienteServicio = empresa_.Clientes.Last();
+
+            //guardo la lista que ya tenia de matafuegos
             ListaMatafuego = ClienteServicio.Matafuegos;
+
+            //Borro la lista de matafugos que tenia cliente
             ClienteServicio.Matafuegos = new List<Matafuego>();
+
         }
 
         //agregar matafuego
@@ -46,6 +54,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             }
             else
             {
+
                 Matafuego Matafuego_ = null;
                switch (cbxTipo.Text)
                {
@@ -61,24 +70,22 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                         Matafuego_ = new Matafuego_CO2(txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), 0);
                         break;
                }
-                DateTime fecha;
-                fecha = DateTime.Now;
-                Matafuego_.EtiquetaMatafuego.Rellenar(fecha, fecha.AddYears(1), Matafuego_.DeterminarTipo());
+                //le cargo los matafuegos al cliente
                 ClienteServicio.Matafuegos.Add(Matafuego_);
 
-                dataGridView1.Rows.Clear();
 
+                //muestro en el datagridview
+                dataGridView1.Rows.Clear();
                 double Total = 0;
                 foreach (var item in ClienteServicio.Matafuegos)
                 {
                     dataGridView1.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga);
+
+                    //cargo el total
                     Total += item.PrecioRecarga;
                 }
                 lblTotal.Text = Total.ToString();
             }
-            
-
-            
 
         }
 
@@ -99,10 +106,18 @@ namespace Proyecto_paradigmas_matafuegos.Forms
 
             if (tecnico != null)
             {
-                MessageBox.Show($"Técnico seleccionado: {tecnico.ApellidoYnombre()}");
+                //MessageBox.Show($"Técnico seleccionado: {tecnico.ApellidoYnombre()}");
 
                 // Crear el servicio con el técnico seleccionado
-                empresa_.ServiciosRealizados.Add(new Servicio(tecnico, ClienteServicio, DateTime.Now));
+                Servicio servicio = new Servicio(tecnico, ClienteServicio, DateTime.Now);
+
+                //Recargo los matafuegos
+                servicio.RealizarRecarga(ClienteServicio, tecnico, DateTime.Now, txtColorArosello.Text);
+
+                //añado el servicio a la lista de la empresa
+                empresa_.CargarServicio(servicio);
+
+                //imprimo la factura                  le paso la lista de matafuegos original que tenia
                 Factura factura = new Factura(empresa_, ListaMatafuego,recepcionistaForm);
                 factura.Show();
                 this.Hide();
@@ -117,12 +132,16 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (ListaMatafuego == null || !ListaMatafuego.Any())
+            if (ListaMatafuego == null || ListaMatafuego.Count == 0)
             {
                 empresa_.Clientes.Remove(ClienteServicio);
+                MessageBox.Show($"Cliente {ClienteServicio.Nombre} eliminado por no realizar operacion");
             }
-            recepcionistaForm.Show();
+
+
+            ClienteServicio.Matafuegos = ListaMatafuego;
             recepcionistaForm.Empresa_ = empresa_;
+            recepcionistaForm.Show();
             recepcionistaForm.MostrarClientes();
 
             this.Hide();

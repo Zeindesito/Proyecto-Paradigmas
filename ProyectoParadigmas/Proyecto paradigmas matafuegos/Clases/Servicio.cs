@@ -19,24 +19,36 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             Fecha = fecha;
         }
 
-        public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime Fecha)
+        public double RealizarRecarga(Cliente cliente, Tecnico tecnico, DateTime fecha, string arosello)
         {
-            double Costo = 0;
+            double costo = 0;
 
-            // Realizar el mantenimiento a los matafuegos   
+            // Crear una lista temporal para iterar sin modificar la original
+            List<Matafuego> matafuegosCopia = cliente.Matafuegos.ToList();
+
+            // Lista para almacenar los matafuegos recargados
             List<Matafuego> matafuegosRecargados = new List<Matafuego>();
-            foreach (var matafuego in cliente.Matafuegos)
+
+            foreach (var matafuego in matafuegosCopia)
             {
-                //Etiqueta nuevaetiqueta = new Etiqueta();
-                matafuego.EtiquetaMatafuego.Rellenar(Fecha, Fecha.AddYears(1), matafuego.DeterminarTipo());
-                matafuegosRecargados.Add(tecnico.RecargarMatafuego(matafuego, ObtenerColorAroselloAnual()));
+                // Cargar los datos de la etiqueta del matafuego
+                matafuego.EtiquetaMatafuego.Rellenar(fecha, fecha.AddYears(1), arosello);
+
+                // Llamar al técnico para recargar el matafuego y agregarlo a la lista de recargados
+                Matafuego matafuegoRecargado = tecnico.RecargarMatafuego(matafuego, arosello);
+                matafuegosRecargados.Add(matafuegoRecargado);
+
+                // Sumar el costo de la recarga al costo total
+                costo += matafuegoRecargado.PrecioRecarga;
             }
 
-            //le paso al cliente la lista de matafuegos ya recargados
+            // Actualizar la lista de matafuegos del cliente con los recargados
             cliente.Matafuegos = matafuegosRecargados;
 
-            return Costo = CalcularCostoTotalRecarga(cliente);
+            // Retornar el costo total de la recarga
+            return costo;
         }
+
 
 
 
@@ -51,6 +63,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             return Costo;
         }
 
+        /*
         public string ColorArosello { get; private set; }
         // Lista de colores rotativos (podrías cambiar o añadir colores si deseas)
         private static readonly string[] ColoresArosello = { "Verde", "Rojo", "Azul", "Amarillo", "Naranja" };
@@ -61,5 +74,6 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             int index = (year - 2024) % ColoresArosello.Length; // Empieza en 2024 con "Verde" y rota anualmente
             return ColoresArosello[index];
         }
+        */
     }
 }

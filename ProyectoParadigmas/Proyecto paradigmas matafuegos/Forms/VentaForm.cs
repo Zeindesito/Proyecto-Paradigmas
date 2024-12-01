@@ -27,17 +27,21 @@ namespace Proyecto_paradigmas_matafuegos
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentaForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
+
+
             MatafuegosSeleccion = Empresa_.MatafuegosList;
 
             ActuaizarDatagridview();
-
             dgvSeleccion.CellClick += dgvSeleccion_CellClick;
             button1.Click += button1_Click_1;
 
-            Cliente_ = Empresa_.Clientes[Empresa_.Clientes.Count - 1];
-
+            //guardo el cliente a realizarle la venta
             Cliente_ = Empresa_.Clientes.Last();
+
+            //guardo la lista que ya tenia de matafuegos
             ListaMatafuego = Cliente_.Matafuegos;
+
+            //Borro la lista de matafugos que tenia cliente
             Cliente_.Matafuegos = new List<Matafuego>();
         }
 
@@ -106,15 +110,18 @@ namespace Proyecto_paradigmas_matafuegos
             return matafuegosParaVenta.Sum(matafuego => matafuego.PrecioVenta);
         }
 
-        //flecha volver al menu anterior
+        //Volver
         private void button3_Click_1(object sender, EventArgs e)
         {
-            if (ListaMatafuego == null || !ListaMatafuego.Any())
+            if (ListaMatafuego == null || ListaMatafuego.Count == 0)
             {
                 Empresa_.Clientes.Remove(Cliente_);
+                MessageBox.Show($"Cliente {Cliente_.Nombre} eliminado por no realizar operacion");
             }
-            recepcionistaForm.Show();
+            Cliente_.Matafuegos = ListaMatafuego;
+
             recepcionistaForm.Empresa_ = Empresa_;
+            recepcionistaForm.Show();
             recepcionistaForm.MostrarClientes();
             this.Hide();
         }
