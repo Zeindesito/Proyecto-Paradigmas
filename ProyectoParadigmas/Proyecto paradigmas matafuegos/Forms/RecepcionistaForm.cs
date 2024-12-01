@@ -216,7 +216,8 @@ namespace Proyecto_paradigmas_matafuegos
         private void serviciosRealizadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ServiciosRealizadosForm serviciosRealizados = new ServiciosRealizadosForm(Empresa_);
-            serviciosRealizados.Show();
+            serviciosRealizados.StartPosition = FormStartPosition.CenterParent;
+            serviciosRealizados.ShowDialog();
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
