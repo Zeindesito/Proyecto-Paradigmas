@@ -59,6 +59,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarDni = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviciosRealizadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -70,8 +72,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,8 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonVenta
@@ -241,7 +243,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tecnicoToolStripMenuItem,
-            this.inventarioToolStripMenuItem});
+            this.inventarioToolStripMenuItem,
+            this.serviciosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(876, 24);
@@ -403,6 +406,21 @@
             this.label2.TabIndex = 61;
             this.label2.Text = "Buscar Cliente (DNI):";
             // 
+            // serviciosToolStripMenuItem
+            // 
+            this.serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.serviciosRealizadosToolStripMenuItem});
+            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.serviciosToolStripMenuItem.Text = "Servicios";
+            // 
+            // serviciosRealizadosToolStripMenuItem
+            // 
+            this.serviciosRealizadosToolStripMenuItem.Name = "serviciosRealizadosToolStripMenuItem";
+            this.serviciosRealizadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.serviciosRealizadosToolStripMenuItem.Text = "Servicios realizados";
+            this.serviciosRealizadosToolStripMenuItem.Click += new System.EventHandler(this.serviciosRealizadosToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(560, 285);
@@ -497,15 +515,6 @@
             this.pictureBox11.TabIndex = 64;
             this.pictureBox11.TabStop = false;
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.DarkRed;
-            this.pictureBox12.Location = new System.Drawing.Point(3, 27);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(873, 964);
-            this.pictureBox12.TabIndex = 65;
-            this.pictureBox12.TabStop = false;
-            // 
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
@@ -514,6 +523,16 @@
             this.pictureBox13.Size = new System.Drawing.Size(867, 958);
             this.pictureBox13.TabIndex = 66;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox12.Location = new System.Drawing.Point(3, 27);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(873, 964);
+            this.pictureBox12.TabIndex = 65;
+            this.pictureBox12.TabStop = false;
             // 
             // RecepcionistaForm
             // 
@@ -573,8 +592,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -624,5 +643,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviciosRealizadosToolStripMenuItem;
     }
 }

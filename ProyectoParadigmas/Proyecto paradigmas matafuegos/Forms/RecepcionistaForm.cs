@@ -212,5 +212,16 @@ namespace Proyecto_paradigmas_matafuegos
             }
             return true;
         }
+
+        private void serviciosRealizadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ServiciosRealizadosForm serviciosRealizados = new ServiciosRealizadosForm(Empresa_);
+            serviciosRealizados.Show();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
