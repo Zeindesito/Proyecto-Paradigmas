@@ -15,7 +15,9 @@ namespace Proyecto_paradigmas_matafuegos
         RecepcionistaForm recepcionistaForm;
         private Empresa Empresa_;
         private List<Matafuego> MatafuegosSeleccion;
+
         private List<Matafuego> MatafuegosFiltrados;
+
         private List<Matafuego> ListaMatafuego;
         private List<Matafuego> matafuegosParaVenta = new List<Matafuego>();
         private Cliente Cliente_;
@@ -25,6 +27,8 @@ namespace Proyecto_paradigmas_matafuegos
         public VentaForm(Empresa empresa, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
+  
+
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VentaForm_FormClosing);
             this.recepcionistaForm = recepcionistaForm;
             this.Empresa_ = empresa;
@@ -84,7 +88,7 @@ namespace Proyecto_paradigmas_matafuegos
         private void dgvSeleccion_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Asegúrate de que se selecciona una fila válida
-            if (e.RowIndex >= 0 && e.RowIndex < dgvSeleccion.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dgvSeleccion.Rows.Count)
             {
                 selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada
@@ -128,13 +132,13 @@ namespace Proyecto_paradigmas_matafuegos
             //actualizado el datagridview donde estan cargados
             foreach (var matafuego in MatafuegosFiltrados)
             {
-                dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
+                dgvSeleccion.Rows.Add(matafuego.Marca,matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
             }
 
             //actualizo el carrito
             foreach (var item in matafuegosParaVenta)
             {
-                dataGridView2.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioVenta);
+                dataGridView2.Rows.Add(item.Marca, item.DeterminarTipo(), item.Peso, item.PrecioVenta);
             }
 
         }
@@ -154,7 +158,7 @@ namespace Proyecto_paradigmas_matafuegos
                 dgvSeleccion.Rows.Clear();
                 foreach (var matafuego in MatafuegosFiltrados)
                 {
-                    dgvSeleccion.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
+                    dgvSeleccion.Rows.Add(matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta);
                 }
             }
         }

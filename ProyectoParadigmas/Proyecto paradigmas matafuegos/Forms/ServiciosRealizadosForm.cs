@@ -20,7 +20,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             {
                 foreach (var matafuego in item.Matafuegos)
                 {
-                    dataGridView1.Rows.Add(item.Cliente_.Nombre, item.Cliente_.Apellido, item.Cliente_.DNI, item.Cliente_.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento, item.Tecnico_.Nombre, item.Tecnico_.Apellido, item.Tecnico_.DNI);
+                    dataGridView1.Rows.Add(item.Cliente_.Nombre, item.Cliente_.Apellido, item.Cliente_.DNI, item.Cliente_.Email, matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento, item.Tecnico_.Nombre, item.Tecnico_.Apellido, item.Tecnico_.DNI);
                 }
             }
 

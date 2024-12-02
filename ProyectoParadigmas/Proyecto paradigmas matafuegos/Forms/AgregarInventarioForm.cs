@@ -23,6 +23,9 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             this.recepcionistaForm = recepcionistaForm;
             Empresa_ = empresa;
             MostrarMatafuegos();
+            // Deshabilitar selección inicial
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
         }
 
 
@@ -65,15 +68,15 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             switch (cbxTipo.Text)
             {
                 case "ABC":
-                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, peso, "Verde", Convert.ToDouble(txtPrecio.Text));
+                    matafuego = new Matafuego_ABC(true, txtColorArosello.Text, true, peso, "Verde", Convert.ToDouble(txtPrecio.Text), txtMarca.Text);
                     break;
 
                 case "K":
-                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", peso, Convert.ToDouble(txtPrecio.Text));
+                    matafuego = new Matafuego_K(txtColorArosello.Text, true, true, "Verde", peso, Convert.ToDouble(txtPrecio.Text), txtMarca.Text);
                     break;
 
                 case "CO2":
-                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, peso, Convert.ToDouble(txtPrecio.Text));
+                    matafuego = new Matafuego_CO2(txtColorArosello.Text, true, peso, Convert.ToDouble(txtPrecio.Text), txtMarca.Text);
                     break;
 
                 default:
@@ -107,14 +110,14 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             dataGridView1.Rows.Clear();
             foreach (var matafuego in Empresa_.MatafuegosList)
             {
-                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                dataGridView1.Rows.Add(matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Asegúrate de que se selecciona una fila válida
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada

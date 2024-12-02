@@ -12,7 +12,7 @@ namespace Proyecto_paradigmas_matafuegos
         public bool KgPolvo {  get; set; } //true = lleno, false = vacio
 
         //constructor
-        public Matafuego_ABC(bool kilos, string arosello_precinto, bool gas, double peso,string manometro, double precio) : base(arosello_precinto,gas, peso, precio)
+        public Matafuego_ABC(bool kilos, string arosello_precinto, bool gas, double peso,string manometro, double precio, string marca) : base(arosello_precinto,gas, peso, precio, marca)
         {
             KgPolvo = kilos;
             Manometro = manometro;

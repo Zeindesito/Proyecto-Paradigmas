@@ -66,7 +66,7 @@ namespace Proyecto_paradigmas_matafuegos
                 {
                     foreach (var matafuego in cliente.Matafuegos)
                     {
-                        dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                        dataGridView1.Rows.Add(cliente.Nombre, cliente.DNI, cliente.Email, matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.EtiquetaMatafuego.FechaVencimiento);
                     }
                 }
                 else
@@ -75,7 +75,7 @@ namespace Proyecto_paradigmas_matafuegos
                 }
 
             }
-
+            txtBuscarDni.Text = string.Empty;
         }
 
         private void CrearCliente()

@@ -19,6 +19,8 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private Empresa empresa_;
         private Cliente ClienteServicio;
         private List<Matafuego> ListaMatafuego;
+        private int selectedRowIndex = -1;
+        private Matafuego MatafuegoElegido;
 
         public ServicioForm(RecepcionistaForm recepcionistaForm, Empresa empresa)
         {
@@ -59,32 +61,22 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 switch (cbxTipo.Text)
                 {
                     case "ABC":
-                        Matafuego_ = new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---", 0);
+                        Matafuego_ = new Matafuego_ABC(false, txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), "---", 0, "Avalle");
                         break;
 
                     case "K":
-                        Matafuego_ = new Matafuego_K(txtColorArosello.Text, false, false, "---", Convert.ToDouble(cbxPeso.Text), 0);
+                        Matafuego_ = new Matafuego_K(txtColorArosello.Text, false, false, "---", Convert.ToDouble(cbxPeso.Text), 0, "Avalle");
                         break;
 
                     case "CO2":
-                        Matafuego_ = new Matafuego_CO2(txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), 0);
+                        Matafuego_ = new Matafuego_CO2(txtColorArosello.Text, false, Convert.ToDouble(cbxPeso.Text), 0, "Avalle");
                         break;
                 }
                 //le cargo los matafuegos al cliente
                 ClienteServicio.Matafuegos.Add(Matafuego_);
 
 
-                //muestro en el datagridview
-                dataGridView1.Rows.Clear();
-                double Total = 0;
-                foreach (var item in ClienteServicio.Matafuegos)
-                {
-                    dataGridView1.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga, DateTime.Now.AddYears(1));
-
-                    //cargo el total
-                    Total += item.PrecioRecarga;
-                }
-                lblTotal.Text = Total.ToString();
+                Mostrar();
             }
 
         }
@@ -147,6 +139,54 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private void ServicioForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        //eliminar
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MatafuegoElegido != null)
+            {
+                ClienteServicio.Matafuegos.RemoveAt(selectedRowIndex);
+                // Limpia la selección
+                MatafuegoElegido = null;
+                // Agrega el producto seleccionado al DataGridView
+                Mostrar();
+                MessageBox.Show("Matafuego eliminado con éxito");
+            }
+        }
+
+        //seleccionar
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Asegúrate de que se selecciona una fila válida
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
+            {
+                selectedRowIndex = e.RowIndex;
+                // Guarda el producto de la fila seleccionada
+                MatafuegoElegido = empresa_.MatafuegosList[e.RowIndex];
+            }
+            else
+            {
+                MessageBox.Show("Elija una fila valida");
+            }
+
+
+        }
+        
+        private void Mostrar()
+        {
+            //muestro en el datagridview
+            dataGridView1.Rows.Clear();
+            double Total = 0;
+            foreach (var item in ClienteServicio.Matafuegos)
+            {
+                dataGridView1.Rows.Add(item.DeterminarTipo(), item.Peso, item.PrecioRecarga, DateTime.Now.AddYears(1));
+
+                //cargo el total
+                Total += item.PrecioRecarga;
+            }
+            lblTotal.Text = Total.ToString();
         }
     }
 }

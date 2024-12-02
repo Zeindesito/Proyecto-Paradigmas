@@ -8,10 +8,9 @@ namespace Proyecto_paradigmas_matafuegos.Clases
 {
     public class Matafuego_CO2 : Matafuego
     {
-        public Matafuego_CO2(string arosello_precinto, bool gas, double peso, double precio) : base(arosello_precinto, gas, peso, precio)
+        public Matafuego_CO2(string arosello_precinto, bool gas, double peso, double precio, string marca) : base(arosello_precinto, gas, peso, precio, marca)
         {
         }
-
         //metodos
         public override void Recargar(string color)
         {

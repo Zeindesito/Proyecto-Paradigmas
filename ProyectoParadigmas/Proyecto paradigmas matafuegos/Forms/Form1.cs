@@ -28,23 +28,26 @@ namespace Proyecto_paradigmas_matafuegos
             {
             new Cliente("Juan", "Frias", "40.211.195", "juanfrias34@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, "Verde", true, 1, "Verde", 35000),
+                new Matafuego_ABC(true, "Verde", true, 1, "Verde", 35000, "Georgia"),
+                new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 65000, "Amerex"),
+
             }),
             new Cliente("Pedro", "Perez", "22.125.875", "perezpedro@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 2.5, 250000),
+                new Matafuego_K("Verde", true, true, "Verde", 2.5, 250000, "Yukon"),
+                new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 190000, "Melisam"),
             }),
              new Cliente("Nazareno", "Rolon", "44.789.897", "nazarolon@gmail.com", new List<Matafuego>
             {
-                new Matafuego_CO2("Verde", true, 5, 450000),
+                new Matafuego_CO2("Verde", true, 5, 450000, "Yukon"),
             }),
             new Cliente("Matias", "Inglant", "43.678.234", "inglantmati@gmail.com", new List<Matafuego>
             {
-                new Matafuego_K("Verde", true, true, "Verde", 10, 600000),
+                new Matafuego_K("Verde", true, true, "Verde", 10, 600000, "Melisam"),
             }),
              new Cliente("Luis", "Fonsi", "47.234.101", "luisfonsi21@gmail.com", new List<Matafuego>
             {
-                new Matafuego_ABC(true, "Verde", true, 5, "Verde",130000),
+                new Matafuego_ABC(true, "Verde", true, 5, "Verde",130000, "Yukon"),
             })
             };
 
@@ -66,21 +69,21 @@ namespace Proyecto_paradigmas_matafuegos
             MatafuegosEmpresa = new List<Matafuego>
             {
                  //1kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 1, 150000),
-                 new Matafuego_CO2("Rojo",true,1,180000),
-                 new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 35000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 1, 150000, "Yukon"),
+                 new Matafuego_CO2("Rojo",true,1,180000, "Yukon"),
+                 new Matafuego_ABC(true, "Rojo", true, 1, "Verde", 35000, "Melisam"),
                  //2.5kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 2.5, 250000),
-                 new Matafuego_CO2("Rojo",true,2.5,250000),
-                 new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 65000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 2.5, 250000, "Georgia"),
+                 new Matafuego_CO2("Rojo",true,2.5,250000, "Yukon"),
+                 new Matafuego_ABC(true, "Rojo", true, 2.5, "Amarillo", 65000, "Amerex"),
                  //5kg
-                 new Matafuego_K("Rojo", true, true, "Verde", 5, 420000),
-                 new Matafuego_CO2("Rojo",true,5,450000),
-                 new Matafuego_ABC(true, "Rojo", true, 5, "Amarillo", 130000),
+                 new Matafuego_K("Rojo", true, true, "Verde", 5, 420000, "Yukon"),
+                 new Matafuego_CO2("Rojo",true,5,450000, "Georgia"),
+                 new Matafuego_ABC(true, "Rojo", true, 5, "Amarillo", 130000, "Melisam"),
                  //10kg
-                 new Matafuego_K("Rojo", true, true, "Amarillo", 10, 680000),
-                 new Matafuego_CO2("Rojo",true,10,600000),
-                 new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 190000),
+                 new Matafuego_K("Rojo", true, true, "Amarillo", 10, 680000, "Yukon"),
+                 new Matafuego_CO2("Rojo",true,10,600000, "Georgia"),
+                 new Matafuego_ABC(true, "Rojo", true, 10, "Amarillo", 190000, "Melisam"),
 
             };
             foreach (var matafuego in MatafuegosEmpresa)
@@ -89,7 +92,7 @@ namespace Proyecto_paradigmas_matafuegos
             }
 
             Servicio viejoServicio = new Servicio(Tecnicos.Last(), listaClientes.Last(), DateTime.Parse("06/02/2024"));
-            viejoServicio.RealizarRecarga(listaClientes.Last(), Tecnicos.Last(), DateTime.Parse("06/02/2024"), "Rojo", new List<Matafuego>{ new Matafuego_K("Verde", true, true, "Verde", 10, 600000) });
+            viejoServicio.RealizarRecarga(listaClientes.Last(), Tecnicos.Last(), DateTime.Parse("06/02/2024"), "Verde", new List<Matafuego>{ new Matafuego_ABC(true, "Verde", true, 5, "Verde", 130000, "Yukon") });
             List<Servicio> servicios = new List<Servicio>();
             servicios.Add(viejoServicio);
             empresa = new Empresa(Tecnicos, listaClientes, MatafuegosEmpresa, servicios);

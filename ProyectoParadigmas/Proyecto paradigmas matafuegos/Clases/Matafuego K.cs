@@ -10,7 +10,7 @@ namespace Proyecto_paradigmas_matafuegos
     {
         public bool Liquido {  get; set; }
         public string Manometro { get; set; }
-        public Matafuego_K(string arosello_precinto, bool gas, bool liquido, string manometro, double peso, double precio) : base(arosello_precinto, gas, peso, precio)
+        public Matafuego_K(string arosello_precinto, bool gas, bool liquido, string manometro, double peso, double precio, string marca) : base(arosello_precinto, gas, peso, precio, marca)
         {
             Liquido = liquido;
             Manometro = manometro;

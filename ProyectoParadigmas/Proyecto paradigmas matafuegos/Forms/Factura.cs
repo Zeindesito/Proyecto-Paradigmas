@@ -21,6 +21,9 @@ namespace Proyecto_paradigmas_matafuegos
         public Factura(Empresa empresa, List<Matafuego> matafuegos, RecepcionistaForm recepcionistaForm)
         {
             InitializeComponent();
+            // Deshabilitar selección inicial
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
             this.recepcionistaForm = recepcionistaForm;
             Empresa_ = empresa;
             Cliente cliente_ = Empresa_.Clientes.Last();
@@ -34,7 +37,7 @@ namespace Proyecto_paradigmas_matafuegos
 
             foreach (var matafuego in cliente_.Matafuegos)
             {
-                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioRecarga, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                dataGridView1.Rows.Add(matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioRecarga, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
             }
 
             //muestro la demas informacion
@@ -71,7 +74,7 @@ namespace Proyecto_paradigmas_matafuegos
             dataGridView1.Rows.Clear();
             foreach (var matafuego in cliente_.Matafuegos)
             {
-                dataGridView1.Rows.Add(matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
+                dataGridView1.Rows.Add(matafuego.Marca, matafuego.DeterminarTipo(), matafuego.Peso, matafuego.PrecioVenta, matafuego.Arosello_Precinto, matafuego.EtiquetaMatafuego.FechaRevision, matafuego.EtiquetaMatafuego.FechaVencimiento);
             }
 
             //muestro la demas informacion

@@ -15,15 +15,17 @@ namespace Proyecto_paradigmas_matafuegos
         public string Arosello_Precinto { get; set; }
         public bool Gas { get; set; }
         public double Peso { get; set; }
+        public string Marca { get; set; }
 
         //constructor
-        public Matafuego(string arosello_precinto, bool gas, double peso, double precio)
+        public Matafuego(string arosello_precinto, bool gas, double peso, double precio, string marca)
         {
             Arosello_Precinto = arosello_precinto;
             Gas = gas;
             Peso = peso;
             PrecioVenta = precio;
             DeterminarPrecioRecarga();
+            Marca = marca;
         }
 
 

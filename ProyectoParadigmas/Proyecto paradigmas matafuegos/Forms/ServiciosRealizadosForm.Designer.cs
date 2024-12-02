@@ -39,6 +39,7 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Arosello = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +57,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(371, 6);
+            this.label4.Location = new System.Drawing.Point(436, 6);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(592, 39);
             this.label4.TabIndex = 67;
@@ -82,6 +83,7 @@
             this.Column8,
             this.Column6,
             this.Column3,
+            this.Column12,
             this.Column2,
             this.Column4,
             this.Arosello,
@@ -106,15 +108,15 @@
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.Size = new System.Drawing.Size(1342, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(1441, 398);
             this.dataGridView1.TabIndex = 66;
             // 
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.DarkRed;
-            this.pictureBox11.Location = new System.Drawing.Point(6, 45);
+            this.pictureBox11.Location = new System.Drawing.Point(5, 45);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(1355, 408);
+            this.pictureBox11.Size = new System.Drawing.Size(1454, 408);
             this.pictureBox11.TabIndex = 72;
             this.pictureBox11.TabStop = false;
             // 
@@ -151,9 +153,14 @@
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column3.Width = 240;
             // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Marca";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
             // Column2
             // 
-            this.Column2.Frozen = true;
             this.Column2.HeaderText = "Tipo de matafuego";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -162,7 +169,6 @@
             // 
             // Column4
             // 
-            this.Column4.Frozen = true;
             this.Column4.HeaderText = "Kg";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -217,7 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1365, 463);
+            this.ClientSize = new System.Drawing.Size(1464, 463);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox11);
@@ -240,6 +246,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Arosello;

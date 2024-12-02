@@ -23,7 +23,11 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             InitializeComponent();
             this.recepcionistaForm = recepcionistaForm;
             Empresa_ = empresa;
+            // Deshabilitar selección inicial
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
             MostrarTecnicos();
+
         }
 
         
@@ -62,7 +66,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             // Asegúrate de que se selecciona una fila válida
-            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count - 1)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada
