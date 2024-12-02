@@ -153,6 +153,10 @@ namespace Proyecto_paradigmas_matafuegos.Forms
                 Mostrar();
                 MessageBox.Show("Matafuego eliminado con éxito");
             }
+            else
+            {
+                MessageBox.Show("Seleccione un matafuego para eliminar.");
+            }
         }
 
         //seleccionar
@@ -164,7 +168,7 @@ namespace Proyecto_paradigmas_matafuegos.Forms
             {
                 selectedRowIndex = e.RowIndex;
                 // Guarda el producto de la fila seleccionada
-                MatafuegoElegido = empresa_.MatafuegosList[e.RowIndex];
+                MatafuegoElegido = ClienteServicio.Matafuegos[e.RowIndex];
             }
             else
             {
